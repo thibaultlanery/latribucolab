@@ -1,2 +1,119 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+<div class="wrapper">
+  <div class="first-banner">
+    <div class="container">
+      <div class="first-banner-content text-center">
+        <div class="punchline ">
+          <h1>N'IMAGINE PLUS COMMENT SONT FABRIQUES VOUS PRODUITS, DECOUVRE LE</h1>
+          <p>Tout au long de l'année découvre tes produits d'épiceries quotidiens et apprends à les déguster</p>
+        </div>
+        <form>
+          <div class="form-group">
+            <input  class="col-4 col-form-label" class="form-control" type="text" placeholder="Prénom">
+          </div>
+           <div class="form-group">
+            <input type="email" class="col-4 col-form-label" class="form-control" placeholder="Email">
+          </div>
+          <button type="button" class="btn btn-success">Success</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="second-banner text-center">
+    <div class="container">
+      <div class="row">
+        <div class="title">
+          <h1>COMMENT CA MARCHE?</h1>
+        </div>
+        <div class="first-step col-xs-12 col-md-4">
+          <%= image_tag 'apprenez', id:'apprenez' %>
+          <h1>APPRENEZ</h1>
+          <p>Je comprends comment mes produits sont fabriqués, depuis la graine jusqu'a mes papilles</p>
+        </div>
+        <div class="second-step col-xs-12 col-md-4">
+          <%= image_tag 'creez', id:"creez" %>
+          <h1>CREEZ</h1>
+          <p>
+            Je pré-commande mon produit en ligne <br>
+            Je donne mon avis en ligne sur les futurs produits à développer <br>
+            Je deviens actionnaire pour un euro </p>
+        </div>
+        <div class="third-step col-xs-12 col-md-4">
+          <%= image_tag 'dégustez', id:'degustez' %>
+          <h1>DEGUSTEZ</h1>
+          <p>Je reçois mes produits uniques et leurs fiches de dégustations directement chez moi!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="third-banner">
+    <div class="container">
+      <div class="row">
+        <div class="title text-center">
+          <h1>CARNET DE ROUTE - MAI 2018</h1>
+          <p>A la découverte de deux coopératives</p>
+        </div>
+        <div class="cards">
+          <div class="col-xs-12 col-md-3 col-md-offset-2">
+            <div class="card">
+            <div class="frisette">
+              <%= image_tag 'frisette' %>
+            </div>
+            <div class="card-title text-center">
+              <p id="cafe-title">CAFE</p>
+              <p id="cafe-brand">LE GRAIN INCA</p>
+            </div>
+            <div class="ambiance-grain">
+            <%= image_tag 'café2', class: "ambiance-grain" %>
+            </div>
+            <div class="doypack-quinoa ">
+            <%= image_tag 'doypack', class:"doypack" %>
+             </div>
+            <div class="description">
+              <p><strong>Coopérative el palomar </strong> <br>
+              Nous partons a la découverte d’un café de haute altitude accroché aux pentes de la cordilière.</p>
+
+            </div>
+            <div class="frisette">
+              <%= image_tag 'frisette' %>
+            </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-xs-12 col-md-offset-2 col-md-3">
+            <div class="card">
+            <div class="frisette">
+              <%= image_tag 'frisettequinoa' %>
+            </div>
+             <div class="card-title text-center">
+            <p id="quinoa-title" >QUINOA</p>
+            <p id="quinoa-brand">LE GRAIN KINWA</p>
+            </div>
+             <div class="ambiance-grain">
+            <%= image_tag 'quinoa', class: "ambiance-grain" %>
+            </div>
+            <div class="doypack-quinoa ">
+              <%= image_tag 'doypack', class:"doypack" %>
+              <%= image_tag 'doypack', class:"doypack" %>
+            </div>
+            <div class="description">
+              <p><strong> Coopérative Juliana </strong> <br>
+              A quelque pas du mythique lac titi caca, nous allons nous comprendre comment se comprendre la mythique quinoa </p>
+            </div>
+            <div class="frisette">
+            <%= image_tag 'frisettequinoa' %>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+<!-- a modifier quand model créé -->
+
+<!-- a modifier quand model créé -->
+
+
+</div>

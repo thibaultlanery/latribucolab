@@ -1,1 +1,105 @@
 // Specific CSS for your home-page
+
+.first-banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  min-height: 550px;
+}
+
+.second-banner {
+  background-color: white;
+  padding: 20px;
+
+  img {
+    width: 125px;
+    border-radius: 50%;
+    box-shadow: 2px;
+    box-shadow: 2px 3px 6px 1px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.third-banner {
+  color:white;
+
+  img {
+  width:100%;
+
+  }
+}
+
+
+.card {
+  // position: relative;
+}
+
+.card-title {
+    // position: absolute;
+    width: 100%;
+
+  p { margin: 0;
+    padding:0;
+  }
+
+  p:first-child {
+  font-size: 29px;
+  background-color: white;
+  }
+
+  font-size: 20px;
+}
+
+#cafe-title {
+  color: #A4765B;
+}
+
+#cafe-brand {
+  color: white;
+  background-color: #A4765B;
+}
+#quinoa-title {
+  color: #EED0A6;
+}
+
+#quinoa-brand {
+  color: white;
+  background-color: #EED0A6;
+
+}
+
+.ambiance-grain {
+  // min-height: 197px;
+  max-height: 130px;
+  background-image: linear-gradient (to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.59) 59%,rgba(255,255,255,1) 100%);
+}
+
+.doypack {
+  max-width: 90px;
+  // margin-left: auto;
+  // margin-right: auto;
+  // display:block;
+}
+
+.doypack-quinoa {
+  margin-top: -65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color:white;
+}
+
+.description {
+  background-color: white;
+  color:black;
+  text-align:center;
+  padding: 25px;
+  height: 130px;
+
+  p {
+    margin: 0;
+  }
+
+ }
+
+
