@@ -9,10 +9,10 @@
         </div>
         <form>
           <div class="form-group">
-            <input  class="col-3 col-form-label" class="form-control" type="text" placeholder="Prénom">
+            <input  class="col-4 col-form-label" class="form-control" type="text" placeholder="Prénom">
           </div>
            <div class="form-group">
-            <input type="email" class="col-3 col-form-label" class="form-control" placeholder="Email">
+            <input type="email" class="col-4 col-form-label" class="form-control" placeholder="Email">
           </div>
           <button type="button" class="btn btn-success">Success</button>
         </form>
@@ -54,27 +54,56 @@
           <p>A la découverte de deux coopératives</p>
         </div>
         <div class="cards">
-          <div class="card col-xs-12 col-md-4">
-            <%= image_tag 'frisette' %>
-            <p>CAFE</p>
-            <p>Le Grain Inca</p>
-            <%= image_tag 'café2', class: "ambiance-grain" %>
-            <%= image_tag 'doypack', class:"doypack" %>
-            <%= image_tag 'frisette' %>
-          </div>
-          <div class="card col-xs-12 col-xs-12 col-md-offset-4 col-md-4">
-            <%= image_tag 'frisettequinoa' %>
-            <p>QUINOA</p>
-            <p>Le Grain Kinwa</p>
-            <%= image_tag 'quinoa', class: "ambiance-grain" %>
-            <div class="doypack-quinoa ">
-              <div>
-            <%= image_tag 'doypack', class:"doypack" %>
-            <%= image_tag 'doypack', class:"doypack" %>
-              </div>
+          <div class="col-xs-12 col-md-3 col-md-offset-2">
+            <div class="card">
+            <div class="frisette">
+              <%= image_tag 'frisette' %>
             </div>
-            <%= image_tag 'frisettequinoa' %>
+            <div class="card-title text-center">
+              <p id="cafe-title">CAFE</p>
+              <p id="cafe-brand">LE GRAIN INCA</p>
+            </div>
+            <div class="ambiance-grain">
+            <%= image_tag 'café2', class: "ambiance-grain" %>
+            </div>
+            <div class="doypack-quinoa ">
+            <%= image_tag 'doypack', class:"doypack" %>
+             </div>
+            <div class="description">
+              <p><strong>Coopérative el palomar </strong> <br>
+              Nous partons a la découverte d’un café de haute altitude accroché aux pentes de la cordilière.</p>
+
+            </div>
+            <div class="frisette">
+              <%= image_tag 'frisette' %>
+            </div>
+            </div>
           </div>
+          <div class="col-xs-12 col-xs-12 col-md-offset-2 col-md-3">
+            <div class="card">
+            <div class="frisette">
+              <%= image_tag 'frisettequinoa' %>
+            </div>
+             <div class="card-title text-center">
+            <p id="quinoa-title" >QUINOA</p>
+            <p id="quinoa-brand">LE GRAIN KINWA</p>
+            </div>
+             <div class="ambiance-grain">
+            <%= image_tag 'quinoa', class: "ambiance-grain" %>
+            </div>
+            <div class="doypack-quinoa ">
+              <%= image_tag 'doypack', class:"doypack" %>
+              <%= image_tag 'doypack', class:"doypack" %>
+            </div>
+            <div class="description">
+              <p><strong> Coopérative Juliana </strong> <br>
+              A quelque pas du mythique lac titi caca, nous allons nous comprendre comment se comprendre la mythique quinoa </p>
+            </div>
+            <div class="frisette">
+            <%= image_tag 'frisettequinoa' %>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </div>
