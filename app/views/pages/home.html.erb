@@ -27,12 +27,12 @@
         </div>
         <div class="first-step col-xs-12 col-md-4">
           <%= cl_image_tag("apprenez_o56tkf.jpg") %>
-          <h1>APPRENEZ</h1>
+          <h2>Apprenez</h2>
           <p>Je comprends comment mes produits sont fabriqués, depuis la graine jusqu'a mes papilles</p>
         </div>
         <div class="second-step col-xs-12 col-md-4">
           <%= cl_image_tag("creez_k3wifi.jpg") %>
-          <h1>CREEZ</h1>
+          <h2>Créez</h2>
           <p>
             Je pré-commande mon produit en ligne <br>
             Je donne mon avis en ligne sur les futurs produits à développer <br>
@@ -40,7 +40,7 @@
         </div>
         <div class="third-step col-xs-12 col-md-4">
           <%= cl_image_tag("dégustez_yjby7t.jpg") %>
-          <h1>DEGUSTEZ</h1>
+          <h2>Dégustez</h2>
           <p>Je reçois mes produits uniques et leurs fiches de dégustations directement chez moi!</p>
         </div>
       </div>
@@ -64,7 +64,9 @@
               <p id="cafe-brand">LE GRAIN INCA</p>
             </div>
             <div class="ambiance-grain">
-              <%= cl_image_tag("café2_mbn1tg.jpg") %>
+
+              <%= cl_image_tag("café2_mbn1tg.jpg", :height=>130, :opacity=>100, :crop=>"scale") %>
+
             </div>
             <div class="doypack-quinoa ">
               <div class="doypack">
@@ -115,7 +117,66 @@
     </div>
 
   </div>
+<div class="fourth-banner text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-xs-12 col-md-4">
+          <div class="icons">
+          <%= cl_image_tag("neutralité_carbone_color_qzgf3g.jpg", :height=>200, :crop=>"scale")%>
+          </div>
+          <div class="test">
+          <h2>Neutralité carbone</h2>
+          <p>Nous plantons autant d’arbre necessaires pour compenser à 100% l’impact de notre activité</p>
+          </div>
+        </div>
+        <div class="hidden-xs col-md-4">
+          <div class="doypack-multiple">
+            <%= cl_image_tag("doypack_ife4cg.jpg", id:"doy-1") %>
+            <%= cl_image_tag("doypack_ife4cg.jpg", id:"doy-2") %>
+            <%= cl_image_tag("doypack_ife4cg.jpg", id:"doy-3") %>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4" >
+          <div class="icons">
+            <%= cl_image_tag("handshake_color_y8su1h.jpg", :height=>200, :crop=>"scale") %>
+          </div>
+          <div class="test">
+          <h2>Commerce équitable</h2>
+          <p>Nos produits sont issus des filières équitables qui garantissent un revenu digne à nos producteurs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-xs-12 col-md-4 col-md-offset-1">
+          <div class="icons">
+          <%= cl_image_tag("transparency_color_dwi3kg.jpg", :height=>200, :crop=>"scale") %>
+          </div>
+          <div class="test">
+          <h2>Transparence</h2>
+          <p>De la coopérative et votre domicile, vous connaitrez tous sur votre produit</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4 col-md-offset-2" >
+          <div class="icons">
+          <%= cl_image_tag("bio_color_ikzfgj.jpg", :height=>200, :crop=>"scale") %>
+          </div>
+          <div class="test">
+          <h2>Agriculture biologique</h2>
+          <p>Nos produits sont issus d’exploitations pratiquant une agriculture biologique</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+
+
+
+
+</div>
 <!-- a modifier quand model créé -->
 
 <!-- a modifier quand model créé -->
