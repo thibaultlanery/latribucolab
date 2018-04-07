@@ -7,15 +7,22 @@
           <h1>MANGER NE T'AURAS JAMAIS RENDU AUSSI INTELLIGENT</h1>
           <h3>Nous parcourons le monde pour développer avec toi des produits d'exceptions </h3>
         </div>
-        <form>
-          <div class="form-group">
-            <input  class="col-4 col-form-label" class="form-control" type="text" placeholder="Prénom">
-          </div>
-           <div class="form-group">
-            <input type="email" class="col-4 col-form-label" class="form-control" placeholder="Email">
-          </div>
-          <button type="button" class="btn btn-success">Je participe à l'aventure!</button>
-        </form>
+          <div class="form">
+            <%= simple_form_for(@user) do |f| %>
+              <%= f.error_notification %>
+
+              <div class="form-inputs">
+                <ul class="list-inline">
+                  <li><%= f.input :name, placeholder: "Prénom", label: false %></li>
+                  <li><%= f.input :email, placeholder: "email", label: false %></li>
+                </ul>
+              </div>
+
+              <div class="form-actions">
+                <%= f.button :submit, "Je reste informé!", class: "btn-warning" %>
+              </div>
+            <% end %>
+            </div>
       </div>
     </div>
   </div>
@@ -26,7 +33,7 @@
           Il avait une saveur unique ce produit, celle d'un voyage dans une vallée isolée et de la découverte d'une communauté. <br>
           On voulait donc leur montrer, leur expliquer ses spécificité et la manière de le déguster. <br>
           <strong>Après, on s'est dit que si ça plaisait à nos amis, ça pourrait plaire à tout le monde, La Tribu était née.</strong> </h4>
-      <!-- <div class="left-container col-md-4">
+     <!--  <div class="left-container col-md-4">
         <%= cl_image_tag("Animated_GIF-downsized_g7pfjq.gif", :height=>120, :crop=>"scale") %>
         <h4>Parce que la marmotte ne mets pas le chocolat dans le papier d'alu</h4>
       </div>
@@ -209,14 +216,31 @@
       </div>
       <div class="team">
         <ul class= "list-inline">
-          <li><%= cl_image_tag("moi_caré_hq60uv.png", :height=>200, :width=>200, :effect=>"grayscale") %><h4>Thibault</h4></li>
+          <li><%= cl_image_tag("Capture_d_écran_2018-04-06_à_19.51.10_aqclbn.png", :effect=>"grayscale", :height=>200, :crop=>"scale") %><h4>Thibault</h4></li>
           <li><%= cl_image_tag("Julien_RIou_juezxg.jpg", :height=>200, :width=>200, :crop=>"thumb") %><h4>Julien</h4></li>
         </ul>
       </div>
       <h2>mais par un prompt renfort,
           Nous nous vîmes trois mille en arrivant au port...</h2>
       <h3>ILS NOUS SOUTIENNENT DANS NOTRE AVENTURE!</h3>
+            <div class="form">
+        <%= simple_form_for(@user) do |f| %>
+          <%= f.error_notification %>
+
+          <div class="form-inputs">
+            <ul class="list-inline">
+              <li><%= f.input :name, placeholder: "Prénom", label: false %></li>
+              <li><%= f.input :email, placeholder: "email", label: false %></li>
+            </ul>
+          </div>
+
+          <div class="form-actions">
+            <%= f.button :submit, "Je reste informé!", class: "btn-warning" %>
+          </div>
+        <% end %>
+        </div>
       <ul class="list-inline followers" >
+        <li><h1>?</h1><h1> et toi</h1></li>
         <li><%= cl_image_tag("romain_iogmvm.jpg") %><p>Romain</p></li>
         <li><%= cl_image_tag("dimitri_ivxt55.jpg")%><p>Dimitri</p></li>
         <li><%= cl_image_tag("coline_nvgx2r.jpg")  %><p>Coline</p></li>
@@ -336,10 +360,11 @@
         <li><%= cl_image_tag("brice_mloxaf.jpg") %><p>Brice</p></li>
         <li><%= cl_image_tag("manu_hk5jit.jpg") %><p>Emanuelle</p></li>
         <li><%= cl_image_tag("joanna_jmnyl5.jpg") %><p>Joanna</p></li>
-        <li><h1>?</h1><h1> et toi</h1></li>
+
       </ul>
     </div>
   </div>
+
 <!-- a modifier quand model créé -->
 
 <!-- a modifier quand model créé -->
