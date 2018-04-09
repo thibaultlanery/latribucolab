@@ -1,5 +1,6 @@
 
 <div class="wrapper">
+  <%= cl_image_tag("flowRoot7503-8_fjjd7n.png") %>
   <div class="first-banner">
     <div class="container">
       <div class="first-banner-content text-center">
@@ -7,15 +8,22 @@
           <h1>MANGER NE T'AURAS JAMAIS RENDU AUSSI INTELLIGENT</h1>
           <h3>Nous parcourons le monde pour développer avec toi des produits d'exceptions </h3>
         </div>
-        <form>
-          <div class="form-group">
-            <input  class="col-4 col-form-label" class="form-control" type="text" placeholder="Prénom">
-          </div>
-           <div class="form-group">
-            <input type="email" class="col-4 col-form-label" class="form-control" placeholder="Email">
-          </div>
-          <button type="button" class="btn btn-success">Je participe à l'aventure!</button>
-        </form>
+          <div class="form">
+            <%= simple_form_for(@user) do |f| %>
+              <%= f.error_notification %>
+
+              <div class="form-inputs">
+                <ul class="list-inline">
+                  <li><%= f.input :name, placeholder: "Prénom", label: false %></li>
+                  <li><%= f.input :email, placeholder: "email", label: false %></li>
+                </ul>
+              </div>
+
+              <div class="form-actions">
+                <%= f.button :submit, "Je reste informé!", class: "btn-warning" %>
+              </div>
+            <% end %>
+            </div>
       </div>
     </div>
   </div>
@@ -26,7 +34,7 @@
           Il avait une saveur unique ce produit, celle d'un voyage dans une vallée isolée et de la découverte d'une communauté. <br>
           On voulait donc leur montrer, leur expliquer ses spécificité et la manière de le déguster. <br>
           <strong>Après, on s'est dit que si ça plaisait à nos amis, ça pourrait plaire à tout le monde, La Tribu était née.</strong> </h4>
-      <!-- <div class="left-container col-md-4">
+     <!--  <div class="left-container col-md-4">
         <%= cl_image_tag("Animated_GIF-downsized_g7pfjq.gif", :height=>120, :crop=>"scale") %>
         <h4>Parce que la marmotte ne mets pas le chocolat dans le papier d'alu</h4>
       </div>
@@ -209,14 +217,30 @@
       </div>
       <div class="team">
         <ul class= "list-inline">
-          <li><%= cl_image_tag("moi_caré_hq60uv.png", :height=>200, :width=>200, :effect=>"grayscale") %><h4>Thibault</h4></li>
+          <li><%= cl_image_tag("Capture_d_écran_2018-04-06_à_19.51.10_aqclbn.png", :effect=>"grayscale", :height=>200, :crop=>"scale") %><h4>Thibault</h4></li>
           <li><%= cl_image_tag("Julien_RIou_juezxg.jpg", :height=>200, :width=>200, :crop=>"thumb") %><h4>Julien</h4></li>
         </ul>
       </div>
       <h2>mais par un prompt renfort,
           Nous nous vîmes trois mille en arrivant au port...</h2>
       <h3>ILS NOUS SOUTIENNENT DANS NOTRE AVENTURE!</h3>
+            <div class="form">
+        <%= simple_form_for(@user) do |f| %>
+          <%= f.error_notification %>
+
+          <div class="form-inputs">
+            <ul class="list-inline">
+              <li><%= f.input :name, placeholder: "Prénom", label: false %></li>
+              <li><%= f.input :email, placeholder: "email", label: false %></li>
+              <li><%= f.button :submit, "Je reste informé!", class: "btn-warning" %></li>
+            </ul>
+          </div>
+
+
+        <% end %>
+        </div>
       <ul class="list-inline followers" >
+        <li><h1>?</h1><h1> et toi</h1></li>
         <li><%= cl_image_tag("romain_iogmvm.jpg") %><p>Romain</p></li>
         <li><%= cl_image_tag("dimitri_ivxt55.jpg")%><p>Dimitri</p></li>
         <li><%= cl_image_tag("coline_nvgx2r.jpg")  %><p>Coline</p></li>
@@ -296,50 +320,10 @@
         <li><%= cl_image_tag("brice_mloxaf.jpg") %><p>Brice</p></li>
         <li><%= cl_image_tag("manu_hk5jit.jpg") %><p>Emanuelle</p></li>
         <li><%= cl_image_tag("joanna_jmnyl5.jpg") %><p>Joanna</p></li>
-
-                <li><%= cl_image_tag("romain_iogmvm.jpg") %><p>Romain</p></li>
-        <li><%= cl_image_tag("dimitri_ivxt55.jpg")%><p>Dimitri</p></li>
-        <li><%= cl_image_tag("coline_nvgx2r.jpg")  %><p>Coline</p></li>
-        <li><%= cl_image_tag("simon_geoqgg.jpg") %><p>Simon</p></li>
-        <li><%= cl_image_tag("christophe_j8urcn.jpg") %><p>Christophe</p></li>
-        <li><%= cl_image_tag("jb_h9rqk6.jpg")  %><p>Jean-baptiste</p></li>
-        <li><%= cl_image_tag("sophie_mlyn48.jpg")  %><p>Sophie</p></li>
-        <li><%= cl_image_tag("lucille_yej9fj.jpg")  %><p>Lucille</p></li>
-        <li><%= cl_image_tag("francois_gfx2la.jpg")  %><p>François</p></li>
-        <li><%= cl_image_tag("caroline_przvij.jpg") %><p>Caroline</p></li>
-        <li><%= cl_image_tag("pierre_nbkmy3.jpg") %><p>Pierre</p></li>
-        <li><%= cl_image_tag("camille_e7yhcf.jpg") %><p>Camille</p></li>
-        <li><%= cl_image_tag("louise_qw0da6.jpg") %><p>Louise</p></li>
-        <li><%= cl_image_tag("antoine_srrcvd.jpg") %><p>Antoine</p></li>
-        <li><%= cl_image_tag("jerome_ufztts.jpg") %><p>Jérome</p></li>
-        <li><%= cl_image_tag("julie_zh3wyo.jpg")  %><p>Julie</p></li>
-        <li><%= cl_image_tag("greg_nlfzxg.jpg") %><p>Grégoire</p></li>
-        <li><%= cl_image_tag("agathe_hd8ppy.jpg") %><p>Agathe</p></li>
-        <li><%= cl_image_tag("clementine_maaufq.jpg") %><p>Clémentine</p></li>
-        <li><%= cl_image_tag("marion_acckwa.jpg") %><p>Marion</p></li>
-        <li><%= cl_image_tag("hugo_r6cncq.jpg") %><p>Hugo</p></li>
-        <li><%= cl_image_tag("heloise_ktzbvx.jpg") %><p>Héloïse</p></li>
-        <li><%= cl_image_tag("margaux_but2el.jpg") %><p>Margaux</p></li>
-        <li><%= cl_image_tag("guillaume_vccnzj.jpg") %><p>Guillaume</p></li>
-        <li><%= cl_image_tag("benoit_mpbx9n.jpg") %><p>Benoit</p></li>
-        <li><%= cl_image_tag("jerome_kx6m9y.jpg") %><p>Jérome</p></li>
-        <li><%= cl_image_tag("loic_ouzago.jpg") %><p>Loïc</p></li>
-        <li><%= cl_image_tag("dimitriv_ctr47e.jpg")%><p>Dimitri</p></li>
-        <li><%= cl_image_tag("mathieu_p65s9j.jpg") %><p>Mathieu</p></li>
-        <li><%= cl_image_tag("annabelle_hyzj8g.jpg") %><p>Annabelle</p></li>
-        <li><%= cl_image_tag("francoisbl_fw1wop.jpg")  %><p>Francois</p></li>
-        <li><%= cl_image_tag("lea_bgxnaz.jpg")%><p>Léa</p></li>
-        <li><%= cl_image_tag("laura_avifqf.jpg")%><p>Laura</p></li>
-        <li><%= cl_image_tag("romaing_ungqqr.jpg")%><p>Romain</p></li>
-        <li><%= cl_image_tag("marine_hqjujb.jpg") %><p>Marine</p></li>
-        <li><%= cl_image_tag("matt_dolhd4.jpg")%><p>Mathilde</p></li>
-        <li><%= cl_image_tag("brice_mloxaf.jpg") %><p>Brice</p></li>
-        <li><%= cl_image_tag("manu_hk5jit.jpg") %><p>Emanuelle</p></li>
-        <li><%= cl_image_tag("joanna_jmnyl5.jpg") %><p>Joanna</p></li>
-        <li><h1>?</h1><h1> et toi</h1></li>
       </ul>
     </div>
   </div>
+
 <!-- a modifier quand model créé -->
 
 <!-- a modifier quand model créé -->
