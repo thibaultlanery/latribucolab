@@ -18,6 +18,7 @@ gem 'webpacker'
 gem 'cloudinary'
 gem "letter_opener", group: :development
 gem "gibbon"
+gem 'mailgun_rails'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
