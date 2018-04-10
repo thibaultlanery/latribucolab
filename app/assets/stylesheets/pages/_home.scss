@@ -4,6 +4,10 @@
   font-family: 'Muli', sans-serif;
 }
 
+.content2 {
+  background-color: white;
+}
+
 .first-banner {
   display: flex;
   justify-content: space-around;
@@ -28,6 +32,7 @@
   }
 
 .form {
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -46,8 +51,8 @@
 }
 
 .third-banner {
-  background-color: white;
-  padding: 20px;
+  // background-color: white;
+  // padding: 20px;
 
 
   h4 {
@@ -153,12 +158,12 @@
 
  }
 .second-banner{
-  background-color: white;
+  // background-color: white;
   // background-color: #8719B0;
 
 }
 .fifth-banner {
-  background-color:white;
+  // background-color:white;
 
   h4 {
     font-style: italic;
