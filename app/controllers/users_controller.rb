@@ -25,15 +25,10 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(user_params)
-
-    respond_to do |format|
-      if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
-
-      else
-        format.html { render :new }
-
-      end
+    if @user.save
+      redirect_to user_path(@user)
+    else
+      redirect_to root_path, alert: "Ooooops, assurez vous de remplir les deux champs, ce mail est peut etre déjà utilisé ou non conforme au format attendu "
     end
   end
 

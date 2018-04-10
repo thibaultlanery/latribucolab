@@ -15,8 +15,8 @@
               <%= f.error_notification %>
               <div class="form-inputs">
                 <ul class="list-inline">
-                  <li><%= f.input :name, placeholder: "Prénom", label: false %></li>
-                  <li><%= f.input :email, placeholder: "email", label: false %></li>
+                  <li><%= f.input :name, required: true, placeholder: "Prénom", label: false %></li>
+                  <li><%= f.input :email, required: true,  placeholder: "email", label: false%></li>
                 </ul>
               </div>
               <div class="form-actions">
