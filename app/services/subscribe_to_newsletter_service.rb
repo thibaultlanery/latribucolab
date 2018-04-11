@@ -6,7 +6,6 @@ class SubscribeToNewsletterService
   end
 
   def call
-    if @user.email
     @gibbon.lists(@list_id).members.create(
       body: {
         email_address: @user.email,
@@ -17,6 +16,5 @@ class SubscribeToNewsletterService
         }
       }
     )
-    end
   end
 end
