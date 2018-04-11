@@ -6,15 +6,20 @@ class SubscribeToNewsletterService
   end
 
   def call
-    @gibbon.lists(@list_id).members.create(
-      body: {
-        email_address: @user.email,
-        status: "subscribed",
-        merge_fields: {
-        FNAME: @user.name,
-        #   LNAME: @user.last_name
+    begin
+      @gibbon.lists(@list_id).members.create(
+        body: {
+          email_address: @user.email,
+          status: "subscribed",
+          merge_fields: {
+          FNAME: @user.name,
+          #   LNAME: @user.last_name
+          }
         }
-      }
-    )
+      )
+    rescue Gibbon::MailChimpError => e
+     puts "Houston, we have a problem: #{e.message} - #{e.raw_body}"
+    end
   end
+
 end
