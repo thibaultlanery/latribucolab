@@ -1,18 +1,33 @@
 /* Main navbar */
+// .header {
+//   position: sticky;
+//   top: 0;
+//   z-index: 999;
+// }
 .navbar-wagon {
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: white;
-  transition: all 0.3s ease;
-  height: 70px;
+color:white;
+  // box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  font-family: 'Poppins', sans-serif;
+  transition: 0.5s background-color ease;
+  height: 100px;
   padding: 0px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+
+.navbar-wagon-white {
+  // background-image: url("http://res.cloudinary.com/dcljc9muz/image/upload/c_scale,w_100/v1523062322/Capture_d_écran_2018-04-06_à_19.51.10_aqclbn.png");
+
+  // background-color:#F4D35E;
+  background-color:#F9D243;
+  color: black !important;
+}
+
 /* Logo */
 .navbar-wagon-brand img {
-  height: 50px;
+  height: 150px;
 }
 
 /* User Avatar */
@@ -37,9 +52,10 @@
 
 /* Navbar link */
 .navbar-wagon-link {
-  color: #616668;
+  color:white;
   font-size: 14px;
 }
+
 .navbar-wagon-link:hover {
   color: #da552f;
   text-decoration: none;

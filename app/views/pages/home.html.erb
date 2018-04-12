@@ -3,13 +3,12 @@
     <div class="container">
       <div class="content">
         <div class="first-banner-content text-center">
-          <div class="logo">
-          <%= cl_image_tag("flowRoot7503-8_qf1iwc.png", :width=>150, :crop=>"scale") %>
-          </div>
           <div class="punchline ">
-            <h1>CONSOMMER N'AURA JAMAIS PLUS LA MEME SAVEUR</h1>
-            <h3>De la nouveauté dans vos fonds de placards, des produits bon, juste et développés ensembles!
-            Nous parcourons le monde pour développer avec vous des produits d'épicerie d'exception, en totale transparence et livré directement chez vous! </h3>
+            <h1>REDONNEZ DE LA TRANSPARENCE A VOS FONDS DE PLACARDS!</h1>
+            <h3><!-- La Tribu redonne de la transparence à vos fonds de placards!  -->
+              <br> Des produits d'épicerie bons, justes et développés tous ensembles!</h3> <br>
+                     <!--    <h1>CONSOMMER N'AURA JAMAIS PLUS LA MEME SAVEUR</h1> -->
+        <!--     Nous parcourons le monde pour développer avec vous des produits d'épicerie d'exception, en totale transparence et livré directement chez vous! La Tribu redonne du sens à vos fonds de placards!  -->
           </div>
           <div class="form">
             <%= simple_form_for(@user) do |f| %>
@@ -21,7 +20,7 @@
                 </ul>
               </div>
               <div class="form-actions">
-                <%= f.button :submit, "Je reste informé!", class: "btn-warning" %>
+                <%= f.button :submit, "Je reste informé!", class: "btn btn-success" %>
               </div>
             <% end %>
           </div>
@@ -29,50 +28,50 @@
       </div>
     </div>
   </div>
-  <div class="second-banner">
+  <div class="second-banner" id="pourquoilatribu">
     <div class="container text-center content2">
       <h1>POURQUOI LA TRIBU?</h1>
-      <h4>La tribu est née d'une volonté de ramener à nos amis du café découvert dans le Chiapas, au Mexique. <br>
+      <h5>La tribu est née d'une volonté de ramener à nos amis du café découvert dans le Chiapas, au Mexique. <br>
           Il avait une saveur unique ce produit, celle d'un voyage dans une vallée isolée et de la découverte d'une communauté. <br>
           On voulait donc leur montrer, leur expliquer ses spécificité et la manière de le déguster. <br>
-          <strong>Après, on s'est dit que si ça plaisait à nos amis, ça pourrait plaire à tout le monde, La Tribu était née.</strong> </h4>
+          <strong>Après, on s'est dit que si ça plaisait à nos amis, ça pourrait plaire à tout le monde, La Tribu était née.</strong> </h5>
     </div>
   </div>
-  <div class="third-banner text-center">
+  <div class="third-banner text-center" id="commentcamarche">
     <div class="container content2">
       <div class="row">
         <div class="title">
           <h1>COMMENT CA MARCHE?</h1>
         </div>
         <div class="first-step col-xs-12 col-md-4">
-          <%= cl_image_tag("apprenez_o56tkf.jpg") %>
-          <h2>Apprends</h2>
-          <h4>Je comprends comment mes produits sont fabriqués, depuis la graine jusqu'a mes papilles</h4>
+          <%= cl_image_tag("apprenezorange_dgu34h.jpg") %>
+          <h2>Apprenez</h2>
+          <h5>Je comprends comment mes produits sont fabriqués, depuis la graine jusqu'a mes papilles</h5>
         </div>
         <div class="second-step col-xs-12 col-md-4">
-          <%= cl_image_tag("creez_k3wifi.jpg") %>
-          <h2>Crée</h2>
-          <h4>
+          <%= cl_image_tag("creezorange_boirh4.jpg") %>
+          <h2>Créez</h2>
+          <h5>
             Je pré-commande mon produit en ligne <br>
             Je donne mon avis en ligne sur les futurs produits à développer <br>
-            Je deviens actionnaire pour un euro </p></h4>
+            Je deviens actionnaire pour un euro </p></h5>
         </div>
         <div class="third-step col-xs-12 col-md-4">
-          <%= cl_image_tag("dégustez_yjby7t.jpg") %>
-          <h2>Déguste</h2>
-          <h4>Je reçois mes produits uniques et leurs fiches de dégustations directement chez moi!</h4>
+          <%= cl_image_tag("dégustezorange_oryffh.jpg") %>
+          <h2>Dégustez</h2>
+          <h5>Je reçois mes produits uniques et leurs fiches de dégustations directement chez moi!</h5>
         </div>
       </div>
     </div>
   </div>
-  <div class="fourth-banner">
+  <div class="fourth-banner" id="carnetderoute">
     <div class="container content">
       <div class="row">
           <div class="title text-center">
             <h1>CARNET DE ROUTE - MAI 2018</h1>
             <h4>Nous partons à la découverte de deux coopératives péruviennes, de café et de quinoa</h4>
             <h4>Notre objectif est de développer 3 produits co-financés avec nos membres</h4>
-            <h2>Lancement et pré-commandes prévues à la fin Aout 2018</h2>
+            <h4 id="lancement">Lancement et pré-commandes prévues à la fin Aout 2018</h4>
           </div>
       </div>
       <div class="row">
@@ -134,12 +133,12 @@
       </div>
     </div>
   </div>
-  <div class="fifth-banner text-center">
+  <div class="fifth-banner text-center" id="cahierdescharges">
     <div class="container content2">
       <div class="row">
         <div class="col-md-12">
           <h1>TANT QU'A FAIRE AUTANT BIEN LE FAIRE!</h1>
-            <h4>Le monde est dangereux à vivre ! Non pas tant à cause de ceux qui font le mal, mais à cause de ceux qui regardent et laissent faire (Albert Einstein)</h4>
+            <h5>Le monde est dangereux à vivre ! Non pas tant à cause de ceux qui font le mal, mais à cause de ceux qui regardent et laissent faire (Albert Einstein)</h5>
           <div class="col-xs-12 col-md-4">
             <div class="icons">
             <%= cl_image_tag("neutralité_carbone_color_qzgf3g.jpg", :height=>200, :crop=>"scale")%>
@@ -191,20 +190,19 @@
       </div>
     </div>
   </div>
-  <div class="sixth-banner">
+  <div class="sixth-banner" id="equipe">
     <div class="container text-center">
       <div class="content">
         <div class="banner-title">
           <h1>L'EQUIPE</h1>
-        <h2>Nous partîmes cinq cents (enfin 2 ;) )</h2>
         </div>
         <div class="team">
           <ul class= "list-inline">
             <li><%= cl_image_tag("Capture_d_écran_2018-04-06_à_19.51.10_aqclbn.png", :effect=>"grayscale", :height=>200, :crop=>"scale") %><h4>Thibault</h4></li>
             <li><%= cl_image_tag("Julien_RIou_juezxg.jpg", :height=>200, :width=>200, :crop=>"thumb") %><h4>Julien</h4></li>
           </ul>
-          <h2>mais par un prompt renfort,
-            Nous nous vîmes trois mille en arrivant au port...</h2>
+          <h4>Nous partîmes cinq cents (enfin 2 ;) ) <br> mais par un prompt renfort,
+            Nous nous vîmes trois mille en arrivant au port...</h4>
           <h3>ILS NOUS SOUTIENNENT DANS NOTRE AVENTURE!</h3>
         </div>
         <div class="form">
@@ -214,7 +212,7 @@
               <ul class="list-inline">
                 <li><%= f.input :name, placeholder: "Prénom", label: false %></li>
                 <li><%= f.input :email, placeholder: "email", label: false %></li>
-                <li><%= f.button :submit, "Je reste informé!", class: "btn-warning" %></li>
+                <li><%= f.button :submit, "Je reste informé!", class: "btn btn-success" %></li>
               </ul>
             </div>
           <% end %>
