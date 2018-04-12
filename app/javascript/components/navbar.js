@@ -1,17 +1,4 @@
-// $( document ).ready(function {
-//   navbar.classList.remove('navbar-logo-white');
-// });
 
-// $(document).ready(function(){
-//     $(".navbar-logo-white").remove();
-// });
-
-
-
-
- // $(document).ready(function() {
- //            $(this).removeClass("navbar-logo-white");
- //         });
 
 function initUpdateNavbarOnScroll() {
   const navbar = document.querySelector('.navbar-wagon');
