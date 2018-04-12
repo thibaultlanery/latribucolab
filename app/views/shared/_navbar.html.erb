@@ -1,5 +1,5 @@
-<div class="header">
-  <div class="navbar-wagon">
+<!-- <div class="header  "> -->
+  <div class="navbar-wagon navbar-fixed-top">
     <!-- Logo -->
     <a href="/" class="navbar-wagon-brand">
        <%= cl_image_tag("flowRoot7503-8_qf1iwc.png", :width=>150, :crop=>"scale") %>
@@ -7,12 +7,12 @@
 
     <!-- Right Navigation -->
     <div class="navbar-wagon-right hidden-xs hidden-sm">
-      <a href="#pourquoilatribu" class="navbar-wagon-item navbar-wagon-link"><h5>Pourquoi La Tribu?</h5></a>
-      <a href="#commentcamarche" class="navbar-wagon-item navbar-wagon-link"><h5>Comment ça marche?</h5></a>
-      <a href="#carnetderoute" class="navbar-wagon-item navbar-wagon-link"><h5>Carnet de route</h5></a>
-      <a href="#cahierdescharges" class="navbar-wagon-item navbar-wagon-link"><h5>Cahier des charges</h5></a>
-      <a href="#equipe" class="navbar-wagon-item navbar-wagon-link"><h5>L'équipe</h5></a>
+      <%= link_to "Pourquoi La Tribu?", "#pourquoilatribu", class: "navbar-wagon-item navbar-wagon-link " %>
+      <%= link_to "Comment ça marche?", "#commentcamarche", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "Carnet de route", "#carnetderoute", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "Cahier des charges", "#cahierdescharges", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "L'équipe", "#equipe", class: "navbar-wagon-item navbar-wagon-link" %>
     </div>
 
   </div>
-</div>
+<!-- </div> -->
