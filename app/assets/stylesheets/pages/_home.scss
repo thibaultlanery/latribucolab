@@ -20,6 +20,9 @@ p:first-child{
 
 
 .wrapper {
+  h5 {
+    font-size: 16px;
+  }
 
 font-family: 'Poppins', sans-serif;
 // font-family: 'Roboto', sans-serif;
@@ -65,12 +68,7 @@ font-family: 'Poppins', sans-serif;
 
    }
 
-   h3 {
-    // letter-spacing: 2px;
-    margin-bottom: 20px;
-    // margin-top: 50px;
-    line-height: 1.5;
-   }
+
   }
 
 .form {
@@ -85,6 +83,7 @@ font-family: 'Poppins', sans-serif;
   h5 {
 
     line-height:25px;
+    font-size: 16px;
   }
 
   // h2{
@@ -99,6 +98,7 @@ margin-top: 25px;
 
   h5 {
    line-height:25px;
+   font-size: 16px;
   }
 
   img {
@@ -179,13 +179,13 @@ margin-top: 25px;
 .ambiance-grain {
   // min-height: 197px;
   min-height: 130px;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 3%,rgba(255,255,255,0.24) 26%,rgba(255,255,255,1) 100%), url(http://res.cloudinary.com/dcljc9muz/image/upload/c_scale,q_auto:good,w_263/v1522885728/cafe%CC%812_mbn1tg.webp);
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 3%,rgba(255,255,255,0.24) 50%,rgba(255,255,255,1) 100%), url(http://res.cloudinary.com/dcljc9muz/image/upload/c_scale,q_auto:good,w_263/v1522885728/cafe%CC%812_mbn1tg.webp);
 
 }
 
 .ambiance-grain-quin {
   min-height: 130px;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 3%,rgba(255,255,255,0.24) 26%,rgba(255,255,255,1) 100%), url(http://res.cloudinary.com/dcljc9muz/image/upload/c_scale,q_auto:good,w_263/v1522885730/quinoa_m96w3v.webp);
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 3%,rgba(255,255,255,0.24) 50%,rgba(255,255,255,1) 100%), url(http://res.cloudinary.com/dcljc9muz/image/upload/c_scale,q_auto:good,w_263/v1522885730/quinoa_m96w3v.webp);
 
 }
 
@@ -234,6 +234,9 @@ margin-top: 25px;
     line-height: 20px;
   }
 
+p {
+  font-size: 16px;
+}
   // h2,p {
   //   background-color:white;
 
