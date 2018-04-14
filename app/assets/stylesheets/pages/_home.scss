@@ -6,8 +6,23 @@
   margin-bottom: 20px;
 }
 
+.circle {
+width: 50px;
+height: 50px;
+background-color:#F9D243;
+border-radius: 50%;
+color: white;
+p:first-child{
+    margin: auto;
+    font-size: 35px;
+}
+}
+
 
 .wrapper {
+  h5 {
+    font-size: 16px;
+  }
 
 font-family: 'Poppins', sans-serif;
 // font-family: 'Roboto', sans-serif;
@@ -53,12 +68,7 @@ font-family: 'Poppins', sans-serif;
 
    }
 
-   h3 {
-    // letter-spacing: 2px;
-    margin-bottom: 20px;
-    // margin-top: 50px;
-    line-height: 1.5;
-   }
+
   }
 
 .form {
@@ -73,6 +83,7 @@ font-family: 'Poppins', sans-serif;
   h5 {
 
     line-height:25px;
+    font-size: 16px;
   }
 
   // h2{
@@ -83,10 +94,11 @@ font-family: 'Poppins', sans-serif;
 .third-banner {
   // background-color: white;
   // padding: 20px;
-
+margin-top: 25px;
 
   h5 {
    line-height:25px;
+   font-size: 16px;
   }
 
   img {
@@ -166,19 +178,27 @@ font-family: 'Poppins', sans-serif;
 
 .ambiance-grain {
   // min-height: 197px;
-  max-height: 130px;
+  min-height: 130px;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 3%,rgba(255,255,255,0.24) 50%,rgba(255,255,255,1) 100%), url(http://res.cloudinary.com/dcljc9muz/image/upload/c_scale,q_auto:good,w_263/v1522885728/cafe%CC%812_mbn1tg.webp);
+
+}
+
+.ambiance-grain-quin {
+  min-height: 130px;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 3%,rgba(255,255,255,0.24) 50%,rgba(255,255,255,1) 100%), url(http://res.cloudinary.com/dcljc9muz/image/upload/c_scale,q_auto:good,w_263/v1522885730/quinoa_m96w3v.webp);
 
 }
 
 .doypack {
   max-width: 90px;
+  margin-top: -65px;
   // margin-left: auto;
   // margin-right: auto;
   // display:block;
 }
 
 .doypack-quinoa {
-  margin-top: -65px;
+
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -214,6 +234,9 @@ font-family: 'Poppins', sans-serif;
     line-height: 20px;
   }
 
+p {
+  font-size: 16px;
+}
   // h2,p {
   //   background-color:white;
 
