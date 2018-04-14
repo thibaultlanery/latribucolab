@@ -85,7 +85,7 @@
               <p id="cafe-brand">LE GRAIN INCA</p>
             </div>
             <div class="ambiance-grain">
-              <%= cl_image_tag("café2_mbn1tg.jpg", :width=>263, :crop=>"scale")%>
+<!--               <%= cl_image_tag("café2_mbn1tg.jpg", :width=>263, :crop=>"scale")%> -->
             </div>
             <div class="doypack-quinoa ">
               <div class="doypack">
@@ -110,8 +110,8 @@
               <p id="quinoa-title" >QUINOA</p>
               <p id="quinoa-brand">LE GRAIN KINWA</p>
             </div>
-             <div class="ambiance-grain">
-              <%= cl_image_tag("quinoa_m96w3v.jpg", :width=>263, :crop=>"scale") %>
+             <div class="ambiance-grain-quin">
+             <!--  <%= cl_image_tag("quinoa_m96w3v.jpg", :width=>263, :crop=>"scale") %> -->
             </div>
             <div class="doypack-quinoa ">
               <div class="doypack">
@@ -195,6 +195,7 @@
       <div class="content">
         <div class="banner-title">
           <h1>L'EQUIPE</h1>
+
         </div>
         <div class="team">
           <ul class= "list-inline">
@@ -203,23 +204,10 @@
           </ul>
           <h4>Nous partîmes cinq cents (enfin 2 ;) ) <br> mais par un prompt renfort,
             Nous nous vîmes trois mille en arrivant au port...</h4>
-          <h3>ILS NOUS SOUTIENNENT DANS NOTRE AVENTURE!</h3>
         </div>
-        <div class="form">
-          <%= simple_form_for(@user) do |f| %>
-            <%= f.error_notification %>
-            <div class="form-inputs">
-              <ul class="list-inline">
-                <li><%= f.input :name, placeholder: "Prénom", label: false %></li>
-                <li><%= f.input :email, placeholder: "email", label: false %></li>
-                <li><%= f.button :submit, "Je reste informé!", class: "btn btn-success" %></li>
-              </ul>
-            </div>
-          <% end %>
-        </div>
+        <h3>ILS NOUS SOUTIENNENT DANS NOTRE AVENTURE!</h3>
           <div class="followers">
             <ul class="list-inline">
-            <li><h1>?</h1><h1> vous</h1></li>
             <li><%= cl_image_tag("romain_iogmvm.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Romain</p></li>
             <li><%= cl_image_tag("dimitri_ivxt55.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)%><p>Dimitri</p></li>
             <li><%= cl_image_tag("coline_nvgx2r.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)  %><p>Coline</p></li>
@@ -227,6 +215,7 @@
             <li><%= cl_image_tag("christophe_j8urcn.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Christophe</p></li>
             <li><%= cl_image_tag("jb_h9rqk6.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)  %><p>Jean-baptiste</p></li>
             <li><%= cl_image_tag("sophie_mlyn48.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)  %><p>Sophie</p></li>
+
             <li><%= cl_image_tag("lucille_yej9fj.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)  %><p>Lucille</p></li>
             <li><%= cl_image_tag("francois_gfx2la.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)  %><p>François</p></li>
             <li><%= cl_image_tag("caroline_przvij.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Caroline</p></li>
@@ -258,9 +247,21 @@
             <li><%= cl_image_tag("matt_dolhd4.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)%><p>Mathilde</p></li>
             <li><%= cl_image_tag("brice_mloxaf.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Brice</p></li>
             <li><%= cl_image_tag("manu_hk5jit.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Emanuelle</p></li>
-            <li><%= cl_image_tag("joanna_jmnyl5.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Joanna</p></li>
-
+            <li><%= cl_image_tag("joanna_jmnyl5.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Joanna</p></li><br>
+            <li class="circle"><p>?</p><p> vous</p></li>
           </ul>
+          <div class="form">
+            <%= simple_form_for(@user) do |f| %>
+              <%= f.error_notification %>
+              <div class="form-inputs">
+                <ul class="list-inline">
+                  <li><%= f.input :name, placeholder: "Prénom", label: false %></li>
+                  <li><%= f.input :email, placeholder: "email", label: false %></li>
+                  <li><%= f.button :submit, "Je reste informé!", class: "btn btn-success" %></li>
+                </ul>
+              </div>
+            <% end %>
+          </div>
         </div>
       </div>
     </div>
