@@ -1,8 +1,6 @@
 class User < ApplicationRecord
-
-  has_many :category_preferences,  dependent: :destroy
-
-  has_many :categories, through: :category_preferences
+    has_many :category_preferences,  dependent: :destroy
+    has_many :categories, through: :category_preferences
 
     after_create :subscribe_to_newsletter
     after_create :send_welcome_email
