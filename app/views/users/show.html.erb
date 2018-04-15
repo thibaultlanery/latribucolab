@@ -3,14 +3,35 @@
     <div class="content">
       <div class="content-text">
         <h1>Un grand merci <%= @user.name.capitalize %></h1>
-        <p>
-          Nous vous avons envoyé un mail de bienvenu à l'adresse mail indiquée et vous enverrons des informations concernant l'avancement du projet.
-        </p>
-        <h3>Si l'idée vous a plu elle plaira à votre entourage alors n'hésitez pas à partagez!</h3>
+        <h5>
+          Nous vous avons envoyé un mail de bienvenu et vous enverrons des informations concernant l'avancement du projet.
+        </h5>
+        <div class="vote">
+          <% unless @user.category_preferences.present? %>
+            <h5>Mais avant ça on vous propose de nous aiguillez sur vos préférences</h5>
+                <%= simple_form_for :category_preferences, url: category_preferences_path do |f| %>
+                  <%= f.fields_for :categories do |uf| %>
+                    <% Category.all.each do |category| %>
+                      <label>
+                        <%= uf.check_box "category_ids", { multiple: true }, category.id, nil %>
+
+                          <%= category.pictoname %>
+                         <p><%= category.name %></p>
+
+                      </label>
+                    <% end %>
+             <!--      <% end %> -->
+                  <%= f.button :submit %>
+                 <% end %>
+          <% else %>
+            <h5>Un grand merci pour votre participation au questionnaire</h5>
+          <% end %>
+        </div>
+        <h5>Si l'idée vous a plu elle plaira à votre entourage alors n'hésitez pas à partagez!</h5>
           <div class="sharethis-inline-share-buttons" data-url="https://latribu.herokuapp.com/"></div>
-          <h1>Mais avant ça on vous propose de nous aiguillez sur vos préférences</h1>
-        <h1>A très vite</h1>
       </div>
+    </div>
+        <h5>A très vite</h5>
       <div class="team">
         <ul class= "list-inline">
           <li><%= cl_image_tag("Capture_d_écran_2018-04-06_à_19.51.10_aqclbn.png", :effect=>"grayscale", :height=>100, :crop=>"scale") %><h4>Thibault</h4></li>
@@ -19,6 +40,6 @@
       </div>
       <p>Votre email sera exclusivement destiné à vous fournir du contenu émanant de La Tribu.</p>
     </div>
-  </div>
 </div>
+
 
