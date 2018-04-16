@@ -1,24 +1,55 @@
 <div class="wrapper">
-  <div class="container text-center show">
+  <div class="container text-center">
     <div class="content">
+      <%= cl_image_tag("flowRoot7503_b1kyho.png", :height=>130, :quality=>"auto:best", :crop=>"scale", :fetch_format=>:auto)%>
       <div class="content-text">
         <h1>Un grand merci <%= @user.name.capitalize %></h1>
-        <p>
-          Nous vous avons envoyé un mail de bienvenu à l'adresse mail indiquée et vous enverrons des informations concernant l'avancement du projet.
-        </p>
-        <h3>Si l'idée vous a plu elle plaira à votre entourage alors n'hésitez pas à partagez!</h3>
-          <div class="sharethis-inline-share-buttons" data-url="https://latribu.herokuapp.com/"></div>
-          <h1>Mais avant ça on vous propose de nous aiguillez sur vos préférences</h1>
-        <h1>A très vite</h1>
+        <h3>
+          Nous vous avons envoyé un mail de bienvenu et vous enverrons des informations concernant l'avancement du projet.</h3>
+
+          <p>PS: Votre email sera <strong>exclusivement</strong> destiné à vous fournir du contenu émanant de La Tribu.</p>
+        </div>
+    </div>
+  </div>
+      <div class="container text-center">
+        <div class="vote">
+          <% unless @user.category_preferences.present? %>
+            <h4><strong>On vous propose de commencer maintenant!</strong><br> Aidez nous à vous connaitre en indiquant vos préférences</h4>
+                <%= simple_form_for :category_preferences, url: category_preferences_path do |f| %>
+                <div class="form-inline ">
+                  <%= f.fields_for :categories do |uf| %>
+                    <% Category.all.each do |category| %>
+                      <label>
+                        <%= uf.check_box "category_ids", { multiple: true, id: "check" }, category.id, nil %>
+                          <%= image_tag category.pictoname %>
+                         <h5><%= category.name %></H5>
+                      </label>
+                    <% end %>
+                  <% end %>
+                </div>
+                  <div class="form-actions ">
+                  <%= f.button :submit, "Soumettre", class:"btn btn-success" %>
+                  </div>
+                <% end %>
+          <% else %>
+            <h5>Merci d'avoir donné votre avis pour les futurs produits!</h5>
+          <% end %>
+        </div>
       </div>
-      <div class="team">
+    <div class="container">
+      <div class="team text-center">
+        <div class="share">
+        <h4>Si l'idée vous a plu elle plaira à votre entourage alors n'hésitez pas à partagez!</h4>
+          <div class="sharethis-inline-share-buttons" data-url="https://latribu.herokuapp.com/"></div>
+          </div>
         <ul class= "list-inline">
+          <h4>A très vite</h4>
           <li><%= cl_image_tag("Capture_d_écran_2018-04-06_à_19.51.10_aqclbn.png", :effect=>"grayscale", :height=>100, :crop=>"scale") %><h4>Thibault</h4></li>
           <li><%= cl_image_tag("Julien_RIou_juezxg.jpg", :height=>100, :width=>100, :crop=>"thumb") %><h4>Julien</h4></li>
         </ul>
+
       </div>
-      <p>Votre email sera exclusivement destiné à vous fournir du contenu émanant de La Tribu.</p>
     </div>
-  </div>
 </div>
+
 
