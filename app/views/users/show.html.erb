@@ -1,20 +1,26 @@
-<div class="wrapper">
-  <div class="container text-center">
-    <div class="content">
+<div class="wrapper show">
+  <div class="container text-center ">
       <%= cl_image_tag("flowRoot7503_b1kyho.png", :height=>130, :quality=>"auto:best", :crop=>"scale", :fetch_format=>:auto)%>
-      <div class="content-text">
-        <h1>Un grand merci <%= @user.name.capitalize %></h1>
-        <h3>
-          Nous vous avons envoyé un mail de bienvenu et vous enverrons des informations concernant l'avancement du projet.</h3>
+    <div class="content-text">
+      <h1>Un grand merci <%= @user.name.capitalize %></h1>
+      <h4>
+        Nous vous avons envoyé un mail de bienvenu et vous enverrons des informations concernant l'avancement du projet. <br>Car n'oubliez pas, notre objectif est de vous donner l'opportunité d'apprendre comme jamais auparavant ce qui se cache derrière nos produits! </h4>
 
-          <p>PS: Votre email sera <strong>exclusivement</strong> destiné à vous fournir du contenu émanant de La Tribu.</p>
+        <p>PS: Votre email sera <strong>exclusivement</strong> destiné à vous fournir du contenu émanant de La Tribu.</p>
+        <div class="share">
+          <h4>Le succès d'un tel projet dépend du nombre de soutiens et de sa notoriété<br> Si l'idée vous a plu elle plaira à votre entourage <srong>n'hésitez pas, partagez!</strong></h4>
+          <div class="sharethis-inline-share-buttons" data-url="https://latribu.herokuapp.com/"></div>
         </div>
     </div>
+
   </div>
       <div class="container text-center">
         <div class="vote">
           <% unless @user.category_preferences.present? %>
-            <h4><strong>On vous propose de commencer maintenant!</strong><br> Aidez nous à vous connaitre en indiquant vos préférences</h4>
+            <h4>La Tribu est une marque collaborative, elle vous donne la parole. <br> Vous pourrez, à votre guise, nous aider à prendre des décisions en nous donnant votre opinion en ligne.<br>
+            Votre avis nous permettra de faire des choix qui correspondent à vos attentes.<br></h4>
+            <h4 style= "padding: 10px">Alors, ne perdons pas de temps, donnez votre avis dès à présent!<br></h4>
+            <h4 style=" color: #F9D243; padding: 10px;">Quels sont les produits que vous aimeriez nous voir déveloper dans les mois qui viennent?</h4>
                 <%= simple_form_for :category_preferences, url: category_preferences_path do |f| %>
                 <div class="form-inline ">
                   <%= f.fields_for :categories do |uf| %>
@@ -22,7 +28,7 @@
                       <label>
                         <%= uf.check_box "category_ids", { multiple: true, id: "check" }, category.id, nil %>
                           <%= image_tag category.pictoname %>
-                         <h5><%= category.name %></H5>
+                         <h5 style="color: #F9D243"><%= category.name %></H5>
                       </label>
                     <% end %>
                   <% end %>
@@ -32,16 +38,13 @@
                   </div>
                 <% end %>
           <% else %>
-            <h5>Merci d'avoir donné votre avis pour les futurs produits!</h5>
+            <h2 style=" color: #F9D243">à voté! <br> Merci de nous avoir donné votre avis pour les futurs produits!</h2>
           <% end %>
         </div>
       </div>
     <div class="container">
       <div class="team text-center">
-        <div class="share">
-        <h4>Si l'idée vous a plu elle plaira à votre entourage alors n'hésitez pas à partagez!</h4>
-          <div class="sharethis-inline-share-buttons" data-url="https://latribu.herokuapp.com/"></div>
-          </div>
+
         <ul class= "list-inline">
           <h4>A très vite</h4>
           <li><%= cl_image_tag("Capture_d_écran_2018-04-06_à_19.51.10_aqclbn.png", :effect=>"grayscale", :height=>100, :crop=>"scale") %><h4>Thibault</h4></li>
