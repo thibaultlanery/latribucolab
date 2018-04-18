@@ -27,7 +27,7 @@
                     <% Category.all.each do |category| %>
                       <label>
                         <%= uf.check_box "category_ids", { multiple: true, id: "check" }, category.id, nil %>
-                          <%= image_tag category.pictoname %>
+                          <%= image_tag category.pictoname, {class: "img-rounded"} %>
                          <h5 style="color: #F9D243"><%= category.name %></H5>
                       </label>
                     <% end %>

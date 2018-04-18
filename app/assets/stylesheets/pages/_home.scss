@@ -58,7 +58,7 @@ font-family: 'Poppins', sans-serif;
   align-items: center;
   color: white;
   min-height: 100vh;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  // text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 
    h1{
     letter-spacing: 2px;
@@ -115,7 +115,7 @@ margin-top: 25px;
   color:white;
   padding-bottom: 30px;
   h4 {
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    // text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
   }
 
   h1 {
@@ -130,12 +130,6 @@ margin-top: 25px;
 
   img {
   width:100%;
-
-  }
-
-  #lancement {
-    margin-top: 30px;
-    margin-bottom: 40px;
   }
 }
 
@@ -269,7 +263,7 @@ p {
   position: relative;
   margin-top: 144px;
   img{
-    max-width:90px;
+    max-width:100px;
 
   }
 }
@@ -294,7 +288,7 @@ p {
 
 .sixth-banner {
   color: white;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  // text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
   img{
     border-radius:50%;
     }

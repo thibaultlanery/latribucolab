@@ -17,7 +17,6 @@
 
   </div>
 <!-- </div> -->
-
 <div class="wrapper">
   <div class="first-banner">
     <div class="container">
@@ -63,12 +62,12 @@
         <div class="title">
           <h1>COMMENT CA MARCHE?</h1>
         </div>
-        <div class="first-step col-xs-12 col-md-4">
+        <div class="first-step col-sm-6 col-md-4">
           <%= cl_image_tag("apprenezorange_dgu34h.jpg", :quality=>"auto", :width=>200, :crop=>"scale") %>
           <h2>Apprenez</h2>
           <h5>Je comprends comment mes produits sont fabriqués, depuis la graine jusqu'a mes papilles</h5>
         </div>
-        <div class="second-step col-xs-12 col-md-4">
+        <div class="second-step col-sm-6 col-md-4">
           <%=cl_image_tag("creezorange_boirh4.jpg", :quality=>"auto", :width=>200, :crop=>"scale") %>
           <h2>Créez</h2>
           <h5>
@@ -76,7 +75,7 @@
             Je donne mon avis en ligne sur les futurs produits à développer <br>
             Je deviens actionnaire pour un euro </p></h5>
         </div>
-        <div class="third-step col-xs-12 col-md-4">
+        <div class="third-step col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
           <%= cl_image_tag("dégustezorange_oryffh.jpg", :quality=>"auto", :width=>200, :crop=>"scale") %>
           <h2>Dégustez</h2>
           <h5>Je reçois mes produits uniques et leurs fiches de dégustations directement chez moi!</h5>
@@ -87,18 +86,38 @@
   <div class="fourth-banner" id="carnetderoute">
     <div class="container content">
       <div class="row">
-          <div class="title text-center">
-            <h1>CARNET DE ROUTE - MAI 2018</h1>
-            <h4>Nous partons à la découverte de deux coopératives péruviennes, de café et de quinoa</h4>
-            <h4>Notre objectif est de développer 3 produits co-financés avec nos membres</h4>
-            <h4 id="lancement">Lancement et pré-commandes prévues à la fin Aout 2018</h4>
-          </div>
+      <div class="title text-center">
+        <h1>CARNET DE ROUTE - MAI 2018</h1>
+        <h4>Nous partons à la découverte de deux coopératives péruviennes, de café et de quinoa</h4>
+        <h4>Notre objectif est de développer 3 produits co-financés avec nos membres</h4>
+      </div>
+    </div>
+      <div class="row text-center" id="clockrow">
+        <h4>Lancement et pré-commandes prévues dans:</h4>
+        <div id="clockdiv">
+        <div class="number">
+          <span class="days"></span>
+          <div class="smalltext">Jours</div>
+        </div>
+        <div class="number">
+          <span class="hours"></span>
+          <div class="smalltext">Heures</div>
+        </div>
+        <div class="number">
+          <span class="minutes"></span>
+          <div class="smalltext">Minutes</div>
+        </div>
+        <div class="number">
+          <span class="seconds"></span>
+          <div class="smalltext">Secondes</div>
+        </div>
+        </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 col-md-3 col-md-offset-2">
+        <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-1">
           <div class="card">
             <div class="frisette">
-              <%= cl_image_tag("frisette_o05m8g.jpg") %>
+              <%= cl_image_tag("frisette_o05m8g.jpg", :width =>18) %>
             </div>
             <div class="card-title text-center">
               <p id="cafe-title">CAFE</p>
@@ -120,10 +139,10 @@
             </div> -->
           </div>
         </div>
-        <div class="col-xs-12 col-md-offset-2 col-md-3">
+        <div class="col-xs-12 col-sm-5 col-md-offset-2 col-md-4">
           <div class="card">
             <div class="frisette">
-              <%= cl_image_tag("frisettequinoa_aow4tb.jpg") %>
+              <%= cl_image_tag("frisettequinoa_aow4tb.jpg", :width =>18) %>
             </div>
              <div class="card-title text-center">
               <p id="quinoa-title" >QUINOA</p>
@@ -149,6 +168,7 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
   <div class="fifth-banner text-center" id="cahierdescharges">
@@ -157,7 +177,7 @@
         <div class="col-md-12">
           <h1>TANT QU'A FAIRE AUTANT BIEN LE FAIRE!</h1>
             <h5>Le monde est dangereux à vivre ! Non pas tant à cause de ceux qui font le mal, mais à cause de ceux qui regardent et laissent faire (Albert Einstein)</h5>
-          <div class="col-xs-12 col-md-4">
+          <div class="col-xs-6 col-md-4">
             <div class="icons">
             <%= cl_image_tag("neutralité_carbone_color_qzgf3g.jpg", :height=>150, :crop=>"scale")%>
             </div>
@@ -166,14 +186,14 @@
             <p>Nous plantons autant d’arbre necessaires pour compenser à 100% l’impact de notre activité</p>
             </div>
           </div>
-          <div class="hidden-xs col-md-4">
+          <div class="hidden-sm col-md-4">
             <div class="doypack-multiple">
               <%= cl_image_tag("doypack_ife4cg.jpg", id:"doy-1") %>
               <%= cl_image_tag("doypack_ife4cg.jpg", id:"doy-2") %>
               <%= cl_image_tag("doypack_ife4cg.jpg", id:"doy-3") %>
             </div>
           </div>
-          <div class="col-xs-12 col-md-4" >
+          <div class="col-xs-6 col-md-4" >
             <div class="icons">
               <%= cl_image_tag("handshake_color_y8su1h.jpg", :height=>150, :crop=>"scale") %>
             </div>
@@ -186,7 +206,7 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <div class="col-xs-12 col-md-4 col-md-offset-1">
+          <div class="col-xs-6 col-md-4 col-md-offset-1">
             <div class="icons">
             <%= cl_image_tag("transparency_color_dwi3kg.jpg", :height=>150, :crop=>"scale") %>
             </div>
@@ -195,7 +215,7 @@
             <p>De la coopérative et votre domicile, vous connaitrez tous sur votre produit</p>
             </div>
           </div>
-          <div class="col-xs-12 col-md-4 col-md-offset-2" >
+          <div class="col-xs-6 col-md-4 col-md-offset-2" >
             <div class="icons">
             <%= cl_image_tag("bio_color_ikzfgj.jpg", :height=>150, :crop=>"scale") %>
             </div>
