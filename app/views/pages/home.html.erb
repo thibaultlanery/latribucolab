@@ -2,7 +2,7 @@
   <div class="navbar-wagon navbar-fixed-top">
     <!-- Logo -->
     <a href="/" class="navbar-wagon-brand">
-       <%= cl_image_tag("flowRoot7503_b1kyho.png", :height=>130, :quality=>"auto:best", :crop=>"scale", :fetch_format=>:auto)%>
+       <%= cl_image_tag("flowRoot7503_b1kyho.webp",lass:"lazyload", :height=>130, :quality=>"auto:best", :crop=>"scale", :fetch_format=>:auto)%>
 
     </a>
 
@@ -63,12 +63,12 @@
           <h1>COMMENT CA MARCHE?</h1>
         </div>
         <div class="first-step col-sm-6 col-md-4">
-          <%= cl_image_tag("apprenezorange_dgu34h.jpg", :quality=>"auto", :width=>200, :crop=>"scale") %>
+          <%= cl_image_tag("apprenezorange_dgu34h.webp",lass:"lazyload", :fetch_format=>:auto, :quality=>"auto", :width=>200, :crop=>"scale") %>
           <h2>Apprenez</h2>
           <h5>Je comprends comment mes produits sont fabriqués, depuis la graine jusqu'a mes papilles</h5>
         </div>
         <div class="second-step col-sm-6 col-md-4">
-          <%=cl_image_tag("creezorange_boirh4.jpg", :quality=>"auto", :width=>200, :crop=>"scale") %>
+          <%=cl_image_tag("creezorange_boirh4.webp", lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>200, :crop=>"scale") %>
           <h2>Créez</h2>
           <h5>
             Je pré-commande mon produit en ligne <br>
@@ -76,7 +76,7 @@
             Je deviens actionnaire pour un euro </p></h5>
         </div>
         <div class="third-step col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
-          <%= cl_image_tag("dégustezorange_oryffh.jpg", :quality=>"auto", :width=>200, :crop=>"scale") %>
+          <%= cl_image_tag("dégustezorange_oryffh.webp",lass:"lazyload", :fetch_format=>:auto, :quality=>"auto", :width=>200, :crop=>"scale") %>
           <h2>Dégustez</h2>
           <h5>Je reçois mes produits uniques et leurs fiches de dégustations directement chez moi!</h5>
         </div>
@@ -117,7 +117,7 @@
         <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-1">
           <div class="card">
             <div class="frisette">
-              <%= cl_image_tag("frisette_o05m8g.jpg", :width =>18) %>
+              <%= cl_image_tag("frisette_o05m8g.webp",class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :width =>18) %>
             </div>
             <div class="card-title text-center">
               <p id="cafe-title">CAFE</p>
@@ -127,22 +127,19 @@
             </div>
             <div class="doypack-quinoa ">
               <div class="doypack">
-                <%= cl_image_tag("doypack_ife4cg.jpg") %>
+                <%= cl_image_tag("doypack_ife4cg.webp", class:"lazyload", :fetch_format=>:auto, :quality=>"auto",) %>
               </div>
              </div>
             <div class="description">
               <p><strong>Coopérative el palomar </strong> <br>
               Nous partons a la découverte d’un café de haute altitude accroché aux pentes de la cordilière.</p>
             </div>
-<!--             <div class="frisette">
-              <%= cl_image_tag("frisette_o05m8g.jpg") %>
-            </div> -->
           </div>
         </div>
         <div class="col-xs-12 col-sm-5 col-md-offset-2 col-md-4">
           <div class="card">
             <div class="frisette">
-              <%= cl_image_tag("frisettequinoa_aow4tb.jpg", :width =>18) %>
+              <%= cl_image_tag("frisettequinoa_aow4tb.webp", class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :width =>18) %>
             </div>
              <div class="card-title text-center">
               <p id="quinoa-title" >QUINOA</p>
@@ -152,19 +149,16 @@
             </div>
             <div class="doypack-quinoa ">
               <div class="doypack">
-                <%= cl_image_tag("doypack_ife4cg.jpg") %>
+                <%= cl_image_tag("doypack_ife4cg.webp", class:"lazyload", :fetch_format=>:auto, :quality=>"auto",) %>
               </div>
               <div class="doypack">
-                <%= cl_image_tag("doypack_ife4cg.jpg") %>
+                <%= cl_image_tag("doypack_ife4cg.webp", class:"lazyload", :fetch_format=>:auto, :quality=>"auto",) %>
               </div>
             </div>
             <div class="description">
               <p><strong> Coopérative Juliana </strong> <br>
               A quelque pas du mythique lac titi caca, nous allons nous comprendre comment se comprendre la mythique quinoa </p>
             </div>
-<!--             <div class="frisette">
-            <%= cl_image_tag("frisettequinoa_aow4tb.jpg") %>
-            </div> -->
           </div>
         </div>
       </div>
@@ -179,7 +173,7 @@
             <h5>Le monde est dangereux à vivre ! Non pas tant à cause de ceux qui font le mal, mais à cause de ceux qui regardent et laissent faire (Albert Einstein)</h5>
           <div class="col-xs-12 col-md-4">
             <div class="icons">
-            <%= cl_image_tag("neutralité_carbone_color_qzgf3g.jpg", :height=>150, :crop=>"scale")%>
+            <%= cl_image_tag("neutralité_carbone_color_qzgf3g.webp", class:"lazyload", :height=>150, :crop=>"scale")%>
             </div>
             <div class="test">
             <h2>Neutralité carbone</h2>
@@ -188,14 +182,14 @@
           </div>
           <div class=" hidden-sm hidden-xs col-md-4">
             <div class="doypack-multiple ">
-              <%= cl_image_tag("doypack_ife4cg.jpg", id:"doy-1") %>
-              <%= cl_image_tag("doypack_ife4cg.jpg", id:"doy-2") %>
-              <%= cl_image_tag("doypack_ife4cg.jpg", id:"doy-3") %>
+              <%= cl_image_tag("doypack_ife4cg.webp", class:"lazyload", id:"doy-1") %>
+              <%= cl_image_tag("doypack_ife4cg.webp", class:"lazyload",  id:"doy-2") %>
+              <%= cl_image_tag("doypack_ife4cg.webp", class:"lazyload",  id:"doy-3") %>
             </div>
           </div>
           <div class="col-xs-12 col-md-4" >
             <div class="icons">
-              <%= cl_image_tag("handshake_color_y8su1h.jpg", :height=>150, :crop=>"scale") %>
+              <%= cl_image_tag("handshake_color_y8su1h.webp", class:"lazyload", :height=>150, :crop=>"scale") %>
             </div>
             <div class="test">
             <h2>Commerce équitable</h2>
@@ -208,7 +202,7 @@
         <div class="col-md-12">
           <div class="col-xs-12 col-md-4 col-md-offset-1">
             <div class="icons">
-            <%= cl_image_tag("transparency_color_dwi3kg.jpg", :height=>150, :crop=>"scale") %>
+            <%= cl_image_tag("transparency_color_dwi3kg.webp", class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :height=>150, :crop=>"scale") %>
             </div>
             <div class="test">
             <h2>Transparence</h2>
@@ -217,7 +211,7 @@
           </div>
           <div class="col-xs-12 col-md-4 col-md-offset-2" >
             <div class="icons">
-            <%= cl_image_tag("bio_color_ikzfgj.jpg", :height=>150, :crop=>"scale") %>
+            <%= cl_image_tag("bio_color_ikzfgj.webp", class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :height=>150, :crop=>"scale") %>
             </div>
             <div class="test">
             <h2>Agriculture biologique</h2>
@@ -237,8 +231,8 @@
         </div>
         <div class="team">
           <ul class= "list-inline">
-            <li><%= cl_image_tag("Capture_d_écran_2018-04-06_à_19.51.10_aqclbn.png",:fetch_format=>:auto, :quality=>"auto", :effect=>"grayscale", :height=>120, :crop=>"scale") %><h4>Thibault</h4></li>
-            <li><%= cl_image_tag("Julien_RIou_juezxg.jpg",:fetch_format=>:auto, :quality=>"auto", :height=>120, :width=>120, :crop=>"thumb") %><h4>Julien</h4></li>
+            <li><%= cl_image_tag("Capture_d_écran_2018-04-06_à_19.51.10_aqclbn.webp", class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :effect=>"grayscale", :height=>120, :crop=>"scale") %><h4>Thibault</h4></li>
+            <li><%= cl_image_tag("Julien_RIou_juezxg.webp",class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :height=>120, :width=>120, :crop=>"thumb") %><h4>Julien</h4></li>
           </ul>
           <h4>Nous partîmes cinq cents (enfin 2 ;) ) <br> mais par un prompt renfort,
             Nous nous vîmes trois mille en arrivant au port...</h4>
@@ -246,46 +240,45 @@
         <h3>ILS NOUS SOUTIENNENT DANS NOTRE AVENTURE!</h3>
           <div class="followers">
             <ul class="list-inline">
-            <li><%= cl_image_tag("romain_iogmvm.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Romain</p></li>
-            <li><%= cl_image_tag("dimitri_ivxt55.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)%><p>Dimitri</p></li>
-            <li><%= cl_image_tag("coline_nvgx2r.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)  %><p>Coline</p></li>
-            <li><%= cl_image_tag("simon_geoqgg.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Simon</p></li>
-            <li><%= cl_image_tag("christophe_j8urcn.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Christophe</p></li>
-            <li><%= cl_image_tag("jb_h9rqk6.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)  %><p>Jean-baptiste</p></li>
-            <li><%= cl_image_tag("sophie_mlyn48.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)  %><p>Sophie</p></li>
-
-            <li><%= cl_image_tag("lucille_yej9fj.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)  %><p>Lucille</p></li>
-            <li><%= cl_image_tag("francois_gfx2la.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)  %><p>François</p></li>
-            <li><%= cl_image_tag("caroline_przvij.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Caroline</p></li>
-            <li><%= cl_image_tag("pierre_nbkmy3.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Pierre</p></li>
-            <li><%= cl_image_tag("camille_e7yhcf.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Camille</p></li>
-            <li><%= cl_image_tag("louise_qw0da6.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Louise</p></li>
-            <li><%= cl_image_tag("antoine_srrcvd.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Antoine</p></li>
-            <li><%= cl_image_tag("jerome_ufztts.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Jérome</p></li>
-            <li><%= cl_image_tag("julie_zh3wyo.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)  %><p>Julie</p></li>
-            <li><%= cl_image_tag("greg_nlfzxg.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Grégoire</p></li>
-            <li><%= cl_image_tag("agathe_hd8ppy.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Agathe</p></li>
-            <li><%= cl_image_tag("clementine_maaufq.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Clémentine</p></li>
-            <li><%= cl_image_tag("marion_acckwa.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Marion</p></li>
-            <li><%= cl_image_tag("hugo_r6cncq.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Hugo</p></li>
-            <li><%= cl_image_tag("heloise_ktzbvx.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Héloïse</p></li>
-            <li><%= cl_image_tag("margaux_but2el.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Margaux</p></li>
-            <li><%= cl_image_tag("guillaume_vccnzj.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Guillaume</p></li>
-            <li><%= cl_image_tag("benoit_mpbx9n.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Benoit</p></li>
-            <li><%= cl_image_tag("jerome_kx6m9y.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Jérome</p></li>
-            <li><%= cl_image_tag("loic_ouzago.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Loïc</p></li>
-            <li><%= cl_image_tag("dimitriv_ctr47e.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)%><p>Dimitri</p></li>
-            <li><%= cl_image_tag("mathieu_p65s9j.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Mathieu</p></li>
-            <li><%= cl_image_tag("annabelle_hyzj8g.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Annabelle</p></li>
-            <li><%= cl_image_tag("francoisbl_fw1wop.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)  %><p>Francois</p></li>
-            <li><%= cl_image_tag("lea_bgxnaz.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)%><p>Léa</p></li>
-            <li><%= cl_image_tag("laura_avifqf.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)%><p>Laura</p></li>
-            <li><%= cl_image_tag("romaing_ungqqr.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)%><p>Romain</p></li>
-            <li><%= cl_image_tag("marine_hqjujb.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Marine</p></li>
-            <li><%= cl_image_tag("matt_dolhd4.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)%><p>Mathilde</p></li>
-            <li><%= cl_image_tag("brice_mloxaf.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Brice</p></li>
-            <li><%= cl_image_tag("manu_hk5jit.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Emanuelle</p></li>
-            <li><%= cl_image_tag("joanna_jmnyl5.jpg", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Joanna</p></li><br>
+            <li><%= cl_image_tag("romain_iogmvm.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Romain</p></li>
+            <li><%= cl_image_tag("dimitri_ivxt55.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)%><p>Dimitri</p></li>
+            <li><%= cl_image_tag("coline_nvgx2r.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)  %><p>Coline</p></li>
+            <li><%= cl_image_tag("simon_geoqgg.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Simon</p></li>
+            <li><%= cl_image_tag("christophe_j8urcn.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Christophe</p></li>
+            <li><%= cl_image_tag("jb_h9rqk6.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)  %><p>Jean-baptiste</p></li>
+            <li><%= cl_image_tag("sophie_mlyn48.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)  %><p>Sophie</p></li>
+            <li><%= cl_image_tag("lucille_yej9fj.webp",class:"lazyload", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)  %><p>Lucille</p></li>
+            <li><%= cl_image_tag("francois_gfx2la.webp",class:"lazyload", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)  %><p>François</p></li>
+            <li><%= cl_image_tag("caroline_przvij.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Caroline</p></li>
+            <li><%= cl_image_tag("pierre_nbkmy3.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Pierre</p></li>
+            <li><%= cl_image_tag("camille_e7yhcf.webp",class:"lazyload", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Camille</p></li>
+            <li><%= cl_image_tag("louise_qw0da6.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Louise</p></li>
+            <li><%= cl_image_tag("antoine_srrcvd.webp",class:"lazyload", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Antoine</p></li>
+            <li><%= cl_image_tag("jerome_ufztts.webp",class:"lazyload", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Jérome</p></li>
+            <li><%= cl_image_tag("julie_zh3wyo.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)  %><p>Julie</p></li>
+            <li><%= cl_image_tag("greg_nlfzxg.webp",class:"lazyload", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Grégoire</p></li>
+            <li><%= cl_image_tag("agathe_hd8ppy.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Agathe</p></li>
+            <li><%= cl_image_tag("clementine_maaufq.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Clémentine</p></li>
+            <li><%= cl_image_tag("marion_acckwa.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Marion</p></li>
+            <li><%= cl_image_tag("hugo_r6cncq.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Hugo</p></li>
+            <li><%= cl_image_tag("heloise_ktzbvx.webp",class:"lazyload", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Héloïse</p></li>
+            <li><%= cl_image_tag("margaux_but2el.webp",class:"lazyload", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Margaux</p></li>
+            <li><%= cl_image_tag("guillaume_vccnzj.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Guillaume</p></li>
+            <li><%= cl_image_tag("benoit_mpbx9n.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Benoit</p></li>
+            <li><%= cl_image_tag("jerome_kx6m9y.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Jérome</p></li>
+            <li><%= cl_image_tag("loic_ouzago.webp",class:"lazyload", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Loïc</p></li>
+            <li><%= cl_image_tag("dimitriv_ctr47e.webp",class:"lazyload", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)%><p>Dimitri</p></li>
+            <li><%= cl_image_tag("mathieu_p65s9j.webp",class:"lazyload", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Mathieu</p></li>
+            <li><%= cl_image_tag("annabelle_hyzj8g.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Annabelle</p></li>
+            <li><%= cl_image_tag("francoisbl_fw1wop.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)  %><p>Francois</p></li>
+            <li><%= cl_image_tag("lea_bgxnaz.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)%><p>Léa</p></li>
+            <li><%= cl_image_tag("laura_avifqf.webp",class:"lazyload", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)%><p>Laura</p></li>
+            <li><%= cl_image_tag("romaing_ungqqr.webp",class:"lazyload", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)%><p>Romain</p></li>
+            <li><%= cl_image_tag("marine_hqjujb.webp",class:"lazyload", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Marine</p></li>
+            <li><%= cl_image_tag("matt_dolhd4.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)%><p>Mathilde</p></li>
+            <li><%= cl_image_tag("brice_mloxaf.webp",class:"lazyload", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Brice</p></li>
+            <li><%= cl_image_tag("manu_hk5jit.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Emanuelle</p></li>
+            <li><%= cl_image_tag("joanna_jmnyl5.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Joanna</p></li><br>
             <li class="circle"><p>?</p><p>Vous</p></li>
           </ul>
           <div class="form">
