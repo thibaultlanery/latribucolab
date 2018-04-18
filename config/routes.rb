@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   resources :users, only: [:show, :create] do
   member do
     resources :category_preferences, only: [:create]
