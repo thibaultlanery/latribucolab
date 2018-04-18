@@ -1,0 +1,42 @@
+/* countdown */
+#clockrow{
+  margin:30px;
+  color: #F9D243;
+}
+#countdown {
+  // font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  color: #fff;
+  line-height: 1.1em;
+  margin: 40px 0 60px;
+}
+
+#clockdiv{
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 3px;
+  color: #F9D243;
+}
+
+#clockdiv > div{
+    padding: 3px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 5px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+
+.smalltext{
+    padding-top: 2px;
+    font-size: 12px;
+
+}
+

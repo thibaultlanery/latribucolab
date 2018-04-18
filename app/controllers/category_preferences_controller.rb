@@ -13,9 +13,8 @@ def create
     @user.category_preferences.each do |category_preference|
       if category_preference.save
         # binding.pry
-      flash[:notice] = 'A voté!'
       else
-      flash[:alert] = 'vous avez déja choisi cette categorie'
+      flash[:alert] = 'hum, :( il semble vous ayez déja choisi cette categorie'
       end
     end
   redirect_to user_path(@user)

@@ -1,16 +1,21 @@
-
-.wrapper {
-  h4 {line-height: 2.1;
+.show {
+  h4{
+line-height: 1.5;
+margin-right: auto;
+margin-left: auto;
+width: 90%;
 }
 
 }
+
+
 .content-text {
-  h3 {
-    line-height: 2.1;
-  }
-  color: white;
-  margin-right: auto;
-  margin-left: auto;
+
+
+  padding: 20px;
+  color: #555;
+  background-color: white;
+  margin-bottom: 20px;
 
 }
 
@@ -23,8 +28,8 @@
 }
 
 .vote {
-  color: #555;
-  background-color: white;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
   padding: 30px;
   font-size: 12px;
   padding-top: 10px;
@@ -50,5 +55,5 @@
 .share {
   background-color:white;
   color: #555;
-  padding: 30px;
+  padding: 20px;
 }
