@@ -19,7 +19,5 @@ import { initUpdateNavbarOnScroll } from '../components/navbar';
 initUpdateNavbarOnScroll();
 
 import {initializeClock } from '../components/countdown';
-var deadline = new Date("09/01/2018");
-var deadline = deadline;
-console.log(deadline)
+
 initializeClock('clockdiv', deadline);
