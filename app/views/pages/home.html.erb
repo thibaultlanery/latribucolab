@@ -1,20 +1,5 @@
-<!-- <div class="header  "> -->
-  <div class="navbar-wagon navbar-fixed-top">
-    <!-- Logo -->
-    <a href="/" class="navbar-wagon-brand">
-       <%= cl_image_tag("flowRoot7503_b1kyho.webp",lass:"lazyload", :height=>130, :quality=>"auto:best", :crop=>"scale", :fetch_format=>:auto)%>
 
-    </a>
-
-    <!-- Right Navigation -->
-    <div class="navbar-wagon-right hidden-xs hidden-sm">
-      <%= link_to "Pourquoi La Tribu?", "#pourquoilatribu", class: "navbar-wagon-item navbar-wagon-link " %>
-      <%= link_to "Comment ça marche?", "#commentcamarche", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Carnet de route", "#carnetderoute", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Cahier des charges", "#cahierdescharges", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "L'équipe", "#equipe", class: "navbar-wagon-item navbar-wagon-link" %>
-    </div>
-
+<%= render "shared/navbar" %>
   </div>
 <!-- </div> -->
 <div class="wrapper">
@@ -29,20 +14,7 @@
                      <!--    <h1>CONSOMMER N'AURA JAMAIS PLUS LA MEME SAVEUR</h1> -->
         <!--     Nous parcourons le monde pour développer avec vous des produits d'épicerie d'exception, en totale transparence et livré directement chez vous! La Tribu redonne du sens à vos fonds de placards!  -->
           </div>
-          <div class="form">
-            <%= simple_form_for(@user) do |f| %>
-              <%= f.error_notification %>
-              <div class="form-inputs">
-                <ul class="list-inline">
-                  <li><%= f.input :name, required: true, placeholder: "Prénom", label: false %></li>
-                  <li><%= f.input :email, required: true,  placeholder: "email", label: false%></li>
-                </ul>
-              </div>
-              <div class="form-actions">
-                <%= f.button :submit, "Je reste informé!", class: "btn btn-success" %>
-              </div>
-            <% end %>
-          </div>
+<%= render "shared/form" %>
         </div>
       </div>
     </div>
@@ -127,7 +99,7 @@
             </div>
             <div class="doypack-quinoa ">
               <div class="doypack">
-                <%= cl_image_tag("doypack_ife4cg.webp", class:"lazyload", :fetch_format=>:auto, :quality=>"auto",) %>
+                <%= cl_image_tag("doypack_ife4cg.webp", class:"lazyload", :fetch_format=>:auto,:width=>90, :quality=>"auto",) %>
               </div>
              </div>
             <div class="description">
@@ -149,10 +121,10 @@
             </div>
             <div class="doypack-quinoa ">
               <div class="doypack">
-                <%= cl_image_tag("doypack_ife4cg.webp", class:"lazyload", :fetch_format=>:auto, :quality=>"auto",) %>
+                <%= cl_image_tag("doypack_ife4cg.webp", class:"lazyload", :fetch_format=>:auto, :width=>90, :quality=>"auto",) %>
               </div>
               <div class="doypack">
-                <%= cl_image_tag("doypack_ife4cg.webp", class:"lazyload", :fetch_format=>:auto, :quality=>"auto",) %>
+                <%= cl_image_tag("doypack_ife4cg.webp", class:"lazyload", :fetch_format=>:auto, :width=>90, :quality=>"auto",) %>
               </div>
             </div>
             <div class="description">
@@ -182,9 +154,9 @@
           </div>
           <div class=" hidden-sm hidden-xs col-md-4">
             <div class="doypack-multiple ">
-              <%= cl_image_tag("doypack_ife4cg.webp", class:"lazyload", id:"doy-1") %>
-              <%= cl_image_tag("doypack_ife4cg.webp", class:"lazyload",  id:"doy-2") %>
-              <%= cl_image_tag("doypack_ife4cg.webp", class:"lazyload",  id:"doy-3") %>
+              <%= cl_image_tag("doypack_ife4cg.webp", class:"lazyload", :width=>100,  id:"doy-1") %>
+              <%= cl_image_tag("doypack_ife4cg.webp", class:"lazyload", :width=>100,   id:"doy-2") %>
+              <%= cl_image_tag("doypack_ife4cg.webp", class:"lazyload", :width=>100,  id:"doy-3") %>
             </div>
           </div>
           <div class="col-xs-12 col-md-4" >
@@ -281,34 +253,11 @@
             <li><%= cl_image_tag("joanna_jmnyl5.webp", class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Joanna</p></li><br>
             <li class="circle"><p>?</p><p>Vous</p></li>
           </ul>
-          <div class="form">
-            <%= simple_form_for(@user) do |f| %>
-              <%= f.error_notification %>
-              <div class="form-inputs">
-                <ul class="list-inline">
-                  <li><%= f.input :name, placeholder: "Prénom", label: false %></li>
-                  <li><%= f.input :email, placeholder: "email", label: false %></li>
-                  <li><%= f.button :submit, "Je reste informé!", class: "btn btn-success" %></li>
-                </ul>
-              </div>
-            <% end %>
-          </div>
+          <%= render "shared/form" %>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="footer">
-  <div class="footer-links">
-    <a href="https://www.instagram.com/thibault____/" target="_blank"><i class="fa fa-instagram"></i></a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=www.la-tribu.co" target="_blank"><i class="fa fa-facebook"></i></a>
-    <a href="https://twitter.com/intent/tweet?text=www.la-tribu.co, latribu, marquedeconsommateur" target="_blank"><i class="fa fa-twitter"></i></a>
-    <a href="https://www.linkedin.com/shareArticle?mini=tru&url=http://www.la-tribu.co
-" target="_blank"><i class="fa fa-linkedin"></i></a>
-  </div>
-  <div class="footer-copyright">
-    This footer is made with <i class="fa fa-heart"></i> at Le Wagon
-  </div>
-</div>
-
+<%= render "shared/footer" %>
 
