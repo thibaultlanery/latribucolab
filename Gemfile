@@ -17,7 +17,7 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'cloudinary'
 gem "letter_opener", group: :development
-gem 'bullet', group: 'development'
+# gem 'bullet', group: 'development'
 gem "gibbon"
 gem 'mailgun_rails'
 
