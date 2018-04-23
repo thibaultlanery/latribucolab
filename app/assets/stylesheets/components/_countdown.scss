@@ -1,7 +1,8 @@
 /* countdown */
 #clockrow{
   margin:30px;
-  color: #F9D243;
+  // color: #F9D243;
+  color: white;
 }
 #countdown {
   // font-family: 'Poppins', sans-serif;
@@ -16,9 +17,10 @@
   display: inline-block;
   font-weight: 100;
   text-align: center;
-  font-size: 25px;
-  letter-spacing: 3px;
-  color: #F9D243;
+  font-size: 40px;
+  letter-spacing: 2px;
+  // color: #F9D243;
+  color: white;
 }
 
 #clockdiv > div{
@@ -36,7 +38,7 @@
 
 .smalltext{
     padding-top: 2px;
-    font-size: 12px;
+    font-size: 16px;
 
 }
 
