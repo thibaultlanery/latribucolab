@@ -7,7 +7,7 @@
 .content-white {
   background-color: white;
   padding: 20px;
-  color: #484848;
+  color: #484848 !important;
 }
 
 .content {
@@ -31,9 +31,9 @@
     letter-spacing: 2px;
     font-size: 44px;
     }
-  .list-inline>li{
-    width: 25%;
-  }
+  // .list-inline>li{
+  //   width: 25%;
+  // }
   }
 
   .form-control {
