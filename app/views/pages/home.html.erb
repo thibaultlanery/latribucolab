@@ -8,7 +8,9 @@
       <div class="first-banner-content text-center">
         <div class="punchline ">
           <h1>VOS PRODUITS D'EPICERIE COMME SI VOUS Y ETIEZ!</h1>
-          <h3>Des produits d'épicerie bons, justes et développés ensembles!</h3> <br>
+          <!-- <H1>MIEUX CONSOMMER DEMARRE LA BA...</H1> -->
+          <!-- <h3>Des produits d'épicerie bons, justes et développés ensembles!</h3> <br> -->
+          <h3>Des produits d'épicerie bons, justes et conçus ensembles!</h3> <br>
         </div>
         <%= render "shared/form" %>
       </div>
@@ -19,10 +21,11 @@
       <div class="title">
         <h1>POURQUOI LA TRIBU?</h1>
       </div>
-        <h4>La tribu est née d'une volonté de ramener à des amis du café découvert dans le Chiapas, au Mexique.<br>
-          Un café avec une saveur unique, celle d'un voyage dans une vallée isolée et de la découverte d'une communauté.<br>
-          Le terroir, le climat, la haute altitude, le labeur d'une communauté indigène, la variété, les arômes, sont autant de caractéristiques propres qui valait la peine d'etre expliquées!<br>
-          <strong>On s'est alors dit que si ça plaisait à nos amis, ça pourrait plaire à tout le monde, <br> La Tribu était née.</strong> </h4>
+        <h4>La Tribu est née d’une découverte lors d’un voyage dans le chiapas, au mexique.<br></h4>
+          <h4>Un café bio de haute altitude, issus d’une coopérative équitable rencontrée à l’occasion, qui nous fit découvrir les champs de caféiers, dans un massif montagneux à 3 heure de routes de la ville.<br></h4>
+          <h4>Il avait un goût spécial ce café, celui de la transparence, de la découverte d'un terroir et d'une communauté.<br></h4>
+          <h4><strong>En partageant ce café, nous avons réalisé que si l’histoire de sa découverte plaisait à nos amis, elle pourrait plaire à tout le monde <br> La Tribu était née.</strong>
+      </h4>
     </div>
   </div>
   <div class="third-banner text-center" id="commentcamarche">
@@ -202,7 +205,7 @@
         </div>
         <div class="team">
           <ul class= "list-inline">
-            <li><%= cl_image_tag("moi_caré_hq60uv.webp", class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :effect=>"grayscale", :height=>120, :crop=>"scale") %><h4>Thibault</h4></li>
+            <li><%= cl_image_tag("moi_caré_hq60uv.webp", class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :effect=>"grayscale", :height=>120,:width=>120, :crop=>"scale") %><h4>Thibault</h4></li>
             <li><%= cl_image_tag("julien_nfwsg0.webp",class:"lazyload", :effect=>"grayscale", :fetch_format=>:auto, :quality=>"auto", :height=>120, :width=>120, :crop=>"thumb") %><h4>Julien</h4></li>
           </ul>
           <h4>Nous partîmes cinq cents (enfin 2 ;) ) <br> mais par un prompt renfort,
