@@ -6,9 +6,9 @@
     <div class="content-text">
       <h1>Un grand merci <%= current_user.name.capitalize %></h1>
       <h4>
-        Nous vous avons envoyé un mail de bienvenu et vous enverrons des informations concernant l'avancement du projet. <br>Car n'oubliez pas, notre objectif est de vous donner l'opportunité d'apprendre comme jamais auparavant ce qui se cache derrière nos produits! </h4>
+        Nous vous avons envoyé un mail de bienvenu et vous enverrons prochainement des informations concernant l'avancement du projet. <br>Car n'oubliez pas, notre objectif est de vous donner l'opportunité d'apprendre tout ce qui se cache derrière nos produits! </h4>
         <div class="share">
-          <h4 style="font-style: italic">Pour qu'un enfant grandisse, il faut tout un village. Proverbe africain ; L'Afrique en proverbes (1905)</h4><h4>Si l'idée vous a plu elle plaira à votre entourage <srong>n'hésitez pas, partagez!</strong></h4>
+          <h5 style="font-style: italic">Pour qu'un enfant grandisse, il faut tout un village.</h5><h5> Proverbe africain ; L'Afrique en proverbes (1905)</h4><h4>Si l'idée vous a plu elle plaira à votre entourage <srong>n'hésitez pas, partagez!</strong></h5>
           <div class="sharethis-inline-share-buttons" data-url="https://www.la-tribu.com"></div>
         </div>
     </div>
@@ -17,10 +17,10 @@
       <div class="container text-center">
         <div class="vote">
           <% unless current_user.category_preferences.present? %>
-            <h4>La Tribu est une marque collaborative, elle vous donne la parole. <br> Vous pourrez, à votre guise, nous aider à prendre des décisions en nous donnant votre opinion en ligne.<br>
+            <h4>La Tribu est une marque collaborative, elle vous donne la parole. <br> Vous pourrez, régulièrement, nous aider à prendre des décisions en nous donnant votre opinion en ligne.<br>
             Votre avis nous permettra de faire des choix qui correspondent à vos attentes.<br></h4>
             <h4 style= "padding: 10px">Alors, ne perdons pas de temps, donnez votre avis dès à présent!<br></h4>
-            <h4 style=" color: #F9D243; padding: 10px;">Quels sont les produits que vous aimeriez nous voir déveloper dans les mois qui viennent?</h4>
+            <h4 style=" color: #F9D243; padding: 10px;">Quels sont les produits que vous aimeriez retrouver sur La Tribu dans les mois à venir?</h4>
                 <%= simple_form_for :category_preferences, url: category_preferences_path do |f| %>
                 <div class="form-inline ">
                   <%= f.fields_for :categories do |uf| %>
@@ -34,11 +34,11 @@
                   <% end %>
                 </div>
                   <div class="form-actions ">
-                  <%= f.button :submit, "Soumettre", class:"btn btn-warning" %>
+                  <%= f.button :submit, "JE VOTE", class:"btn btn-warning" %>
                   </div>
                 <% end %>
           <% else %>
-            <h2 style=" color: #F9D243">à voté! <br> Merci d'avoir contribué au choix des futurs produits!</h2>
+            <h2 style=" color: #F9D243">A voté!<br>Merci d'avoir contribué au choix de vos futurs produits !</h2>
           <% end %>
         </div>
       </div>

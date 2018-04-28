@@ -60,7 +60,7 @@
   }
 }
 .third-banner {
-  color: #5F5F5F;
+  color: #484848;
   margin-top: 25px;
   h5 {
    line-height:25px;
@@ -137,7 +137,7 @@
 }
 .description {
   background-color: white;
-  color: #5F5F5F;
+  color: #484848;
   text-align:center;
   padding: 25px;
   height: 130px;
@@ -226,18 +226,27 @@
   }
 }
 .circle {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background-color:#F9D243;
   border-radius: 50%;
   color: white;
   p:first-child{
-      margin: auto;
-      font-size: 35px;
+
+      font-size: 44px;
   }
 }
 
 @media (max-width: 375px) {
+
+  .content-mob {
+    background-color: #4778AD !important;
+  }
+
+  .content-mob2 {
+    color: #484848 !important;
+    background-color: #F9D243 !important;
+  }
 
   .navbar-wagon {
     display: flex;
@@ -245,6 +254,12 @@
     justify-content: space-around;
   }
   //first-banner
+  .first-banner{
+  background-image: radial-gradient(ellipse at center, rgba(0,50,70,0.2) 40%,rgba(0,50,70,0.2) 100%), url("https://res.cloudinary.com/dcljc9muz/image/upload/c_scale,h_850,q_auto:good/v1524784283/Chipas_tapachula_2mo_uofivn.webp") ;
+  background-size: auto !important;
+  background-repeat: no-repeat!important;
+  background-position:center center;
+  }
   .punchline {
     h1 {
       font-size: 35px;
@@ -265,7 +280,9 @@
     font-size: 16px;
 
 }
-.fourth-banner h4 {
+.fourth-banner
+h1 { color: #484848;}
+h4 {
   line-height: 30px;
     font-size: 18px;
   }
@@ -292,6 +309,8 @@
   height: 120px;
 }
 .sixth-banner {
+  // background-color: #4778AD ;    background-color: #F2ED6F;
+  // #5885AD
   h3 {
     font-size: 22px;
   }
