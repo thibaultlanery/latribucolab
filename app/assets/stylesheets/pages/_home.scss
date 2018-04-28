@@ -280,12 +280,17 @@
     font-size: 16px;
 
 }
-.fourth-banner
-h1 { color: #484848;}
+.fourth-banner {
+color: #484848;
+h1 {
+  color: #484848;
+}
 h4 {
   line-height: 30px;
     font-size: 18px;
+    color: #484848;
   }
+}
 #clockrow {
     margin-bottom: 30px;
     margin-left: 0px;
@@ -295,6 +300,7 @@ h4 {
 #clockdiv {
   font-size: 25px;
   letter-spacing: 1px;
+  color: #484848;
 }
 .card {
   margin-bottom: 20px;
