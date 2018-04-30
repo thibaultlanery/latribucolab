@@ -5,41 +5,44 @@ margin-right: auto;
 margin-left: auto;
 width: 90%;
 }
-
+}
+.div-logo {
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .logo {
-  padding: 20px;
+background-image: url("https://res.cloudinary.com/dcljc9muz/image/upload/c_scale,f_auto,h_130,q_auto:best/v1524451547/tribublanco_1_yauycz.svg");
+background-size: auto !important;
+background-repeat: no-repeat!important;
+height: 130px;
+margin-left: auto;
+margin-right: auto;
+width: 180px;
 }
-
 
 .content-text {
-
-
-  padding: 20px;
-  color:#484848;;
-  background-color: white;
-  margin-bottom: 20px;
-
+padding: 20px;
+color:#484848;
+background-color: white;
+margin-bottom: 20px;
 }
-
-
 .team {
-  color: white;
-  img{
-    border-radius: 50%;
-  }
+color: white;
+img{
+  border-radius: 50%;
+}
 }
 
 .vote {
   color: white;
   background: rgba(0, 0, 0, 0.3);
   padding: 30px;
-  font-size: 12px;
   padding-top: 10px;
   margin-bottom: 20px;
   img {
-
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -53,11 +56,52 @@ width: 90%;
 #check {
   display: none
 }
-
 }
-
 .share {
   background-color:white;
   color: #484848;
   padding: 20px;
+}
+
+@media (max-width: 375px) {
+  .logo {
+    background-image: url("https://res.cloudinary.com/dcljc9muz/image/upload/c_scale,f_auto,q_auto:good,w_400/v1524535139/photoshare_if3mv8.webp") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  width: 100% !important;
+  height: 160px;
+
+  }
+.show {
+  h4 {
+line-height: 25px;
+width: 100%;
+font-size: 17px;
+  }
+}
+.content-text {
+  h2{
+    line-height: 1.5;
+  }
+padding: 0;
+  }
+.vote {
+  padding-top: 10px;
+  background-color: #37bfc3 !important;
+  margin-bottom: 10px;
+   img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: box-shadow ease 200ms;
+    margin: 5px;
+    border: 3px solid transparent;
+  }
+  input:checked + img {
+    border: 3px solid #28a745;
+  }
+#check {
+  display: none
+  }
+  }
 }
