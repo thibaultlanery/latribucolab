@@ -20,6 +20,7 @@ gem "letter_opener", group: :development
 # gem 'bullet', group: 'development'
 gem "gibbon"
 gem 'mailgun_rails'
+gem 'forest_liana'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
