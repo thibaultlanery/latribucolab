@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  mount ForestLiana::Engine => '/forest'
   resources :users, only: [:show, :create] do
   member do
     resources :category_preferences, only: [:create]
