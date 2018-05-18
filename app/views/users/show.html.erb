@@ -6,23 +6,23 @@
     </div>
     <div class="content-text">
       <h2>Un grand merci <%= current_user.name.capitalize %></h2>
-      <h4>Nous vous avons envoyé un mail de bienvenu et vous enverrons prochainement des informations concernant l'avancement du projet.</h4>
-      <h4>Car n'oubliez pas, notre objectif est de vous donner l'opportunité d'apprendre tout ce qui se cache derrière nos produits! </h4>
+      <h4>Nous vous avons envoyé un mail de bienvenue et vous enverrons prochainement des informations concernant l'avancement du projet.</h4>
+      <h4>Car n'oubliez pas que notre objectif est de vous faire découvrir tout ce qui se cache derrière nos produits ! </h4>
         <div class="share">
           <h5 style="font-style: italic"><strong>Pour qu'un enfant grandisse, il faut tout un village.</strong></h5>
           <h5><small>L'Afrique en proverbes (1905)</small></h5>
-          <h4>Si l'idée vous a plu elle plaira à votre entourage <strong>n'hésitez pas, partagez!</strong></h4>
-          <div class="sharethis-inline-share-buttons" data-url="https://www.la-tribu.com"></div>
+          <h4>Si l'idée vous a plu elle plaira à votre entourage. <strong>Alors n'hésitez pas, partagez !</strong></h4>
+          <div class="sharethis-inline-share-buttons" data-url="https://www.la-tribu.co"></div>
         </div>
     </div>
   </div>
       <div class="container text-center">
         <div class="vote">
           <% unless current_user.category_preferences.present? %>
-            <h4>La Tribu est une marque collaborative, elle vous donne la parole. <br> Vous pourrez, régulièrement, nous aider à prendre des décisions en nous donnant votre opinion en ligne.</h4>
+            <h4>La Tribu est une marque collaborative, elle vous donne la parole. <br> Vous pourrez régulièrement, contribuer au projet, en nous donnant votre opinion en ligne.</h4>
             <h4>Votre avis nous permettra de faire des choix qui correspondent à vos attentes.</h4>
-            <h4 >Alors, ne perdons pas de temps, donnez votre avis dès à présent!</h4>
-            <h4 style="font-style: italic">Quels sont les produits que vous aimeriez retrouver sur La Tribu dans les mois à venir?</h4>
+            <h4 >Alors ne perdons pas de temps, donnez-nous votre avis dès maintenant !</h4>
+            <h4>Quels sont les produits que vous aimeriez retrouver sur La Tribu dans les mois à venir?</h4>
                 <%= simple_form_for :category_preferences, url: category_preferences_path do |f| %>
                   <%= f.fields_for :categories do |uf| %>
                     <div class="row">
@@ -31,7 +31,7 @@
                       <label>
                         <%= uf.check_box "category_ids", { multiple: true, id: "check" }, category.id, nil %>
                           <%= image_tag category.pictoname, {class: "img-rounded"} %>
-                         <h5 style="font-style: italic"><%= category.name %></H5>
+                         <h5><%= category.name %></H5>
                       </label>
                       </div>
                     <% end %>
@@ -49,7 +49,7 @@
     <div class="container">
       <div class="team text-center">
         <ul class= "list-inline">
-          <h4>A très vite</h4>
+          <h4>À très vite</h4>
           <li><%= cl_image_tag("moi_caré_hq60uv.png", class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :effect=>"grayscale", :height=>120,:width=>120, :crop=>"scale") %><h4>Thibault</h4></li>
           <li><%= cl_image_tag("julien_nfwsg0.png",class:"lazyload", :effect=>"grayscale", :fetch_format=>:auto, :quality=>"auto", :height=>120, :width=>120, :crop=>"thumb") %><h4>Julien</h4></li>
         </ul>
