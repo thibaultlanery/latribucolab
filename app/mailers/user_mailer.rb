@@ -7,7 +7,6 @@ class UserMailer < ApplicationMailer
   #
   def welcome(user)
     @user = user  # Instance variable => available in view
-    @greeting = "HI"
-    mail(to: @user.email, subject: 'Bienvenu!')
+    mail(to: @user.email, subject: 'Bienvenue dans La Tribu 🌱 🌎')
   end
 end

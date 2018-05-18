@@ -7,12 +7,12 @@
   </tr>
   <tr>
    <td style="text-align: center;">
-    <h1>Bienvenue dans La Tribu <%= @user.name + "!" %></h1>
+    <h1>Bienvenue dans La Tribu <%= @user.name.capitalize + " " + "!" %></h1>
    </td>
   </tr>
   <tr>
    <td >
-    <p>Ici, nous rapprochons notre communauté de consommateurs éclairés du savoir-faire agricole de producteurs situés aux quatre coins du monde</p>
+    <p>Ici, nous rapprochons notre communauté de consommateurs éclairés du savoir-faire agricole de producteurs situés aux quatre coins du monde.</p>
    </td>
   </tr>
   <tr>
@@ -29,16 +29,16 @@
   <tr>
     <td >
       <ul>
-        <li>obtenir la transparence totale sur nos produit, de la graine à l’assiette</li>
-        <li>remettre producteurs et consommateurs au coeur de l’équation</li>
-        <li>consommer des produits de qualité qui respectent leur santé</li>
-        <li>placer l’écologie comme pilier du projet</li>
+        <li>obtenir la transparence totale sur nos produit, de la graine à l’assiette,</li>
+        <li>remettre producteurs et consommateurs au coeur de l’équation,</li>
+        <li>consommer des produits de qualité qui respectent leur santé,</li>
+        <li>placer l’écologie comme pilier du projet,</li>
       </ul>
     </td>
   </tr>
   <tr>
    <td>
-    <p>Ceux sont également eux qui ont choisi les premiers-nés de notre future gamme de produits !</p>
+    <p>Ils ont également choisi les premiers-nés de notre future gamme de produits !</p>
    </td>
   </tr>
   <tr>
@@ -50,21 +50,21 @@
     <td>
       <p>Cap sur les terres Incas, à flanc de Cordillère des Andes où poussent en altitude
       un café d’exception et du quinoa savoureux. Nous partons 1 mois à la rencontre des communautés de producteurs. Notre objectif est de tout voir, tout comprendre pour tout vous expliquer.
-      <br><strong ><p style="text-align: center;" >Mieux consommer démarre la-bas.*</p>
-</p>
+      <br><strong ><p style="text-align: center;" >Mieux consommer démarre là-bas.*</p>
    </td>
   </tr>
   <tr>
-    <td style="text-align: center; font-style: italic">
+    <td style="text-align: center">
       <p>C’est le lancement de la confection de nos produits artisanalement vôtre, disponibles en prévente sur notre site dès Septembre !! 😜😃</p>
     </td>
   </tr>
   <tr>
-     <td style="text-align: center; font-style: italic">
+     <td style="text-align: center">
       <p><strong>Transparence? Vous avez dit transparence?</strong></p>
       <p>Pour tout apprendre en photos, vidéos et infographies, c’est par ici :</p>
    </td>
   </tr>
+</table>
   <table align="center">
   <tr align="center">
     <td style="width:120px" >
@@ -84,12 +84,11 @@
   </tr>
      <tr>
     <td style="text-align: center;">
-      <p>A très bientôt pour un débrief de voyage !</p>
+      <p>À très bientôt pour un débrief de ce voyage !</p>
     </td>
   </tr>
 </table>
 <table align="center" text-align="center" >
-
   <tr>
     <td style="width:120px" align="center">
      <%= cl_image_tag("moi_caré_hq60uv.png", class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :effect=>"grayscale", :height=>120,:width=>120, :crop=>"scale") %><h4>Thibault</h4>
@@ -99,8 +98,6 @@
    </td>
   </tr>
 </table>
-
-
 <table align="center">
   <tr>
     <td >
