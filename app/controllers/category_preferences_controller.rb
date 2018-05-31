@@ -6,9 +6,9 @@ def create
   if current_user.category_preferences.present?
     flash[:alert] = 'vous avez déja voté'
     redirect_to user_path(@user)
-  elsif  params[:category_preference] == nil
+  elsif  params[:category_preferences] == nil
     flash[:alert] = 'merci de sélectionner les catégories'
-    redirect_to user_path(@user)
+redirect_to user_path(@user)
   else
     category_ids = category_params
     @user.category_preferences << category_ids.map { |category_id| CategoryPreference.new(category_id: category_id) }
@@ -18,7 +18,7 @@ def create
       flash[:alert] = 'hum, :( il semble vous ayez déja choisi cette categorie'
       end
     end
-
+  redirect_to user_path(@user)
   end
 end
 
