@@ -19,10 +19,13 @@
       <div class="container text-center">
         <div class="vote">
           <% unless current_user.category_preferences.present? %>
-            <h4>La Tribu est une marque collaborative, elle vous donne la parole. <br> Vous pourrez régulièrement, contribuer au projet, en nous donnant votre opinion en ligne.</h4>
-            <h4>Votre avis nous permettra de faire des choix qui correspondent à vos attentes.</h4>
-            <h4 >Alors ne perdons pas de temps, donnez-nous votre avis dès maintenant !</h4>
-            <h4>Quels sont les produits que vous aimeriez retrouver sur La Tribu dans les mois à venir?</h4>
+            <h1>Votez !</h1>
+            <h4><strong>Quels sont les produits que vous aimeriez retrouver sur La Tribu dans les mois à venir?</strong></h4>
+            <div class="pitch">
+            <h5>La Tribu est une marque collaborative, elle vous donne la parole. <br> Vous pourrez régulièrement, contribuer au projet, en nous donnant votre opinion en ligne.</h5>
+            <h5>Alors ne perdons pas de temps, donnez-nous votre avis dès maintenant !</h5>
+            </div>
+            <h4 style="font-style: italic">Cliquez sur les images pour effectuer votre sélection:</h4>
                 <%= simple_form_for :category_preferences, url: category_preferences_path do |f| %>
                   <%= f.fields_for :categories do |uf| %>
                     <div class="row">
@@ -37,7 +40,7 @@
                     <% end %>
                     </div>
                   <% end %>
-                <div class="form-actions ">
+                <div class="form-actions" id="vote">
                 <%= f.button :submit, "JE VOTE", class:"btn btn-warning" %>
                 </div>
               <% end %>

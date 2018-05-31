@@ -1,10 +1,20 @@
 .show {
   h4{
 line-height: 1.5;
+letter-spacing: 0.4px;
+margin-bottom: 20px;
 margin-right: auto;
 margin-left: auto;
 width: 90%;
 }
+
+.pitch {
+  margin-bottom: 20px;
+  h5 {
+  letter-spacing:0.4px;
+  }
+}
+
 }
 .div-logo {
 padding: 20px;
@@ -38,7 +48,7 @@ img{
 
 .vote {
   color: white;
-  background: rgba(0, 0, 0, 0.3);
+  background:  #37bfc3;
   padding: 30px;
   padding-top: 10px;
   margin-bottom: 20px;
@@ -60,7 +70,7 @@ img{
 .share {
   background-color:white;
   color: #484848;
-  padding: 20px;
+  padding: 10px;
 }
 
 @media (max-width: 375px) {
