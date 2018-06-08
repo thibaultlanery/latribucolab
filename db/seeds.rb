@@ -8,7 +8,7 @@
 Category.destroy_all
 
 category_list = [
-  ["De nouvelles variétés de café", "https://res.cloudinary.com/dcljc9muz/image/upload/c_fill,h_150,w_150/v1522885728/café2_mbn1tg.png"],
+  ["Des variétés de café", "https://res.cloudinary.com/dcljc9muz/image/upload/c_fill,h_150,w_150/v1522885728/café2_mbn1tg.png"],
   ["Des variétés de thés", "https://res.cloudinary.com/dcljc9muz/image/upload/c_fill,h_150,w_150/v1523829838/DSC_0015_hifvs0.png"],
   ["Des variétés de poivres", "https://res.cloudinary.com/dcljc9muz/image/upload/c_scale,h_150,q_auto:good/v1523828163/DSC_0007_fcfzai.png"],
   ["Des variétés d'épices","https://res.cloudinary.com/dcljc9muz/image/upload/c_fill,h_150,w_150/v1523828163/DSC_0008_pthpke.png"],
