@@ -16,7 +16,35 @@
       </div>
     </div>
   </div>
-  <div class="second-banner" id="pourquoilatribu">
+  <div class="third-banner text-center" id="commentcamarche">
+    <div class="container content-white">
+      <div class="row">
+        <div class="title">
+          <h1>COMMENT &Ccedil;A MARCHE ?</h1>
+        </div>
+        <div class="first-step col-sm-6 col-md-4">
+          <%=cl_image_tag("creezorange_boirh4.png", :secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>200, :height=>200, :crop=>"fill") %>
+          <h2>Créez</h2>
+          <h5>
+            Je m'inscrit pour suivre le projet. <br>
+            Je donne mon avis en ligne sur les futurs produits à développer. <br>
+            Je pré-commande mes produits en ligne. <br>
+          </p></h5>
+        </div>
+        <div class="second-step col-sm-6 col-md-4">
+          <%= cl_image_tag("apprenezorange_dgu34h.png", :secure => true, lass:"lazyload", :fetch_format=>:auto, :height=>200, :quality=>"auto:good", :width=>200, :crop=>"fill")%>
+          <h2>Apprenez</h2>
+          <h5>Je comprends comment mes produits sont fabriqués, de la graine à mes papilles,<br> grâce aux photos, vidéos et infographies en ligne.</h5>
+        </div>
+        <div class="third-step col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
+          <%= cl_image_tag("dégustezorange_oryffh.png",:secure => true, lass:"lazyload", :fetch_format=>:auto, :quality=>"auto", :width=>200, :height=>200,  :crop=>"fill") %>
+          <h2>Dégustez</h2>
+          <h5>Je reçois mes produits uniques et leurs fiches de dégustations directement chez moi !</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="second-banner" id="pourquoilatribu">
     <div class="container text-center content-white">
       <div class="title">
         <h1>POURQUOI LA TRIBU ?</h1>
@@ -26,33 +54,6 @@
           <h4>Il avait un goût spécial ce café, celui de la transparence, de la découverte d'un terroir et d'une communauté.<br></h4>
           <h4>En partageant ce café avec nos amis, nous avons réalisé que si l’histoire de sa découverte leur plaisait,<br> elle pourrait plaire à tout le monde. <br><h4> La Tribu était née ! </h4>
       </h4>
-    </div>
-  </div>
-  <div class="third-banner text-center" id="commentcamarche">
-    <div class="container content-white">
-      <div class="row">
-        <div class="title">
-          <h1>COMMENT &Ccedil;A MARCHE ?</h1>
-        </div>
-        <div class="first-step col-sm-6 col-md-4">
-          <%= cl_image_tag("apprenezorange_dgu34h.png", :secure => true, lass:"lazyload", :fetch_format=>:auto, :height=>200, :quality=>"auto:good", :width=>200, :crop=>"fill")%>
-          <h2>Apprenez</h2>
-          <h5>Je comprends comment mes produits sont fabriqués, de la graine à mes papilles,<br> grâce aux photos, vidéos et infographies en ligne.</h5>
-        </div>
-        <div class="second-step col-sm-6 col-md-4">
-          <%=cl_image_tag("creezorange_boirh4.png", :secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>200, :height=>200, :crop=>"fill") %>
-          <h2>Créez</h2>
-          <h5>
-            Je pré-commande mes produits en ligne. <br>
-            Je donne mon avis en ligne sur les futurs produits à développer. <br>
-            Je deviens actionnaire pour 1€. </p></h5>
-        </div>
-        <div class="third-step col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
-          <%= cl_image_tag("dégustezorange_oryffh.png",:secure => true, lass:"lazyload", :fetch_format=>:auto, :quality=>"auto", :width=>200, :height=>200,  :crop=>"fill") %>
-          <h2>Dégustez</h2>
-          <h5>Je reçois mes produits uniques et leurs fiches de dégustations directement chez moi !</h5>
-        </div>
-      </div>
     </div>
   </div>
   <div class="fourth-banner" id="carnetderoute">
@@ -200,7 +201,7 @@
     <div class="container text-center">
       <div class="content content-mob">
         <div class="title">
-          <h1>L'ÉQUIPE</h1>
+          <h1>UN PROJET COLLABORATIF</h1>
 
         </div>
         <div class="team">
@@ -211,7 +212,7 @@
           <h4>Nous partîmes cinq cents (enfin 2 😉) <br> mais par un prompt renfort,
             Nous nous vîmes trois mille en arrivant au port...<br><small style="font-style: italic; color:white">(Pierre Corneille)</small></h4>
         </div>
-        <h3>ILS NOUS SOUTIENNENT DANS NOTRE AVENTURE!</h3>
+        <h3>ILS SUIVENT NOTRE AVENTURE !</h3>
           <div class="followers">
             <ul class="list-inline">
             <li><%= cl_image_tag("romain_iogmvm.png",:secure => true,  class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Romain</p></li>
