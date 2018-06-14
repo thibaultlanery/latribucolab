@@ -68,7 +68,7 @@
    font-size: 16px;
   }
   img {
-    width: 200px;
+    width: 150px;
     border-radius: 50%;
     // box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
     border: 6px solid #F9D243;
@@ -241,7 +241,9 @@
 
 @media (max-width: 375px) {
 .title > h1 {
-  font-size: 30px;
+  font-size: 29px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
   .content-mob {
     background-color: #37bfc3 !important;
