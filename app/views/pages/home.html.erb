@@ -16,28 +16,24 @@
       </div>
     </div>
   </div>
+  <div class="container">
+    <div class="vote">
+      <ul class="list-inline text-center">
 
-<ul class="list-inline">
-  <% Category.all.each do |category| %>
-    <label>
-        <%= image_tag category.pictoname, {class: "img-rounded"} %>
-       <h5><%= category.name %></H5>
-    </label>
-  <% end %>
-</ul>
+        <% CategoryPreference.try.each do |category_preference| %>
+       <li>
+        <h1><%= CategoryPreference.try.index(category_preference) + 1 %></h1>
+        <label>
+            <%= image_tag category_preference[0].pictoname, {class: "img-rounded"} %>
+           <h5><%= category_preference[0].name %></H5>
 
-<ul class="list-inline">
-  <% CategoryPreference.try.each do |category_preference| %>
-    <label>
-        <%= image_tag category_preference[0].pictoname, {class: "img-rounded"} %>
-       <h5><%= category_preference[0].name %></H5>
-        <h5><%= category_preference[1]%></h5>
-    </label>
-  <% end %>
-</ul>
-
-
-
+            <h5><% category_preference[1]%></h5>
+        </label>
+      <% end %>
+      </li>
+      </ul>
+    </div>
+  </div>
   <div class="third-banner text-center" id="commentcamarche">
     <div class="container content-white">
       <div class="row">
