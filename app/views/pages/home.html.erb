@@ -16,6 +16,28 @@
       </div>
     </div>
   </div>
+
+<ul class="list-inline">
+  <% Category.all.each do |category| %>
+    <label>
+        <%= image_tag category.pictoname, {class: "img-rounded"} %>
+       <h5><%= category.name %></H5>
+    </label>
+  <% end %>
+</ul>
+
+<ul class="list-inline">
+  <% CategoryPreference.try.each do |category_preference| %>
+    <label>
+        <%= image_tag category_preference[0].pictoname, {class: "img-rounded"} %>
+       <h5><%= category_preference[0].name %></H5>
+        <h5><%= category_preference[1]%></h5>
+    </label>
+  <% end %>
+</ul>
+
+
+
   <div class="third-banner text-center" id="commentcamarche">
     <div class="container content-white">
       <div class="row">
@@ -43,7 +65,9 @@
         </div>
       </div>
     </div>
-  </div>
+
+
+
     <div class="second-banner" id="pourquoilatribu">
     <div class="container text-center content-white">
       <div class="title">

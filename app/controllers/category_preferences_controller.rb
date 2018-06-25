@@ -2,6 +2,7 @@ class CategoryPreferencesController < ApplicationController
 
 before_action :set_user, only: [:create]
 
+
 def create
   if current_user.category_preferences.present?
     flash[:alert] = 'vous avez déja voté'
