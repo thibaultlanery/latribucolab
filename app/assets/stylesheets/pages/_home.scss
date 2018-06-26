@@ -12,14 +12,14 @@
 }
 
 .content {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.25);
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
   letter-spacing: 1px;
-
-
+  color: white;
 }
+
 .first-banner {
   margin-top: 70px;
   display: flex;
@@ -54,7 +54,7 @@
 
 //video
 .youtubevideowrap {
-    width: 80%;
+    width: 90%;
     max-width: 640px;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -74,6 +74,7 @@
   left:0;
   width:100%;
   height:100%;
+  margin-top: 10px;
 }
 
 //fin video
@@ -96,7 +97,7 @@
    font-size: 16px;
   }
   img {
-    width: 150px;
+    width: 130px;
     border-radius: 50%;
     // box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
     border: 6px solid #F9D243;
@@ -193,8 +194,8 @@
 .icons {
   img {
   margin-top:10px;
-  max-width: 150px;
-  height:150px;
+  max-width: 130px;
+  height:130px;
   border-radius: 50%;
   // box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
   border: 6px solid #F9D243;
@@ -271,7 +272,7 @@
 }
   .voteresults {
     // margin-top: 20px;
-    color: #484848;
+    color: white;
   img{
     color:white;
     width: 100px !important;

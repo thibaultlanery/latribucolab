@@ -17,34 +17,37 @@
     </div>
   </div>
 
-<Div class="container content-white text-center">
+<Div class="container content text-center">
   <div class="row">
-    <div class="col-xs-6">
-
-  <div class="voteresults">
-    <div class="row">
-      <h2>TOP 4:</h2>
-      <h4>Les prochains produits choisis par la communauté.</h4>
-      <% CategoryPreference.try.first(4).each do |category_preference| %>
-        <div class="col-xs-6 col-md-3">
-          <h1><%= CategoryPreference.try.index(category_preference) + 1 %></h1>
-              <%= image_tag category_preference[0].pictoname%>
-              <h5><%= category_preference[0].name %></H5>
-              <h5><% category_preference[1]%></h5>
+    <div class="title">
+      <h1>ACTUALITÉS LA TRIBU </h1>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <div class="voteresults">
+        <div class="row">
+          <h4 style="color: red"> - EN LIVE - <h4><h4>Le Top 4 des produits choisis par la communauté </h4>
+          <% CategoryPreference.try.first(4).each do |category_preference| %>
+            <div class="col-xs-6 col-md-3">
+              <h1><%= CategoryPreference.try.index(category_preference) + 1 %></h1>
+                  <%= image_tag category_preference[0].pictoname, {class:"img-rounded"}%>
+                  <h5><%= category_preference[0].name %></H5>
+                  <h5><% category_preference[1]%></h5>
+              </div>
+            <% end %>
           </div>
-        <% end %>
+          <h3>Vous aussi votez ! <br> Suivez-nous  et donnez nous votre avis!</h3>
+        </div>
+      </div>
+    <div class="col-xs-12 col-md-6">
+     <h4>Notre premier épisode - Le projet </h4>
+      <div class="youtubevideowrap">
+        <div class="video-container">
+          <div class="container text-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PBb71QN6g2k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="col-xs-6">
-  <div class="youtubevideowrap">
-    <div class="video-container">
-      <div class="container text-center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/PBb71QN6g2k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-  </div>
   </div>
 </Div>
 
@@ -56,7 +59,7 @@
           <h1>COMMENT &Ccedil;A MARCHE ?</h1>
         </div>
         <div class="first-step col-sm-6 col-md-4">
-          <%=cl_image_tag("creezorange_boirh4.png", :secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>150, :height=>150, :crop=>"fill") %>
+          <%=cl_image_tag("creezorange_boirh4.png", :secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>130, :height=>130, :crop=>"fill") %>
           <h2>Créez</h2>
           <h5>
             Je m'inscris pour suivre le projet. <br>
@@ -65,12 +68,12 @@
           </p></h5>
         </div>
         <div class="second-step col-sm-6 col-md-4">
-          <%= cl_image_tag("apprenezorange_dgu34h.png", :secure => true, lass:"lazyload", :fetch_format=>:auto, :height=>150, :quality=>"auto:good", :width=>150, :crop=>"fill")%>
+          <%= cl_image_tag("apprenezorange_dgu34h.png", :secure => true, lass:"lazyload", :fetch_format=>:auto, :height=>130, :quality=>"auto:good", :width=>130, :crop=>"fill")%>
           <h2>Apprenez</h2>
           <h5>Je comprends comment mes produits sont fabriqués, de la graine à mes papilles,<br> grâce aux photos, vidéos et infographies en ligne.</h5>
         </div>
         <div class="third-step col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
-          <%= cl_image_tag("dégustezorange_oryffh.png",:secure => true, lass:"lazyload", :fetch_format=>:auto, :quality=>"auto", :width=>150, :height=>150,  :crop=>"fill") %>
+          <%= cl_image_tag("dégustezorange_oryffh.png",:secure => true, lass:"lazyload", :fetch_format=>:auto, :quality=>"auto", :width=>130, :height=>130,  :crop=>"fill") %>
           <h2>Dégustez</h2>
           <h5>Je reçois mes produits uniques et leurs fiches de dégustations directement chez moi !</h5>
         </div>
@@ -258,7 +261,7 @@
         </div>
 
           <div class="followers">
-            <h4> Ils sont des dizaines à participer à l'aventure ! Vous aussi rejoignez-nous et construisez la marque !</h4>
+            <h4>Au départ, l'aventure a démarré à deux. <br> Aujourd'hui, ils sont des dizaines à participer à l'aventure ! <br>Vous aussi rejoignez-nous et construisez la marque !</h4>
             <ul class="list-inline">
             <li><%= cl_image_tag("romain_iogmvm.png",:secure => true,  class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Romain</p></li>
             <li><%= cl_image_tag("dimitri_ivxt55.png",:secure => true,  class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)%><p>Dimitri</p></li>
