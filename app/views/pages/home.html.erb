@@ -17,6 +17,26 @@
     </div>
   </div>
 
+<Div class="container content-white text-center">
+  <div class="row">
+    <div class="col-xs-6">
+
+  <div class="voteresults">
+    <div class="row">
+      <h2>TOP 4:</h2>
+      <h4>Les prochains produits choisis par la communauté.</h4>
+      <% CategoryPreference.try.first(4).each do |category_preference| %>
+        <div class="col-xs-6 col-md-3">
+          <h1><%= CategoryPreference.try.index(category_preference) + 1 %></h1>
+              <%= image_tag category_preference[0].pictoname%>
+              <h5><%= category_preference[0].name %></H5>
+              <h5><% category_preference[1]%></h5>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-6">
   <div class="youtubevideowrap">
     <div class="video-container">
       <div class="container text-center">
@@ -24,7 +44,9 @@
       </div>
     </div>
   </div>
-
+  </div>
+  </div>
+</Div>
 
 
   <div class="third-banner text-center" id="commentcamarche">
@@ -57,22 +79,7 @@
   </div>
 
 
-<div class="container text-center">
-  <div class="voteresults">
-    <div class="row">
-      <h4>Nous interrogeons notre communauté pour la sélection des produits à développer en priorité.</h4>
-      <h2>Classement TOP 4:</h2>
-      <% CategoryPreference.try.first(4).each do |category_preference| %>
-        <div class="col-xs-6 col-md-3">
-          <h1><%= CategoryPreference.try.index(category_preference) + 1 %></h1>
-              <%= image_tag category_preference[0].pictoname%>
-              <h5><%= category_preference[0].name %></H5>
-              <h5><% category_preference[1]%></h5>
-          </div>
-        <% end %>
-      </div>
-    </div>
-  </div>
+
 
 
 
@@ -251,7 +258,7 @@
         </div>
 
           <div class="followers">
-            <h4> Ils sont des dizaines à participer à l'aventure ! Vous aussi rejoignez-nous et donnez-nous votre avis !</h4>
+            <h4> Ils sont des dizaines à participer à l'aventure ! Vous aussi rejoignez-nous et construisez la marque !</h4>
             <ul class="list-inline">
             <li><%= cl_image_tag("romain_iogmvm.png",:secure => true,  class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Romain</p></li>
             <li><%= cl_image_tag("dimitri_ivxt55.png",:secure => true,  class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)%><p>Dimitri</p></li>
