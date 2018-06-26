@@ -57,18 +57,25 @@
   </div>
 
 
-  <div class="second-banner" id="pourquoilatribu">
-    <div class="container text-center content-white">
-      <div class="title">
-        <h1>POURQUOI LA TRIBU ?</h1>
+<div class="container text-center">
+  <div class="voteresults">
+    <div class="row">
+      <h4>Nous interrogeons notre communauté pour la sélection des produits à développer en priorité.</h4>
+      <h2>Classement TOP 4:</h2>
+      <% CategoryPreference.try.first(4).each do |category_preference| %>
+        <div class="col-xs-6 col-md-3">
+          <h1><%= CategoryPreference.try.index(category_preference) + 1 %></h1>
+              <%= image_tag category_preference[0].pictoname%>
+              <h5><%= category_preference[0].name %></H5>
+              <h5><% category_preference[1]%></h5>
+          </div>
+        <% end %>
       </div>
-        <h4>La Tribu est née d’une découverte lors d’un voyage dans le Chiapas, au Mexique.<br></h4>
-          <h4>Un café bio de haute altitude, issu d’une coopérative équitable rencontrée à l’occasion, <br> qui nous fit découvrir les champs de caféiers.<br></h4>
-          <h4>Il avait un goût spécial ce café, celui de la transparence, de la découverte d'un terroir et d'une communauté.<br></h4>
-          <h4>En partageant ce café avec nos amis, nous avons réalisé que si l’histoire de sa découverte leur plaisait,<br> elle pourrait plaire à tout le monde. <br><h4> La Tribu était née ! </h4>
-      </h4>
     </div>
   </div>
+
+
+
 
   <div class="fourth-banner" id="carnetderoute">
     <div class="container content content-mob2">
@@ -214,7 +221,18 @@
    </div>
 
 
-
+  <div class="second-banner" id="pourquoilatribu">
+    <div class="container text-center content-white">
+      <div class="title">
+        <h1>POURQUOI LA TRIBU ?</h1>
+      </div>
+        <h4>La Tribu est née d’une découverte lors d’un voyage dans le Chiapas, au Mexique.<br></h4>
+          <h4>Un café bio de haute altitude, issu d’une coopérative équitable rencontrée à l’occasion, <br> qui nous fit découvrir les champs de caféiers.<br></h4>
+          <h4>Il avait un goût spécial ce café, celui de la transparence, de la découverte d'un terroir et d'une communauté.<br></h4>
+          <h4>En partageant ce café avec nos amis, nous avons réalisé que si l’histoire de sa découverte leur plaisait,<br> elle pourrait plaire à tout le monde. <br><h4> La Tribu était née ! </h4>
+      </h4>
+    </div>
+  </div>
 
 
   <div class="sixth-banner" id="equipe">
@@ -229,23 +247,11 @@
             <li><%= cl_image_tag("moi_caré_hq60uv.png", :secure => true, class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :effect=>"grayscale", :height=>120,:width=>120, :crop=>"scale") %><h4>Thibault</h4></li>
             <li><%= cl_image_tag("julien_nfwsg0.png", :secure => true, class:"lazyload", :effect=>"grayscale", :fetch_format=>:auto, :quality=>"auto", :height=>120, :width=>120, :crop=>"thumb") %><h4>Julien</h4></li>
           </ul>
-          <h4>Nous interrogeons notre communauté pour la sélection des produits à développer en priorité.</h4>
-          <h2>Classement TOP 4:</h2>
+
         </div>
-        <div class="voteresults">
-          <div class="row">
-            <% CategoryPreference.try.first(4).each do |category_preference| %>
-              <div class="col-xs-6 col-md-3">
-                <h1><%= CategoryPreference.try.index(category_preference) + 1 %></h1>
-                    <%= image_tag category_preference[0].pictoname%>
-                    <h5><%= category_preference[0].name %></H5>
-                    <h5><% category_preference[1]%></h5>
-                </div>
-              <% end %>
-            </div>
-          </div>
+
           <div class="followers">
-            <h4> Vous aussi, rejoignez les et donnez-nous votre avis !</h4>
+            <h4> Ils sont des dizaines à participer à l'aventure ! Vous aussi rejoignez-nous et donnez-nous votre avis !</h4>
             <ul class="list-inline">
             <li><%= cl_image_tag("romain_iogmvm.png",:secure => true,  class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Romain</p></li>
             <li><%= cl_image_tag("dimitri_ivxt55.png",:secure => true,  class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)%><p>Dimitri</p></li>
