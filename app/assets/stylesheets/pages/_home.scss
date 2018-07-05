@@ -31,7 +31,11 @@ font-family: 'Montserrat', sans-serif;
   }
 }
   .content-blue {
-  background: #2E4057;
+  //background: #2E4057;
+  //background: #086788;
+  //background: #087887;
+  //background: #0B98C6;
+  background:  #37bfc3;
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -203,7 +207,7 @@ font-family: 'Montserrat', sans-serif;
     font-style: italic;
     margin-right: auto;
     margin-left: auto;
-    width: 60%;
+    width: 70%;
     // color:#7FC199;
     color: #37bfc3;
     line-height: 20px;
@@ -219,7 +223,8 @@ font-family: 'Montserrat', sans-serif;
   height:130px;
   border-radius: 50%;
   // box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
-  border: 4px solid #F9D243;
+  //border: 4px solid #F9D243;
+  border: 4px solid #EF476F;
    // border: 2px solid #0B2C64;
   }
 }
@@ -287,10 +292,7 @@ font-family: 'Montserrat', sans-serif;
 
 }
   .voteresults {
-    // margin-top: 20px;
-    color: white;
   img{
-    color:white;
     width: 100px !important;
     height: 100px !important;
     object-fit: cover;
@@ -300,7 +302,7 @@ font-family: 'Montserrat', sans-serif;
 .desc {
   margin-right: auto;
   margin-left: auto;
-  width: 60%;
+  width: 80%;
 }
 
 @media (max-width: 375px) {
@@ -310,16 +312,13 @@ font-family: 'Montserrat', sans-serif;
   padding-left: 15px;
 }
 
-.voteresults {
-  color: #5F5F5F;
-}
   .content-mob {
     background-color: #37bfc3 !important;
+    //background-color: #087887;
     margin-top: 0px;
     margin-bottom: 0px;
-    h1 {
-      color: white;
-    }
+    padding:0px;
+    color: white;
   }
 
   .content-mob2 {
@@ -363,15 +362,14 @@ font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 
 }
-.fourth-banner, .second-banner {
+.fourth-banner {
 color: #484848;
 h1 h2 h3{
   color: #484848 !important;
 }
 h4 {
   line-height:25px;
-    font-size: 18px;
-    color: #484848;
+  font-size: 18px;
   }
 }
 #clockrow {
@@ -383,7 +381,6 @@ h4 {
 #clockdiv {
   font-size: 25px;
   letter-spacing: 1px;
-  color: #484848;
 }
 .card {
   margin-bottom: 20px;

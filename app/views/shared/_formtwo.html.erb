@@ -5,8 +5,10 @@
       <ul class="list-inline ">
         <li><%= f.input :name, required: true, placeholder: "Prénom", label: false %></li>
         <li><%= f.input :email, required: true,  placeholder: "Email", label: false%></li>
-        <li><%= f.button :submit, "JE VOTE", class: "btn btn-warning" %></li>
       </ul>
+    </div>
+    <div class="">
+      <%= f.button :submit, "JE VOTE", class: "btn btn-warning" %>
     </div>
   <% end %>
 </div>
