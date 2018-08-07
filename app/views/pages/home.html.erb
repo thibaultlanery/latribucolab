@@ -8,7 +8,7 @@
           <!-- <h1>VOS PRODUITS D'EPICERIE COMME SI VOUS Y ETIEZ!</h1> -->
           <h1>MIEUX CONSOMMER DÉMARRE LÀ-BAS</h1>
           <!-- <h3>Des produits d'épicerie bons, justes et développés ensembles!</h3> <br> -->
-          <h3>Des produits d'épicerie bons, justes et conçus ensemble !</h3> <br>
+          <h3>Des produits conçus ensemble qui nous rapprochent des producteurs!</h3> <br>
         </div>
         <%= render "shared/form" %>
       </div>
@@ -22,7 +22,7 @@
           <h4></h4>
         </div>
         <div class="col-xs-12 col-md-6">
-          <h3 style="color: #F9D243">- Vidéo -</h3><h4>la génèse</h4>
+          <h3 style="color: #F9D243">- En vidéo -</h3><h4>La génèse</h4>
           <div class="youtubevideowrap">
             <div class="video-container">
               <div class="container text-center">
@@ -47,7 +47,8 @@
               <% end %>
             </div>
             <div class="">
-              <h4>Vous aussi votez ! <br> Rejoignez-nous pour donner votre avis!</h4>
+              <h4>Rejoignez notre communauté</h4>
+              <h4>pour donner votre avis!</h4>
               <%= render "shared/formtwo" %>
             </div>
           </div>
@@ -91,8 +92,8 @@
         </div>
         <div class="desc text-justify">
           <h4>Mieux consommer démarre en comprenant ce que l'on consomme. <br>
-          Nous sommes donc partis 1 mois au Pérou à la rencontre de producteurs de Quinoa et de Café, nos premiers produits choisis par nos premiers membres.<br>
-          Munis de nos caméras, nous sommes allés leur poser nos questions pour tout comprendre. <br> En vidéos, photos, dossiers et articles, nous vous expliquons tout sur les coulisses de vos produits préférés.<br>
+          Nous sommes donc partis 1 mois au Pérou à la rencontre de producteurs de Quinoa et de Café, nos premiers produits choisis par nos premiers membres.
+          Munis de nos caméras, nous sommes allés leur poser nos questions pour tout comprendre. En vidéos, photos, dossiers et articles, nous vous expliquons tout sur les coulisses de vos produits préférés.
           Notre objectif est de développper ensemble nos gammes de produits et vous permettre de comprendre comment ils sont élaborés.</h4>
         </div>
       </div>
@@ -176,51 +177,40 @@
           <div class="title">
           <h1>DES PRODUITS JUSTES</h1>
           </div>
-          <div class="col-xs-12 col-md-4">
+          <div class="col-xs-12 col-md-3">
             <div class="icons">
               <%= cl_image_tag("icones rose/transparency_rose.jpg", :secure => true, class:"lazyload", :fetch_format=>:auto, :height=>150, :quality=>"auto:good", :crop=>"scale") %>
             </div>
             <div class="test">
-            <h2>Transparence</h2>
-            <p>De la coopérative à vos papilles, vous connaîtrez tout sur votre produit.</p>
+              <h2>Transparence</h2>
+              <p>De la coopérative à vos papilles, vous connaîtrez tout sur votre produit.</p>
             </div>
           </div>
-          <div class=" hidden-sm hidden-xs col-md-4">
-            <div class="doypack-multiple ">
-              <%= cl_image_tag("packaging__01_l1z20l.png", :secure => true, class:"lazyload", :width=>100,  id:"doy-1") %>
-              <%= cl_image_tag("packaging__01_l1z20l.png", :secure => true, class:"lazyload", :width=>100,   id:"doy-2") %>
-              <%= cl_image_tag("packaging__02_zb1k9z.png", :secure => true, class:"lazyload", :width=>100,  id:"doy-3") %>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4" >
+          <div class="col-xs-12 col-md-3" >
             <div class="icons">
               <%= cl_image_tag("icones rose/neutralité_carbone_rose.jpg", :secure => true, class:"lazyload", :height=>150, :quality=>"auto:good", :crop=>"scale")%>
             </div>
             <div class="test">
-            <h2>Neutralité carbone</h2>
-            <p>Nous plantons autant d’arbres que nécessaire pour compenser à 100% l’impact de notre activité.</p>
+              <h2>Neutralité carbone</h2>
+              <p>Nous plantons autant d’arbres que nécessaire pour compenser à 100% l’impact de notre activité.</p>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="col-xs-12 col-md-4 col-md-offset-1">
+          <div class="col-xs-12 col-md-3">
             <div class="icons">
               <%= cl_image_tag("icones rose/bio_rose.jpg", :secure => true, class:"lazyload", :fetch_format=>:auto, :height=>150, :quality=>"auto:good", :crop=>"scale") %>
             </div>
             <div class="test">
-            <h2>Agriculture biologique</h2>
-            <p>Nos produits sont issus d’exploitations pratiquant une agriculture biologique.</p>
+              <h2>Agriculture biologique</h2>
+              <p>Nos produits sont issus d’exploitations pratiquant une agriculture biologique.</p>
             </div>
           </div>
-          <div class="col-xs-12 col-md-4 col-md-offset-2" >
+          <div class="col-xs-12 col-md-3" >
             <div class="icons">
               <%= cl_image_tag("icones rose/handshake_rose.jpg",:secure => true, class:"lazyload", :height=>150, :quality=>"auto:good", :crop=>"scale") %>
             </div>
             <div class="test">
-            <h2>Commerce équitable</h2>
-            <p>Nos produits sont issus des filières équitables qui garantissent un revenu juste à nos producteurs.</p>
+              <h2>Commerce équitable</h2>
+              <p>Nos produits sont issus des filières équitables qui garantissent un revenu juste à nos producteurs.</p>
             </div>
           </div>
         </div>
@@ -235,9 +225,9 @@
         </div>
         <div class="desc text-justify">
           <h4>La Tribu est née de la découverte d'un café lors d’un voyage dans le Chiapas, au Mexique.<br>
-          Un café bio de haute altitude, issu d’une coopérative équitable rencontrée à l’occasion.<br>
-          Il avait un goût spécial ce café, celui de la transparence, de la découverte d'un terroir et d'une communauté.<br>
-          En voulant en ramener à nos amis, nous avons réalisé que si l’histoire de sa découverte leur plaisait,<br> elle pourrait plaire à tout le monde. <br> La Tribu était née ! </h4>
+          Un café bio de haute altitude, issu d’une coopérative équitable rencontrée à l’occasion.
+          Il avait un goût spécial ce café, celui de la transparence, de la découverte d'un terroir et d'une communauté.
+          En voulant en ramener à nos amis, nous avons réalisé que si l’histoire de sa découverte leur plaisait, elle pourrait plaire à tout le monde. La Tribu était née ! </h4>
         </div>
         <div class="team">
           <ul class= "list-inline">
@@ -246,7 +236,7 @@
           </ul>
         </div>
           <div class="followers">
-              <h4>Au départ, l'aventure a démarré à deux. <br> Aujourd'hui, ils sont des dizaines à participer à l'aventure ! <br>Vous aussi rejoignez-nous et construisez la marque !</h4>
+              <h4>Au départ, l'aventure a démarré à deux. <br> Aujourd'hui, ils sont presque 400 à participer à l'aventure ! <br>Vous aussi rejoignez-nous et construisez la marque !</h4>
             <ul class="list-inline">
             <li><%= cl_image_tag("romain_iogmvm.png",:secure => true,  class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><p>Romain</p></li>
             <li><%= cl_image_tag("dimitri_ivxt55.png",:secure => true,  class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)%><p>Dimitri</p></li>
