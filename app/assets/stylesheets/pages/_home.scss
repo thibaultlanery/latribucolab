@@ -154,6 +154,19 @@ font-family: 'Montserrat', sans-serif;
   width:100%;
   }
 }
+
+.container-carnet-img {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10px;
+}
+.carnet-img {
+  width: 160px;
+  height: 160px;
+}
+
 .card-title {
   width: 100%;
   p { margin: 0;
@@ -380,6 +393,7 @@ h4 {
   font-size: 18px;
   }
 }
+
 #clockrow {
     margin-bottom: 30px;
     margin-left: 0px;
