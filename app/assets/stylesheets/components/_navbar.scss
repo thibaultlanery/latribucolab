@@ -10,25 +10,27 @@
   // font-family: 'Poppins', sans-serif;
   //font-family: 'Fira Sans', sans-serif;
   font-family: 'Montserrat', sans-serif;
-  transition: 0.5s background-color ease;
+  // transition: 0.5s background-color ease;
   height: 80px;
   padding: 0px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #37bfc3;
+
 }
 
 
-.navbar-wagon-white {
+// .navbar-wagon-white {
 
-  // background-color:#F4D35E;
-  // background-color:#F9D243;
-   // background-color:#454E9E;
-   // background-color:  #083D77 ;
-   // background-color: #7FC199;
-   background-color: #37bfc3;
-  color: white !important;
-}
+//   // background-color:#F4D35E;
+//   // background-color:#F9D243;
+//    // background-color:#454E9E;
+//    // background-color:  #083D77 ;
+//    // background-color: #7FC199;
+//    background-color: #37bfc3;
+//   color: white !important;
+// }
 
 /* Logo */
 .navbar-wagon-brand img {
@@ -44,6 +46,7 @@
 
 /* Right section */
 .navbar-wagon-right {
+
   width: 90%;
   display: flex;
   align-items: center;
@@ -58,7 +61,7 @@
 
 /* Navbar link */
 .navbar-wagon-link {
-  color:white;
+  color: white !important;
   font-size: 16px;
 }
 
