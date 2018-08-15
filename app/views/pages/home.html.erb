@@ -195,7 +195,53 @@
           </div>
         </div>
 
-  <div class="second-banner">
+
+
+
+
+
+
+
+
+
+
+
+  <div class="seventh-banner" id="equipe">
+    <div class="container text-center">
+      <div class="content-mob">
+        <div class="voteresults col-sm-6">
+          <div class="row">
+            <h4>Le Top 4 des produits choisis par la communauté</h4>
+            <h4>(votes ouverts depuis le 21 mai 2018)</h4>
+               <% CategoryPreference.try.first(4).each do |category_preference| %>
+              <div class="col-xs-6 col-md-3">
+                <h2><%= CategoryPreference.try.index(category_preference) + 1 %></h2>
+                <%= image_tag category_preference[0].pictoname, {class:"img-rounded"}%>
+                <h5><%= category_preference[0].name %></H5>
+                <h5><% category_preference[1]%></h5>
+              </div>
+            <% end %>
+          </div>
+        </div>
+        <div class="team col-sm-6">
+          <ul class= "list-inline">
+            <li><%= cl_image_tag("moi_caré_hq60uv.png", :secure => true, class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :effect=>"grayscale", :height=>120,:width=>120, :crop=>"scale") %><h4>Thibault</h4></li>
+            <li><%= cl_image_tag("julien_nfwsg0.png", :secure => true, class:"lazyload", :effect=>"grayscale", :fetch_format=>:auto, :quality=>"auto", :height=>120, :width=>120, :crop=>"thumb") %><h4>Julien</h4></li>
+          </ul>
+        </div>
+        <div class="">
+          <h4>Rejoignez notre communauté</h4>
+          <h4>pour donner votre avis!</h4>
+          <%= render "shared/formtwo" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+ <div class="second-banner">
     <div class="container content-mob text-center" id="actualites">
       <div class="row">
         <div class="title">
@@ -212,58 +258,9 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-md-6">
-          <div class="voteresults">
-            <div class="row">
-              <h3 style="color: #F9D243"> - En live - </h3>
-              <h4>Le Top 4 des produits choisis par la communauté</h4>
-              <h4>(votes ouverts depuis le 21 mai 2018)</h4>
-                 <% CategoryPreference.try.first(4).each do |category_preference| %>
-                <div class="col-xs-6 col-md-3">
-                  <h2><%= CategoryPreference.try.index(category_preference) + 1 %></h2>
-                  <%= image_tag category_preference[0].pictoname, {class:"img-rounded"}%>
-                  <h5><%= category_preference[0].name %></H5>
-                  <h5><% category_preference[1]%></h5>
-                </div>
-              <% end %>
-            </div>
-            <div class="">
-              <h4>Rejoignez notre communauté</h4>
-              <h4>pour donner votre avis!</h4>
-              <%= render "shared/formtwo" %>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-  <div class="seventh-banner" id="equipe">
-    <div class="container text-center">
-      <div class="content-blue content-mob">
-        <div class="team">
-          <ul class= "list-inline">
-            <li><%= cl_image_tag("moi_caré_hq60uv.png", :secure => true, class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :effect=>"grayscale", :height=>120,:width=>120, :crop=>"scale") %><h4>Thibault</h4></li>
-            <li><%= cl_image_tag("julien_nfwsg0.png", :secure => true, class:"lazyload", :effect=>"grayscale", :fetch_format=>:auto, :quality=>"auto", :height=>120, :width=>120, :crop=>"thumb") %><h4>Julien</h4></li>
-          </ul>
-        </div>
-          <div class="">
-            <%= render "shared/form" %>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 <%= render "shared/footer" %>
 
