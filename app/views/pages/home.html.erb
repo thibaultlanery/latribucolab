@@ -17,11 +17,11 @@
     </div>
   </div>
 
-  <div class="fourth-banner" id="carnetderoute">
+  <div class="fourth-banner" id="nosproduits">
     <div class="container content content-mob">
       <div class="row">
         <div class="title text-center">
-          <h1>NOS PREMIERS PRODUITS</h1>
+          <h1>Nos premiers produits</h1>
           <h3>Des produits conçus ensemble qui nous rapprochent des producteurs!</h3>
         </div>
       </div>
@@ -75,12 +75,12 @@
     </div>
   </div>
 
-  <div class="fifth-banner text-center" id="cahierdescharges">
+  <div class="fifth-banner text-center" id="nosvaleurs">
     <div class="container content-white">
       <div class="row">
         <div class="col-md-12">
           <div class="title">
-          <h1>NOS VALEURS</h1>
+          <h1>Nos valeurs</h1>
           <h3>Nous visitons directement nos producteurs bio et commerce équitable, et t'expliquons tout sur nos produits.</h3>
           </div>
           <div class="col-xs-12 col-md-3">
@@ -128,7 +128,7 @@
     <div class="container content-white">
       <div class="row">
         <div class="title">
-          <h1>UNE MARQUE COLLABORATIVE ?</h1>
+          <h1>Une marque collaborative?</h1>
         </div>
         <div class="first-step col-sm-6 col-md-4">
           <%=cl_image_tag("creez_vert_r6bwsi.jpg", :secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>130, :height=>130, :crop=>"fill") %>
@@ -155,14 +155,19 @@
 
 <Div class="lancement">
   <div class="container text-center">
+    <div class="title">
+      <h1>Lancement imminent !</h1>
+    </div>
     <div class="row">
       <div class="col-md-6">
         <div class="lancement-expl">
           <div class="txt">
-            <h1>LANCEMENT IMMINENT</h1>
-            <p>Nous lançons une campagne de financement participatif pour vendre notre première gamme de produits le 1er Octobre 🚀. </p>
-            <p>Vos commandes nous permettront de nous approvisionner, puis transformer et empaqueter les produits avec l'aide d'une PME française, et de l'ESAT du Havre. </p>
-            <p>Bien entendu, nous vous livrerons à domicile !</p>
+              <p>Nous lançons une campagne de financement participatif pour vendre notre première gamme de produits le 1er Octobre 🚀. </p>
+              <p>Vos commandes nous permettront de nous approvisionner, puis transformer et empaqueter les produits avec l'aide d'une PME française, et de l'ESAT du Havre. </p>
+              <p>Bien entendu, nous vous livrerons à domicile !</p>
+            <div class="">
+            <%= render "shared/formthree" %>
+            </div>
           </div>
         </div>
       </div>
@@ -195,98 +200,112 @@
   </div>
 </Div>
 
-        <div class="container hidden-xs">
-          <div class="row">
-            <div class="container-carnet-img">
-              <div class="carnet-img">
-                  <%= cl_image_tag("instagram-noirtxt_hzeqiu.png",:secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>160, :height=>160, :crop=>"fill") %>
-                </div>
-                <div class="carnet-img">
-                <%= cl_image_tag("Interview_producteur_pe8xgz.jpg",:secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>160, :height=>160, :crop=>"fill")%>
-                </div>
-                <div class="carnet-img">
-                <%= cl_image_tag("Café_rojo_3_va8cr2.jpg",:secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>160, :height=>160, :crop=>"fill")%>
-                </div>
-                <div class="carnet-img">
-                  <%= cl_image_tag("Macro_plant_quinoa_3_gmv5fe.jpg",:secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>160, :height=>160, :crop=>"fill") %>
-                </div>
-                <div class="carnet-img">
-                  <%= cl_image_tag("Bons_touristes_aj58ke.jpg",:secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>160, :height=>160, :crop=>"fill") %>
-                </div>
-                <div class="carnet-img">
-                  <%= cl_image_tag("Producteurs_Nous_z2s5zy.jpg",:secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>160, :height=>160, :crop=>"fill") %>
-                </div>
-            </div>
+<div class="comprendre text-center">
+  <div class="container">
+    <div class="title">
+      <h1>Tout comprendre sur nos produits</h1>
+      <h3>Comprendre la fabrication de nos produits de  A à Z</h3>
+    </div>
+     <div class="comprendre-image">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <%= cl_image_tag("la_recolte_wj0apj.png",:secure => true, lass:"lazyload", :fetch_format=>:auto, :quality=>"auto", :height=>250, :width=> 298,  :crop=>"scale") %>
+            <p>Des vidéos qui vous expliquent les étapes de la fabrication de nos produits, filmés par nos soins, surplace.</p>
           </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="seventh-banner" id="equipe">
-    <div class="container text-center">
-      <div class="content-mob">
-        <div class="voteresults col-sm-6">
-          <div class="row">
-            <h4>Le Top 4 des produits choisis par la communauté</h4>
-            <h4>(votes ouverts depuis le 21 mai 2018)</h4>
-               <% CategoryPreference.try.first(4).each do |category_preference| %>
-              <div class="col-xs-6 col-md-3">
-                <h2><%= CategoryPreference.try.index(category_preference) + 1 %></h2>
-                <%= image_tag category_preference[0].pictoname, {class:"img-rounded"}%>
-                <h5><%= category_preference[0].name %></H5>
-                <h5><% category_preference[1]%></h5>
-              </div>
-            <% end %>
+          <div class="col-md-4">
+            <%= cl_image_tag("La_récolte_V4_Facebook_ceezzu.png", :height=>250, :width=> 298, :secure => true, lass:"lazyload", :fetch_format=>:auto, :quality=>"auto", :crop=>"scale") %>
+            <p>Nous mettons à disposition des plus curieux des dossiers écrits pour approfondissent ces sujets.</p>
           </div>
-        </div>
-        <div class="team col-sm-6">
-          <ul class= "list-inline">
-            <li><%= cl_image_tag("moi_caré_hq60uv.png", :secure => true, class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :effect=>"grayscale", :height=>120,:width=>120, :crop=>"scale") %><h4>Thibault</h4></li>
-            <li><%= cl_image_tag("julien_nfwsg0.png", :secure => true, class:"lazyload", :effect=>"grayscale", :fetch_format=>:auto, :quality=>"auto", :height=>120, :width=>120, :crop=>"thumb") %><h4>Julien</h4></li>
-          </ul>
-        </div>
-        <div class="">
-          <h4>Rejoignez notre communauté</h4>
-          <h4>pour donner votre avis!</h4>
-          <%= render "shared/formtwo" %>
+          <div class="col-md-4">
+            <%= cl_image_tag("Album_1_-_Lac_Titicaca_1_p2emfv.png",:secure => true, lass:"lazyload", :fetch_format=>:auto, :quality=>"auto", :height=>250, :width=> 298, :crop=>"scale") %>
+            <p>En 3.600km de découverte au Pérou, nous avons vu des sites extraordinaire. À découvrir en photos.</p>
+          <div class="btn-medium-pink" id="apprendre">
+           Apprendre des choses
+          </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+<div class="instagram">
+  <div class="container hidden-xs">
+    <div class="row">
+      <div class="container-carnet-img">
+        <div class="carnet-img">
+            <%= cl_image_tag("instagram-noirtxt_hzeqiu.png",:secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>160, :height=>160, :crop=>"fill") %>
+          </div>
+          <div class="carnet-img">
+          <%= cl_image_tag("Interview_producteur_pe8xgz.jpg",:secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>160, :height=>160, :crop=>"fill")%>
+          </div>
+          <div class="carnet-img">
+          <%= cl_image_tag("Café_rojo_3_va8cr2.jpg",:secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>160, :height=>160, :crop=>"fill")%>
+          </div>
+          <div class="carnet-img">
+            <%= cl_image_tag("Macro_plant_quinoa_3_gmv5fe.jpg",:secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>160, :height=>160, :crop=>"fill") %>
+          </div>
+          <div class="carnet-img">
+            <%= cl_image_tag("Bons_touristes_aj58ke.jpg",:secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>160, :height=>160, :crop=>"fill") %>
+          </div>
+          <div class="carnet-img">
+            <%= cl_image_tag("Producteurs_Nous_z2s5zy.jpg",:secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>160, :height=>160, :crop=>"fill") %>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="seventh-banner" id="equipe">
+      <div class="container text-center">
+        <div class="content-mob">
+          <div class="title">
+            <h1>Votez !</h1>
+          </div>
+          <div class="voteresults col-sm-6">
+            <div class="row">
+              <h4>Le Top 4 des produits choisis par la communauté</h4>
+              <h4>(votes ouverts depuis le 21 mai 2018)</h4>
+                 <% CategoryPreference.try.first(4).each do |category_preference| %>
+                <div class="col-xs-6 col-md-3">
+                  <h2><%= CategoryPreference.try.index(category_preference) + 1 %></h2>
+                  <%= image_tag category_preference[0].pictoname, {class:"img-rounded"}%>
+                  <h5><%= category_preference[0].name %></H5>
+                  <h5><% category_preference[1]%></h5>
+                </div>
+              <% end %>
+            </div>
+          </div>
+          <div class="team col-sm-6">
+            <ul class= "list-inline">
+              <li><%= cl_image_tag("moi_caré_hq60uv.png", :secure => true, class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :effect=>"grayscale", :height=>120,:width=>120, :crop=>"scale") %><h4>Thibault</h4></li>
+              <li><%= cl_image_tag("julien_nfwsg0.png", :secure => true, class:"lazyload", :effect=>"grayscale", :fetch_format=>:auto, :quality=>"auto", :height=>120, :width=>120, :crop=>"thumb") %><h4>Julien</h4></li>
+            </ul>
+          </div>
+          <div class="">
+            <h4>Rejoignez notre communauté</h4>
+            <h4>pour donner votre avis!</h4>
+            <%= render "shared/formtwo" %>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
 </div>
 
- <div class="second-banner">
-    <div class="container content-mob text-center" id="actualites">
-      <div class="row">
-        <div class="title">
-          <h1>DÉCOUVREZ LE PROJET </h1>
-          <h4></h4>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <h3 style="color: #F9D243">- En vidéo -</h3><h4>La genèse</h4>
-          <div class="youtubevideowrap">
-            <div class="video-container">
-              <div class="container text-center">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/PBb71QN6g2k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
 <%= render "shared/footer" %>
 

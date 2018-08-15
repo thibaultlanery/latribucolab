@@ -151,11 +151,19 @@ font-family: 'Montserrat', sans-serif;
   }
 }
 
-.lancement {
+.comprendre {
+  min-height: 380px;
+  background-color: #37bfc3;
+  color: white;
+}
 
+#apprendre {
+  margin-right: auto;
+  margin-left: auto;
+  display: flow-root;
 }
 .lancement-expl {
-  min-height: 300px;
+  min-height: 380px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -167,16 +175,21 @@ font-family: 'Montserrat', sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
   background-position:center center;
-  min-height: 300px;
+  min-height: 370px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+.instagram {
+min-height: 380px;
+
+}
 .container-carnet-img {
   display: flex;
   justify-content: space-around;
-
+  align-items: center;
+  min-height: 380px;
   margin-bottom: 10px;
 }
 .carnet-img {
