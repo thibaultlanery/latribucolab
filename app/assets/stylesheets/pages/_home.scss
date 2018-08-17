@@ -135,6 +135,7 @@ font-family: 'Montserrat', sans-serif;
   }
 }
 .fourth-banner {
+  min-height: 600px;
   color:white;
   padding-bottom: 30px;
   h4 {
@@ -199,33 +200,35 @@ min-height: 380px;
 //card
 //flip
 .scene {
-  perspective: 600px;
+ -webkit-perspective: 600;
+  perspective: 600;
 }
 .card {
   position: relative;
-  transition: transform 0.5s;
-  transform-style: preserve-3d;
+  -webkit-transition: 0.7s all ease-in-out;
+  transition: 0.7s all ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d
 }
-.card__face {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  backface-visibility: hidden;
+
+.card:hover {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg)
 }
 
 .card__face--front {
-  background: red;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .card__face--back {
-  background: blue;
-  transform: rotateY( 180deg );
-}
-
-.card.is-flipped {
+  position: absolute;
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-//flip
+
+//endflip
 .card-title {
   width: 100%;
   p { margin: 0;
@@ -316,28 +319,7 @@ min-height: 380px;
   opacity:0.9;
   padding: 10px;
 }
-.doypack-multiple {
-  position: relative;
-  margin-top: 144px;
-  img{
-    max-width:100px;
-  }
-}
-#doy-1 {
-  position: absolute;
-  top: 23px;
-  left: 60px;
-}
-#doy-2 {
-  position: absolute;
-  top: 23px;
-  left: 180px;
-}
-#doy-3 {
-  position: absolute;
-  top: 143px;
-  left: 125px;
-}
+
 
 .title{
   margin-bottom: 25px;
