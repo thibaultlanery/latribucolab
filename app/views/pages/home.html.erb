@@ -27,24 +27,31 @@
       </div>
       <div class="row">
         <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-1">
-          <div class="card" id="card">
-            <div class="frisette">
-              <%= cl_image_tag("frisette_o05m8g.png",:secure => true, class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :width =>18) %>
-            </div>
-            <div class="card-title text-center">
-              <p id="cafe-title">CAFE</p>
-              <p id="cafe-brand">SANCHIRIO PALOMAR</p>
-            </div>
-            <div class="ambiance-grain">
-            </div>
-            <div class="doypack-quinoa ">
-              <div class="doypack">
-                <%= cl_image_tag("packaging__02_zb1k9z.png", :secure => true, class:"lazyload", :fetch_format=>:auto,:width=>90, :quality=>"auto",) %>
+          <div class="scene">
+            <div class="card" id="card">
+              <div class="card__face card__face--front">
+                <div class="frisette">
+                  <%= cl_image_tag("frisette_o05m8g.png",:secure => true, class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :width =>18) %>
+                </div>
+                <div class="card-title text-center">
+                  <p id="cafe-title">CAFE</p>
+                  <p id="cafe-brand">SANCHIRIO PALOMAR</p>
+                </div>
+                <div class="ambiance-grain">
+                </div>
+                <div class="doypack-quinoa ">
+                  <div class="doypack">
+                    <%= cl_image_tag("packaging__02_zb1k9z.png", :secure => true, class:"lazyload", :fetch_format=>:auto,:width=>90, :quality=>"auto",) %>
+                  </div>
+                 </div>
+                <div class="description">
+                  <p><strong>Coopérative El Palomar </strong> <br>
+                  Découvrez les secrets d’un café de haute altitude, réputé pour son goût unique, cultivé sans pesticides et suspendu aux pentes de la Cordillère.</p>
+                </div>
               </div>
-             </div>
-            <div class="description">
-              <p><strong>Coopérative El Palomar </strong> <br>
-              Découvrez les secrets d’un café de haute altitude, réputé pour son goût unique, cultivé sans pesticides et suspendu aux pentes de la Cordillère.</p>
+              <div class="card__face card__face--back">
+                <h1>OK</h1>
+              </div>
             </div>
           </div>
         </div>

@@ -196,7 +196,36 @@ min-height: 380px;
   width: 160px;
   height: 160px;
 }
+//card
+//flip
+.scene {
+  perspective: 600px;
+}
+.card {
+  position: relative;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+.card__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
 
+.card__face--front {
+  background: red;
+}
+
+.card__face--back {
+  background: blue;
+  transform: rotateY( 180deg );
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+//flip
 .card-title {
   width: 100%;
   p { margin: 0;
@@ -250,6 +279,9 @@ min-height: 380px;
     margin: 0;
   }
  }
+
+//endofcard
+
 .fifth-banner {
   // background-color:white;
   // color:  #5F5F5F;
