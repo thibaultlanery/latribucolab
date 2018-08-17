@@ -1,4 +1,5 @@
 <%= render "shared/navbar" %>
+<div class="wrapper">
   <div class="first-banner">
     <div class="container">
       <div class="first-banner-content text-center">
@@ -14,19 +15,21 @@
       </div>
     </div>
   </div>
-  <div class="fourth-banner" id="nosproduits">
-    <div class="container content content-mob">
+  <div class="essaiflipcard">
+    <div class="container">
       <div class="row">
-        <div class="title text-center">
-          <h1>Nos premiers produits</h1>
-          <h3>Des produits conçus ensemble qui nous rapprochent des producteurs!</h3>
+        <div class="col-xs-12">
+          <div class="title text-center">
+            <h1>Nos premiers produits</h1>
+            <h3>Des produits conçus ensemble qui nous rapprochent des producteurs!</h3>
+          </div>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-1">
-          <div class="scene">
-            <div class="card" id="card">
-              <div class="card__face card__face--front">
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
                 <div class="frisette">
                   <%= cl_image_tag("frisette_o05m8g.png",:secure => true, class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :width =>18) %>
                 </div>
@@ -40,13 +43,13 @@
                   <div class="doypack">
                     <%= cl_image_tag("packaging__02_zb1k9z.png", :secure => true, class:"lazyload", :fetch_format=>:auto,:width=>90, :quality=>"auto",) %>
                   </div>
-                 </div>
+                </div>
                 <div class="description">
                   <p><strong>Coopérative El Palomar </strong> <br>
                   Découvrez les secrets d’un café de haute altitude, réputé pour son goût unique, cultivé sans pesticides et suspendu aux pentes de la Cordillère.</p>
                 </div>
               </div>
-              <div class="card__face card__face--back">
+              <div class="back">
                 <h4>Coopérative: C.A.F.E Sanchirio Palomar</h4>
                 <h4>Nombre de producteurs: 175</h4>
                 <h4>Méthode de culture: café d’ombre biologique</h4>
@@ -60,17 +63,17 @@
           </div>
         </div>
         <div class="col-xs-12 col-sm-5 col-md-offset-2 col-md-4">
-          <div class="scene">
-            <div class="card" id="card">
-              <div class="card__face card__face--front">
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
                 <div class="frisette">
                   <%= cl_image_tag("frisettequinoa_aow4tb.png", :secure => true, class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :width =>18) %>
                 </div>
-                 <div class="card-title text-center">
-                  <p id="quinoa-title" >QUINOA</p>
-                  <p id="quinoa-brand">LOS CHANKAS</p>
+                <div class="card-title text-center">
+                <p id="quinoa-title" >QUINOA</p>
+                <p id="quinoa-brand">LOS CHANKAS</p>
                 </div>
-                 <div class="ambiance-grain-quin">
+                <div class="ambiance-grain-quin">
                 </div>
                 <div class="doypack-quinoa ">
                   <div class="doypack">
@@ -79,10 +82,10 @@
                 </div>
                 <div class="description">
                   <p><strong> Coopérative Los Chankas</strong> <br>
-                  Nous allons comprendre comment se cultive la mythique quinoa, sur les hauts plateaux d'Andahuaylas où se pratique l'agriculture bio depuis des millénaires.</p>
+                    Nous allons comprendre comment se cultive la mythique quinoa, sur les hauts plateaux d'Andahuaylas où se pratique l'agriculture bio depuis des millénaires.</p>
                 </div>
               </div>
-              <div class="card__face card__face--back">
+              <div class="back">
                 <h4>Coopérative: COOPERATIVA AGRARIA LOS CHANKAS</h4>
                 <h4>Nombre de producteurs: 350</h4>
                 <h4>Altitude: 3 300 à 3 800 m d’altitude</h4>
@@ -173,10 +176,10 @@
     </div>
   </div>
   <div class="lancement">
-  <div class="container text-center">
-    <div class="title">
-      <h1>Lancement imminent !</h1>
-    </div>
+    <div class="container text-center">
+      <div class="title">
+        <h1>Lancement imminent !</h1>
+      </div>
     <div class="row">
       <div class="col-md-6">
         <div class="lancement-expl">
@@ -215,8 +218,8 @@
             </div>
           </div>
         </div>
+      </div>
     </div>
-  </div>
   </div>
   <div class="comprendre text-center">
     <div class="container">
@@ -307,5 +310,6 @@
       </div>
     </div>
   </div>
+</div>
 <%= render "shared/footer" %>
 
