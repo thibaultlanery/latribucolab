@@ -1,3 +1,23 @@
+.scrollmenu {
+    overflow: scroll;
+    white-space: nowrap;
+    // margin-top: 10px;
+    // margin-bottom: -7px;
+    padding: 10px;
+    background-color: #F5F5F5;
+}
+
+.scrollmenu .item {
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
 .wrapper {
   h5 {
     font-size: 15px;
@@ -134,22 +154,22 @@ font-family: 'Montserrat', sans-serif;
      // border: 2px solid #0B2C64;
   }
 }
-.fourth-banner {
-  min-height: 700px;
-  padding-bottom: 30px;
-  h4 {
-     line-height: 25px;
-      font-size: 16px;
-      letter-spacing: 1.7px;
-  }
+// .fourth-banner {
+//   min-height: 700px;
+//   padding-bottom: 30px;
+//   h4 {
+//      line-height: 25px;
+//       font-size: 16px;
+//       letter-spacing: 1.7px;
+//   }
 
-  h2 {
-    margin-bottom: 15px;
-  }
-  img {
-  width:100%;
-  }
-}
+//   h2 {
+//     margin-bottom: 15px;
+//   }
+//   img {
+//   width:100%;
+//   }
+// }
 
 .comprendre {
   min-height: 380px;
@@ -257,6 +277,7 @@ min-height: 380px;
 // }
  //essai flip 2
 
+
  .card {
   position: relative;
   height: 480px;
@@ -323,7 +344,11 @@ Front of the card styels
 }
 
 //endofessai2
-
+.frisette{
+  img {
+    width: 100%;
+  }
+}
 .card-title {
   width: 100%;
   p { margin: 0;
@@ -436,6 +461,29 @@ Front of the card styels
 
 
 @media (max-width: 375px) {
+
+.container {
+  padding-left: 35px !important;
+  padding-right: 35px !important;
+}
+
+  .comprendre-image {
+    img{
+    width: 250px;
+    height: 225px;
+    }
+  }
+
+  .instagram {
+   min-height: 170px;
+
+  }
+.carnet-img {
+  margin-left: 10px;
+}
+.container-carnet-img {
+min-height: 170px;
+}
 .title > h1 {
   font-size: 25px;
   padding-right: 15px;
@@ -475,12 +523,12 @@ Front of the card styels
   }
   .punchline {
     h1 {
-      font-size: 35px;
+      font-size: 29px;
       line-height: 1.3;
     };
     h3 {
       line-height: 1.6;
-      font-size: 22px;
+      font-size: 18px;
     };
   }
 
