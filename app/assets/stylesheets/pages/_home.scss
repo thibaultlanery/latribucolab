@@ -1,26 +1,6 @@
-.scrollmenu {
-    overflow: scroll;
-    white-space: nowrap;
-    // margin-top: 10px;
-    // margin-bottom: -7px;
-    padding: 10px;
-    background-color: #F5F5F5;
-}
-
-.scrollmenu .item {
-  display: inline-block;
-}
-
-
-
-
-
-
-
-
-.wrapper {
+.wrapper-home {
   h5 {
-    font-size: 15px;
+    font-size: 16px;
   }
 //font-family: 'Poppins', sans-serif;
 //font-family: 'Encode Sans Condensed', sans-serif;
@@ -30,43 +10,25 @@
 // font-family: 'Encode Sans Semi Expanded', sans-serif;
 //font-family: 'Fira Sans', sans-serif;
 font-family: 'Montserrat', sans-serif;
-//font-family: 'Open Sans', sans-serif;
+
+h1 {
+font-weight: 700;
+}
 // font-family: 'Josefin Sans', sans-serif;
 }
 
-
-.content-white {
-  background-color: white;
-  padding: 20px;
-  color: #484848 !important;
-  margin-bottom: 20px;
+.grey {
+  color: #484848;
 }
 
-.content {
-  color: black;
-  padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
-  h4 {
-    font-size: 20px;
+.title{
+  margin-bottom: 25px;
+  h1 {
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
   }
 }
-  .content-blue {
-  //background: #2E4057;
-  //background: #086788;
-  //background: #087887;
-  //background: #0B98C6;
-  background:  #37bfc3;
-  padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
-  color: white;
-  h4 {
-    font-size: 20px;
-    }
-  }
 
 .first-banner {
   background-image: radial-gradient(ellipse at center, rgba(0,50,70,0.2) 40%,rgba(0,50,70,0.2) 100%), url('https://res.cloudinary.com/dcljc9muz/image/upload/f_auto,c_scale,q_auto:best,w_1500/v1532032555/Producteurs_Nous_z2s5zy.jpg') ;
@@ -82,15 +44,7 @@ font-family: 'Montserrat', sans-serif;
   align-items: center;
   color: white;
   min-height: 100vh;
-   letter-spacing: 1px;
-
-   h1{
-    letter-spacing: 2px;
-    font-size: 44px;
-    }
-  // .list-inline>li{
-  //   width: 25%;
-  // }
+  letter-spacing: 1px;
   }
 
   .form-control {
@@ -101,51 +55,7 @@ font-family: 'Montserrat', sans-serif;
     margin-top: 50px;
   }
 
-
-//video
-.youtubevideowrap {
-    width: 90%;
-    max-width: 640px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
-.video-container {
-  position:relative;
-  padding-bottom:56.25%;
-  padding-top:30px;
-  height:0;
-  overflow:hidden;
-}
-
-.video-container iframe, .video-container object, .video-container embed {
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  margin-top: 10px;
-}
-
-//fin video
-
-.sixth-banner {
-  // color: #484848;
-   margin-top: 25px;
-
-  h4 {
-    line-height:30px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-.third-banner {
-  color: #484848;
-
-  h5 {
-   line-height:25px;
-   font-size: 16px;
-  }
+.fourth-banner {
   img {
     width: 130px;
     border-radius: 50%;
@@ -154,24 +64,9 @@ font-family: 'Montserrat', sans-serif;
      // border: 2px solid #0B2C64;
   }
 }
-// .fourth-banner {
-//   min-height: 700px;
-//   padding-bottom: 30px;
-//   h4 {
-//      line-height: 25px;
-//       font-size: 16px;
-//       letter-spacing: 1.7px;
-//   }
 
-//   h2 {
-//     margin-bottom: 15px;
-//   }
-//   img {
-//   width:100%;
-//   }
-// }
 
-.comprendre {
+.fifth-banner {
   min-height: 380px;
   background-color: #37bfc3;
   color: white;
@@ -201,7 +96,7 @@ font-family: 'Montserrat', sans-serif;
   align-items: center;
 }
 
-.instagram {
+.sixth-banner {
 min-height: 380px;
 
 }
@@ -216,66 +111,6 @@ min-height: 380px;
   width: 160px;
   height: 160px;
 }
-
-
-//essaiflip
-
-// .flip-container {
-//   perspective: 600px;
-// }
-//   /* flip the pane when hovered */
-//   .flip-container:hover .flipper, .flip-container.hover .flipper {
-//     transform: rotateY(180deg);
-//   }
-
-// .flip-container, .front, .back {
-
-//   width: 100%;
-//   height: 480px;
-// }
-
-// /* flip speed goes here */
-// .flipper {
-//   transition: 0.6s;
-//   transform-style: preserve-3d;
-//   position: relative;
-// }
-
-// /* hide back of pane during swap */
-// .front, .back {
-//   backface-visibility: hidden;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-// }
-
-// /* front pane, placed above back */
-// .front {
-
-//   z-index: 2;
-//   /* for firefox 31 */
-//   transform: rotateY(0deg);
-// }
-
-// /* back, initially hidden pane */
-// .back {
-//   transform: rotateY(180deg);
-// }
-// .flipped {
-//   -webkit-transform: rotateY( 180deg );
-//   -moz-transform: rotateY( 180deg );
-//   -o-transform: rotateY( 180deg );
-//   transform: rotateY( 180deg );
-// }
-
-// .flip-button {
-//   position: absolute;
-//   width: 25px;
-//   height: 25px;
-//   bottom : 0;
-//   right: 0;
-// }
- //essai flip 2
 
 
  .card {
@@ -405,18 +240,10 @@ Front of the card styels
 
 //endofcard
 
-.fifth-banner {
+.third-banner {
   // background-color:white;
   // color:  #5F5F5F;
-  h5 {
-    font-style: italic;
-    margin-right: auto;
-    margin-left: auto;
-    width: 70%;
-    // color:#7FC199;
-    color: #37bfc3;
-    line-height: 20px;
-  }
+
   p {
   font-size: 16px;
   }
@@ -433,17 +260,9 @@ Front of the card styels
    // border: 2px solid #0B2C64;
   }
 }
-.test {
-  margin-top:10px;
-  background-color: white;
-  opacity:0.9;
-  padding: 10px;
-}
 
 
-.title{
-  margin-bottom: 25px;
-}
+
 
   .voteresults {
   img{
@@ -453,26 +272,34 @@ Front of the card styels
     }
   }
 
-.desc {
-  margin-right: auto;
-  margin-left: auto;
-  width: 80%;
-}
 
 
 @media (max-width: 375px) {
+
+.scrollmenu {
+  overflow: scroll;
+  white-space: nowrap;
+  // margin-top: 10px;
+  // margin-bottom: -7px;
+  padding: 10px;
+  background-color: #F5F5F5;
+}
+
+.scrollmenu .item {
+  display: inline-block;
+}
 
 .container {
   padding-left: 35px !important;
   padding-right: 35px !important;
 }
 
-  .comprendre-image {
-    img{
-    width: 250px;
-    height: 225px;
-    }
+.comprendre-image {
+  img{
+  width: 250px;
+  height: 225px;
   }
+}
 
   .instagram {
    min-height: 170px;
@@ -536,21 +363,6 @@ min-height: 170px;
     margin-top: 0px;
   }
 
-  .sixth-banner h4 {
-    line-height: 25px;
-    font-size: 16px;
-
-}
-.fourth-banner {
-color: #484848;
-h1 h2 h3{
-  color: #484848 !important;
-}
-h4 {
-  line-height:25px;
-  font-size: 18px;
-  }
-}
 
 #clockrow {
     margin-bottom: 30px;
@@ -565,36 +377,14 @@ h4 {
 .card {
   margin-bottom: 20px;
 }
-.fifth-banner h5 {
-  width: 100% !important;
-  line-height: 25px;
-}
 
 .icons img {
   max-width: 120px;
   height: 120px;
 }
-.seventh-banner {
-  h3 {
-    font-size: 22px;
-  }
-  h4 {
-  line-height: 25px;
-  font-size: 18px;
-}
 
-}
 
-.followers {
-  font-size: 14px;x
 
-  img {
-    height: 40px;
-    width: 40px;
-    margin-top: 10px;
-  }
-
-}
 .footer {
     display: flex;
     align-items: center;

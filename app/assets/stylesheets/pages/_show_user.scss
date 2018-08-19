@@ -1,11 +1,25 @@
+.wrapper {
+  background-image: radial-gradient(ellipse at center, rgba(0,70,50,0.4) 40%,rgba(0,70,50,0.3) 60%), url('http://res.cloudinary.com/dcljc9muz/image/upload/c_scale,w_1500/v1523561725/coffeplant_p3bft4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-attachment: fixed;
+  font-family: 'Montserrat', sans-serif;
+h1 {
+font-weight: 700;
+}
+// font-family: 'Josefin Sans', sans-serif;
+}
+
 .show {
   h4{
 line-height: 1.5;
 letter-spacing: 0.4px;
 // margin-bottom: 20px;
-margin-right: auto;
-margin-left: auto;
-width: 90%;
+// margin-right: auto;
+// margin-left: auto;
+// width: 90%;
+
 }
 
 .pitch {
@@ -21,6 +35,7 @@ padding: 20px;
 display: flex;
 align-items: center;
 justify-content: center;
+
 }
 
 .logo {
@@ -39,11 +54,11 @@ color:#484848;
 background-color: white;
 margin-bottom: 20px;
 }
-.team {
-color: white;
+.team-show  {
 img{
   border-radius: 50%;
 }
+color: white
 }
 
 .vote {
