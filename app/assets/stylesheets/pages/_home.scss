@@ -1,6 +1,7 @@
 .wrapper-home {
   h5 {
     font-size: 16px;
+    line-height: 1.5;
   }
 //font-family: 'Poppins', sans-serif;
 //font-family: 'Encode Sans Condensed', sans-serif;
@@ -9,24 +10,36 @@
 // font-family: 'Oswald', sans-serif;
 // font-family: 'Encode Sans Semi Expanded', sans-serif;
 //font-family: 'Fira Sans', sans-serif;
-font-family: 'Montserrat', sans-serif;
-
+//font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
 h1 {
-font-weight: 700;
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: 1.5px;
+}
+h2 {
+  font-size: 22px;
+  font-weight: 700;
 }
 // font-family: 'Josefin Sans', sans-serif;
 }
 
+.banner {
+margin-top: 15px;
+padding: 20px;
+
+}
 .grey {
   color: #484848;
 }
 
+
 .title{
-  margin-bottom: 25px;
+  margin-bottom: 60px;
   h1 {
-    font-size: 30px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
+    font-size: 35px;
+    //
+    // font-family: 'Permanent Marker', cursive;
+    //
   }
 }
 
@@ -96,15 +109,11 @@ font-weight: 700;
   align-items: center;
 }
 
-.sixth-banner {
-min-height: 380px;
-
-}
 .container-carnet-img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 380px;
+  min-height: 200px;
   margin-bottom: 10px;
 }
 .carnet-img {
@@ -263,13 +272,16 @@ Front of the card styels
 
 
 
-
+.team > h4{
+    font-family: 'Permanent Marker', cursive;
+}
   .voteresults {
   img{
     width: 100px !important;
     height: 100px !important;
     object-fit: cover;
     }
+
   }
 
 

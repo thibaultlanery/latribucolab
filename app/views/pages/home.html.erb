@@ -15,7 +15,7 @@
       </div>
     </div>
   </div>
-  <div class="second-banner grey">
+  <div class="second-banner banner grey">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
@@ -101,7 +101,7 @@
       </div>
     </div>
   </div>
-  <div class="third-banner grey text-center" id="nosvaleurs">
+  <div class="third-banner banner grey text-center" id="nosvaleurs">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -149,7 +149,7 @@
       </div>
     </div>
   </div>
-  <div class="fourth-banner grey text-center" id="commentcamarche">
+  <div class="fourth-banner banner grey text-center" id="commentcamarche">
     <div class="container">
       <div class="row">
         <div class="title">
@@ -177,7 +177,7 @@
       </div>
     </div>
   </div>
-  <div class="lancement grey">
+  <div class="lancement banner grey">
     <div class="container text-center">
       <div class="title">
         <h1>Lancement imminent !</h1>
@@ -186,9 +186,9 @@
       <div class="col-md-6">
         <div class="lancement-expl">
           <div class="txt">
-              <h5>Nous lançons une campagne de financement participatif pour vendre notre première gamme de produits le 1er Octobre 🚀. </h5>
-              <h5>Vos commandes nous permettront de nous approvisionner, puis transformer et empaqueter les produits avec l'aide d'une PME française, et de l'ESAT du Havre. </h5>
-              <h5>Bien entendu, nous vous livrerons à domicile !</h5>
+            <h5>Nous lançons une campagne de <strong>financement participatif</strong> pour vendre notre <strong>première gamme de produits le 1er Octobre</strong> 🚀. </h5>
+              <h5>Vos commandes nous permettront de nous approvisionner, puis transformer et empaqueter les produits avec l'aide <strong>d'une PME française, et de l'ESAT du Havre.</strong> </h5>
+              <h5>Bien entendu, <strong>nous vous livrerons à domicile !</strong></h5>
             <div class="">
             <%= render "shared/formthree" %>
             </div>
@@ -223,11 +223,11 @@
       </div>
     </div>
   </div>
-  <div class="fifth-banner text-center">
+  <div class="fifth-banner banner text-center">
     <div class="container">
       <div class="title">
         <h1>Tout comprendre sur nos produits</h1>
-        <h3>Comprendre la fabrication de nos produits de  A à Z</h3>
+        <h4>Comprenez la fabrication de nos produits de  A à Z</h4>
       </div>
        <div class="comprendre-image">
         <div class="row">
@@ -250,8 +250,14 @@
       </div>
     </div>
   </div>
-  <div class="sixth-banner grey hidden-xs">
+  <div class="sixth-banner banner grey hidden-xs text-center">
     <div class="container ">
+      <div class="row">
+        <div class="title">
+          <h1>Voyagez</h1>
+          <h4>Suivez les coulisses du projet en images</h4>
+        </div>
+      </div>
       <div class="row">
         <div class="container-carnet-img">
           <div class="carnet-img">
@@ -277,8 +283,14 @@
       </div>
     </div>
 
-  <div class="sixth-banner grey visible-xs">
+  <div class="sixth-banner banner grey visible-xs text-center">
     <div class="container ">
+      <div class="row">
+        <div class="title">
+        <h1>Voyagez</h1>
+        <h4>Suivez les coulisses du projet en images</h4>
+        </div>
+      </div>s
       <div class="scrollmenu" >
           <div class="item" >
             <ul class="list-inline">
@@ -310,14 +322,16 @@
 
 
 
-  <div class="seventh-banner grey" id="equipe">
+  <div class="seventh-banner banner grey" id="equipe">
     <div class="container text-center">
       <div class="title">
         <h1>Votez !</h1>
+        <h4>Participez à la création de nos gammes</h4>
       </div>
       <div class="voteresults col-sm-6">
         <div class="row">
-          <h4>Le Top 4 des produits choisis par la communauté</h4>
+          <h2>Le Top 4</h2>
+          <h4>des produits choisis par la communauté</h4>
           <h4>(votes ouverts depuis le 21 mai 2018)</h4>
              <% CategoryPreference.try.first(4).each do |category_preference| %>
             <div class="col-xs-6 col-md-3">
@@ -338,7 +352,7 @@
         <h4>Rejoignez notre communauté</h4>
         <h4>pour donner votre avis!</h4>
         <%= render "shared/formtwo" %>
-      </div>
+        </div>
       </div>
     </div>
   </div>

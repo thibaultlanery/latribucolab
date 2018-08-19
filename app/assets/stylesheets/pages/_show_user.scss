@@ -1,12 +1,18 @@
 .wrapper {
-  background-image: radial-gradient(ellipse at center, rgba(0,70,50,0.4) 40%,rgba(0,70,50,0.3) 60%), url('http://res.cloudinary.com/dcljc9muz/image/upload/c_scale,w_1500/v1523561725/coffeplant_p3bft4.jpg');
+  background-image: url('https://res.cloudinary.com/dcljc9muz/image/upload/c_scale,w_1500/v1532032821/Café_rojo_3_va8cr2.jpg');
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position:center center;
   background-attachment: fixed;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
 h1 {
-font-weight: 700;
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: 1.5px;
 }
 // font-family: 'Josefin Sans', sans-serif;
 }
@@ -49,6 +55,7 @@ width: 180px;
 }
 
 .content-text {
+border-radius: 15px;
 padding: 20px;
 color:#484848;
 background-color: white;
@@ -62,6 +69,7 @@ color: white
 }
 
 .vote {
+  border-radius: 15px;
   color: white;
   background:  #37bfc3;
   padding: 30px;
