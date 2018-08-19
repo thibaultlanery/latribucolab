@@ -34,7 +34,7 @@ padding: 20px;
 
 
 .title{
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   h1 {
     font-size: 35px;
     //
@@ -287,6 +287,10 @@ Front of the card styels
 
 
 @media (max-width: 375px) {
+
+  .rocket {
+  margin-top: 10px;
+}
 
 .scrollmenu {
   overflow: scroll;
