@@ -3,6 +3,9 @@
     font-size: 16px;
     line-height: 1.5;
   }
+  h4 {
+    line-height: 1.5;
+  }
 //font-family: 'Poppins', sans-serif;
 //font-family: 'Encode Sans Condensed', sans-serif;
 //font-family: 'Encode Sans Condensed', sans-serif;
@@ -175,9 +178,9 @@ Front of the card styels
 **********************/
 
 .card .flip-button {
-  position: absolute;
-  bottom : 0;
-  right: 0;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card .back {
@@ -240,15 +243,18 @@ Front of the card styels
   background-color: white;
   color: #484848;
   text-align:center;
-  padding: 25px;
+  padding: 15px;
   height: 170px;
   p {
     margin: 0;
   }
  }
 
-//endofcard
+ .content-back  {
+  height: 90%;
+}
 
+//endofcard
 .third-banner {
   // background-color:white;
   // color:  #5F5F5F;
@@ -270,10 +276,63 @@ Front of the card styels
   }
 }
 
+.followers {
+    img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  p {
+    margin: 0 0 5px;
+  }
+}
 
+.team {
+  img {
+    border-radius: 50%;
+  }
+  margin-top: 10px;
+}
 
+.link {
+  position: absolute;
+  background: black;
+  opacity: 0;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color:#F9D243;
+  border-radius: 50%;
+  p:first-child{
+    color: white;
+      font-size: 32px;
+  }
+}
+.equipe {
+  background-color: #f04770;
+  color: white;
+  padding-bottom: 10px;
+
+}
+.chiapas {
+  background-color: red;
+  background-image: radial-gradient(ellipse at center, rgba(0,0,0,0.4) 40%,rgba(0,0,0,0.3) 60%), url('https://res.cloudinary.com/dcljc9muz/image/upload/c_scale,e_auto_saturation,w_600/v1534956515/DSC_0510_2_jr4mnw.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center center;
+  min-height: 396px !important;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.txt {
+  padding: 30px;
+}
 .team > h4{
     font-family: 'Permanent Marker', cursive;
+
 }
   .voteresults {
   img{
@@ -281,7 +340,6 @@ Front of the card styels
     height: 100px !important;
     object-fit: cover;
     }
-
   }
 
 
@@ -310,10 +368,31 @@ Front of the card styels
   padding-right: 35px !important;
 }
 
+.card {
+  margin-bottom: 20px;
+  height: 420px;
+}
+
+.ambiance-grain {
+  min-height: 95px;
+}
+#cafe-title {
+  font-size: 25px !important;
+}
+
+#cafe-brand {
+font-size: 20px;
+}
+.doypack {
+  img {
+    width: 70px;
+  }
+
+}
 .comprendre-image {
   img{
-  width: 250px;
-  height: 225px;
+  width: 200px;
+  height: 180px;
   }
 }
 
@@ -328,56 +407,38 @@ Front of the card styels
 min-height: 170px;
 }
 .title > h1 {
-  font-size: 25px;
+  font-size: 30px;
   padding-right: 15px;
   padding-left: 15px;
 }
 
-  .content-mob {
-    background-color: #37bfc3 !important;
-    //background-color: #087887;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding:12px;
-    color: white;
-  }
+.navbar-wagon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+//first-banner
+.first-banner{
+background-image: radial-gradient(ellipse at center, rgba(0,50,70,0.2) 40%,rgba(0,50,70,0.2) 100%), url("https://res.cloudinary.com/dcljc9muz/image/upload/c_scale,h_850,q_auto:low/v1524784283/Chipas_tapachula_2mo_uofivn.png") ;
+background-size: auto !important;
+background-repeat: no-repeat!important;
+background-position:center center;
+min-height: 100vh !important;
+}
+.punchline {
+  h1 {
+    font-size: 32px;
+    line-height: 1.3;
+  };
+  h3 {
+    line-height: 1.6;
+    font-size: 18px;
+  };
+}
 
-  .content-mob2 {
-    margin: 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    color: #484848 !important;
-    background-color: white !important;
-  }
-
-
-  .navbar-wagon {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  //first-banner
-  .first-banner{
-  background-image: radial-gradient(ellipse at center, rgba(0,50,70,0.2) 40%,rgba(0,50,70,0.2) 100%), url("https://res.cloudinary.com/dcljc9muz/image/upload/c_scale,h_850,q_auto:low/v1524784283/Chipas_tapachula_2mo_uofivn.png") ;
-  background-size: auto !important;
-  background-repeat: no-repeat!important;
-  background-position:center center;
-  min-height: 100vh !important;
-  }
-  .punchline {
-    h1 {
-      font-size: 29px;
-      line-height: 1.3;
-    };
-    h3 {
-      line-height: 1.6;
-      font-size: 18px;
-    };
-  }
-
-  .form {
-    margin-top: 0px;
-  }
+.form {
+  margin-top: 0px;
+}
 
 
 #clockrow {
@@ -385,14 +446,22 @@ min-height: 170px;
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
+    h3 {
+      font-size: 20px;
+    }
   }
 #clockdiv {
   font-size: 25px;
   letter-spacing: 1px;
 }
-.card {
-  margin-bottom: 20px;
+
+.smalltext {
+  font-size: 13px;
 }
+.rocket {
+  min-height: 250px;
+}
+
 
 .icons img {
   max-width: 120px;
@@ -406,5 +475,14 @@ min-height: 170px;
     align-items: center;
     justify-content: space-around;
   }
+
+.team {
+
+    img {
+  width:100px;
+  height:100px;
+    border-radius: 50%;
+  }
+}
 
 }
