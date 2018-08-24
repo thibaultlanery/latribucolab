@@ -15,9 +15,9 @@ console.log('Hello World from Webpacker')
 //   $('[data-toggle="tooltip"]').tooltip();
 // })
 
-import { initUpdateNavbarOnScroll } from '../components/navbar';
-initUpdateNavbarOnScroll();
+// import { cardmodif } from '../components/navbar';
+// cardmodif();
 
-import {initializeClock } from '../components/countdown';
+import {initializeClock } from '../components/coutdown';
 var deadline = new Date("10/01/2018");
 initializeClock('clockdiv', deadline);

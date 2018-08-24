@@ -1,11 +1,31 @@
+.wrapper {
+  background-image: url('https://res.cloudinary.com/dcljc9muz/image/upload/c_scale,w_1500/v1532032821/Café_rojo_3_va8cr2.jpg');
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-attachment: fixed;
+  font-family: 'Open Sans', sans-serif;
+  h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: 1.5px;
+}
+// font-family: 'Josefin Sans', sans-serif;
+}
+
 .show {
   h4{
 line-height: 1.5;
 letter-spacing: 0.4px;
 // margin-bottom: 20px;
-margin-right: auto;
-margin-left: auto;
-width: 90%;
+// margin-right: auto;
+// margin-left: auto;
+// width: 90%;
+
 }
 
 .pitch {
@@ -21,6 +41,7 @@ padding: 20px;
 display: flex;
 align-items: center;
 justify-content: center;
+
 }
 
 .logo {
@@ -34,19 +55,21 @@ width: 180px;
 }
 
 .content-text {
+border-radius: 15px;
 padding: 20px;
 color:#484848;
 background-color: white;
 margin-bottom: 20px;
 }
-.team {
-color: white;
+.team-show  {
 img{
   border-radius: 50%;
 }
+color: white
 }
 
 .vote {
+  border-radius: 15px;
   color: white;
   background:  #37bfc3;
   padding: 30px;
@@ -74,14 +97,14 @@ img{
 }
 
 @media (max-width: 375px) {
-  .logo {
-    background-image: url("https://res.cloudinary.com/dcljc9muz/image/upload/c_scale,f_auto,q_auto:good,w_400/v1524535139/photoshare_if3mv8.webp") !important;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
-  width: 100% !important;
-  height: 160px;
+  // .logo {
+  //   background-image: url("https://res.cloudinary.com/dcljc9muz/image/upload/c_scale,f_auto,q_auto:good,w_400/v1524535139/photoshare_if3mv8.webp") !important;
+  // background-size: contain !important;
+  // background-repeat: no-repeat !important;
+  // width: 100% !important;
+  // height: 160px;
 
-  }
+  // }
 .show {
   h4 {
 line-height: 25px;
