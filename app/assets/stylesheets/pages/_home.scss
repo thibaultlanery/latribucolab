@@ -71,6 +71,10 @@ padding: 20px;
     margin-top: 50px;
   }
 
+  .formtwo {
+    margin-top: 50px;
+  }
+
 .fourth-banner {
   img {
     width: 130px;
@@ -308,6 +312,13 @@ Front of the card styels
     color: white;
       font-size: 32px;
   }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    color: #37bfc3;
+  }
 }
 .equipe {
   background-color: #f04770;
@@ -358,11 +369,17 @@ Front of the card styels
 
   .comprendre-image {
     img{
-    width: 150px;
-    height: 135px;
+    width: 200px;
+    height: 180px;
     }
   }
 
+.voter {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  min-height: 493px !important;
+}
 @media (max-width: 375px) {
 
   .wrapper-home h5 {
@@ -414,8 +431,8 @@ Front of the card styels
   }
   .comprendre-image {
     img{
-    width: 200px;
-    height: 180px;
+    width: 150px;
+    height: 135px;
     }
   }
 

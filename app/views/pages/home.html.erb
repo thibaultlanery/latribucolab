@@ -46,7 +46,7 @@
                 </div>
                 <div class="description">
                   <p><strong>Coopérative El Palomar </strong> <br>
-                  Découvrez les secrets d’un café de haute altitude, réputé pour son goût unique, cultivé sans pesticides et suspendu aux pentes de la Cordillère.</p>
+                  Un café de haute altitude, réputé pour son goût unique, cultivé sans pesticides entre l'amazonie et la cordillère.</p>
                 </div>
                 <%= cl_image_tag("reload_xwpfnn.png", :width=>35, :crop=>"scale", :secure => true, class:"lazyload", class:"flip-button",  :fetch_format=>:auto, :quality=>"auto") %>
               </div>
@@ -89,7 +89,7 @@
                 </div>
                 <div class="description">
                   <p><strong> Coopérative Los Chankas</strong> <br>
-                    Nous allons comprendre comment se cultive la mythique quinoa, sur les hauts plateaux d'Andahuaylas où se pratique l'agriculture bio depuis des millénaires.</p>
+                    Une quinoa des hauts plateaux d'Andahuaylas où se pratique l'agriculture naturelle, sans pesticides depuis des millénaires.</p>
                 </div>
                 <%= cl_image_tag("reload_xwpfnn.png", :width=>35, :crop=>"scale", :secure => true, class:"lazyload", class:"flip-button",  :fetch_format=>:auto, :quality=>"auto") %>
               </div>
@@ -128,7 +128,7 @@
             </div>
             <div class="test">
               <h2>Transparence</h2>
-              <p>De la coopérative à vos papilles, vous connaîtrez tout sur votre produit.</p>
+              <h5>De la coopérative à vos papilles, vous connaîtrez tout sur votre produit.</h5>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3" >
@@ -137,7 +137,7 @@
             </div>
             <div class="test">
               <h2>Neutralité carbone</h2>
-              <p>Nous plantons autant d’arbres que nécessaire pour compenser à 100% l’impact de notre activité.</p>
+              <h5>Nous plantons autant d’arbres que nécessaire pour compenser à 100% l’impact de notre activité.</h5>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3">
@@ -146,7 +146,7 @@
             </div>
             <div class="test">
               <h2>Agriculture biologique</h2>
-              <p>Nos produits sont issus d’exploitations pratiquant une agriculture biologique.</p>
+              <h5>Nos produits sont issus d’exploitations pratiquant une agriculture biologique.</h5>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3" >
@@ -155,7 +155,7 @@
             </div>
             <div class="test">
               <h2>Commerce équitable</h2>
-              <p>Nos produits sont issus des filières équitables qui garantissent un revenu juste à nos producteurs.</p>
+              <h5>Nos produits sont issus des filières équitables qui garantissent un revenu juste à nos producteurs.<h5>
             </div>
           </div>
         </div>
@@ -186,7 +186,7 @@
               </ul>
             </div>
             <div class="followers">
-                <h5>Au départ, l'aventure a démarré à deux. <br> Aujourd'hui, ils sont presque 400 à participer à l'aventure !</h5>
+                <h5>Au départ, nous avons démarré l'aventure à deux. <br> Aujourd’hui, nous sommes presque 400 !</h5>
               <ul class="list-inline">
                 <li><%= cl_image_tag("romain_iogmvm.png",:secure => true,  class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><h6>Romain</h6></li>
                 <li><%= cl_image_tag("dimitri_ivxt55.png",:secure => true,  class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto)%><h6>Dimitri</h6></li>
@@ -210,7 +210,7 @@
                 <li><%= cl_image_tag("marion_acckwa.png", :secure => true, class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><h6>Marion</h6></li>
                 <li><%= cl_image_tag("hugo_r6cncq.png", :secure => true, class:"lazyload",:quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><h6>Hugo</h6></li>
                 <li><%= cl_image_tag("heloise_ktzbvx.png",:secure => true, class:"lazyload", :quality=>"auto", :width=>50, :crop=>"scale", :fetch_format=>:auto) %><h6>Héloïse</h6></li>
-                <li class="circle"><p>?</p><p>Vous</p></li>
+                <li class="circle"><p>?</p><p><a href="#lancement">Vous</a></p></li>
               </ul>
           </div>
         </div>
@@ -301,15 +301,21 @@
        <div class="comprendre-image">
         <div class="row">
           <div class="col-md-4 col-sm-4">
-            <%= cl_image_tag("la_recolte_wj0apj.png",:secure => true, lass:"lazyload", :fetch_format=>:auto, :quality=>"auto", :height=>250, :width=> 298,  :crop=>"scale") %>
+            <%= link_to "https://www.facebook.com/LaTribuMarqueCollaborative/videos/vl.625210557862740/213201916001459/?type=1", target: "_blank" do %>
+              <%= cl_image_tag("la_recolte_wj0apj.png",:secure => true, lass:"lazyload", :fetch_format=>:auto, :quality=>"auto", :height=>250, :width=> 298,  :crop=>"scale") %>
+            <% end %>
             <h5>Des vidéos qui vous expliquent les étapes de la fabrication de nos produits, filmés par nos soins, surplace.</h5>
           </div>
           <div class="col-md-4 col-sm-4">
-            <%= cl_image_tag("La_récolte_V4_Facebook_ceezzu.png", :height=>250, :width=> 298, :secure => true, lass:"lazyload", :fetch_format=>:auto, :quality=>"auto", :crop=>"scale") %>
+            <%= link_to "https://www.facebook.com/LaTribuMarqueCollaborative/photos/pcb.226883964633254/226864554635195/?type=3&theater", target: "_blank" do %>
+              <%= cl_image_tag("La_récolte_V4_Facebook_ceezzu.png", :height=>250, :width=> 298, :secure => true, lass:"lazyload", :fetch_format=>:auto, :quality=>"auto", :crop=>"scale") %>
+            <% end %>
             <h5>Nous mettons à disposition des plus curieux des dossiers écrits pour approfondissent ces sujets.</h5>
           </div>
           <div class="col-md-4 col-sm-4">
-            <%= cl_image_tag("Album_1_-_Lac_Titicaca_1_p2emfv.png",:secure => true, lass:"lazyload", :fetch_format=>:auto, :quality=>"auto", :height=>250, :width=> 298, :crop=>"scale") %>
+            <%= link_to "https://www.facebook.com/LaTribuMarqueCollaborative/photos/ms.c.eJwtjsERADEIAju6URSV~;hu7SeJzB1kBEB4V3iwxPxwGNYloLIenN9ssHtN47sfxOOGXVctGmgzJ7ZPHV5j14~_aJlyPVtJFz~;Wi~;~;3J9Ybjs62PcvT1nX6qkHmdr6gfNRymC.bps.a.222311835090467/222313631756954/?type=3&theater", target: "_blank" do %>
+              <%= cl_image_tag("Album_1_-_Lac_Titicaca_1_p2emfv.png",:secure => true, lass:"lazyload", :fetch_format=>:auto, :quality=>"auto", :height=>250, :width=> 298, :crop=>"scale") %>
+            <% end %>
             <h5>En 3.600km de découverte au Pérou, nous avons vu des sites extraordinaire. À découvrir en photos.</h5>
             <div class="btn-medium-pink" id="apprendre">
              Apprendre des choses
@@ -330,27 +336,39 @@
       <div class="row">
         <div class="container-carnet-img">
           <div class="carnet-img">
+            <%= link_to "http://www.instagram.com", target: "_blank" do %>
               <%= cl_image_tag("instagram-noirtxt_hzeqiu.png",:secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>160, :height=>160, :crop=>"fill") %>
-            </div>
-            <div class="carnet-img">
-            <%= cl_image_tag("Interview_producteur_pe8xgz.jpg",:secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>160, :height=>160, :crop=>"fill")%>
-            </div>
-            <div class="carnet-img">
+            <% end %>
+          </div>
+          <div class="carnet-img">
+            <%= link_to "http://www.instagram.com", target: "_blank" do %>
+              <%= cl_image_tag("Interview_producteur_pe8xgz.jpg",:secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>160, :height=>160, :crop=>"fill")%>
+            <% end %>
+          </div>
+          <div class="carnet-img">
+            <%= link_to "http://www.instagram.com", target: "_blank" do %>
             <%= cl_image_tag("Café_rojo_3_va8cr2.jpg",:secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>160, :height=>160, :crop=>"fill")%>
-            </div>
-            <div class="carnet-img">
+            <% end %>
+          </div>
+          <div class="carnet-img">
+            <%= link_to "http://www.instagram.com", target: "_blank" do %>
               <%= cl_image_tag("Macro_plant_quinoa_3_gmv5fe.jpg",:secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>160, :height=>160, :crop=>"fill") %>
-            </div>
-            <div class="carnet-img">
+            <% end %>
+          </div>
+          <div class="carnet-img">
+            <%= link_to "http://www.instagram.com", target: "_blank" do %>
               <%= cl_image_tag("Bons_touristes_aj58ke.jpg",:secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>160, :height=>160, :crop=>"fill") %>
-            </div>
-            <div class="carnet-img">
+            <% end %>
+          </div>
+          <div class="carnet-img">
+            <%= link_to "https://www.instagram.com/p/BkUwIKuDl2A/?taken-by=latribu__lamarquecollaborative", target: "_blank" do %>
               <%= cl_image_tag("Producteurs_Nous_z2s5zy.jpg",:secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>160, :height=>160, :crop=>"fill") %>
-            </div>
+            <% end %>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
   <div class="sixth-banner banner grey visible-sm .visible-xs text-center">
     <div class="container ">
@@ -397,22 +415,13 @@
         </div>
       </div>
       <div class="row">
-        <div class="team col-sm-6">
-          <ul class= "list-inline">
-            <li><%= cl_image_tag("moi_caré_hq60uv.png", :secure => true, class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :effect=>"grayscale", :height=>120,:width=>120, :crop=>"scale") %><h4>Thibault</h4></li>
-            <li><%= cl_image_tag("julien_nfwsg0.png", :secure => true, class:"lazyload", :effect=>"grayscale", :fetch_format=>:auto, :quality=>"auto", :height=>120, :width=>120, :crop=>"thumb") %><h4>Julien</h4></li>
-          </ul>
-          <div class="">
-          <h4>Rejoignez notre communauté</h4>
-          <h4>pour donner votre avis!</h4>
-          <%= render "shared/formtwo" %>
-          </div>
-        </div>
         <div class="voteresults col-sm-6">
           <div class="row">
-            <h2>Le Top 4</h2>
-            <h4>des produits choisis par la communauté</h4>
-            <h4>(votes ouverts depuis le 21 mai 2018)</h4>
+            <div class="txt">
+              <h4>Depuis le 21 mai 2018 les votes sont ouverts pour élire <strong>les prochains produits que nous développerons ensemble !</strong></h4>
+              <h2>Découvrez Le Top 4</h2>
+              <h4>des produits choisis par la communauté</h4>
+            </div>
                <% CategoryPreference.try.first(4).each do |category_preference| %>
               <div class="col-xs-6 col-md-3">
                 <%= image_tag category_preference[0].pictoname, {class:"img-rounded"}%>
@@ -421,6 +430,13 @@
                 <h5><% category_preference[1]%></h5>
               </div>
             <% end %>
+          </div>
+        </div>
+        <div class="voter col-sm-6">
+          <div class="txt">
+            <h2>Rejoignez notre communauté</h2>
+            <h2>pour donner votre avis!</h2>
+            <%= render "shared/formtwo" %>
           </div>
         </div>
       </div>
