@@ -159,7 +159,6 @@ padding: 20px;
 
 .card .front,
 .card .back{
-  // background-color: #cccccc;
   display: block;
   height: 100%;
   width: 100%;
@@ -188,6 +187,9 @@ Front of the card styels
 }
 
 .card .back {
+  padding: 20px;
+  background-color: #f04770;
+  color: white;
   -webkit-transform: rotateY( 180deg );
   -moz-transform: rotateY( 180deg );
   -o-transform: rotateY( 180deg );
@@ -248,7 +250,7 @@ Front of the card styels
   color: #484848;
   text-align:center;
   padding: 15px;
-  height: 170px;
+  height: 117px;
   p {
     margin: 0;
   }

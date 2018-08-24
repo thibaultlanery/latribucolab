@@ -1,19 +1,5 @@
-.btn-medium {
-  max-width: 260px;
-  font-size: 18px !important;
-  color: white !important;
-  border: none !important;
-  padding: 15px 20px !important;
-  border-radius: 50px !important;
-  font-weight: lighter !important;
-  background-color:  #f04770 !important;
-}
-.btn-medium:hover {
-  opacity: 1;
-  text-decoration: none;
-  color: #37bfc3 !important;
-  background-color: white !important;
-}
+
+
 .btn-medium-pink {
   max-width: 260px;
   font-size: 18px !important;
@@ -23,10 +9,17 @@
   border-radius: 50px !important;
   font-weight: lighter !important;
   background-color:  #f04770 !important;
+  a {
+    color: white;
+  }
 }
 .btn-medium-pink:hover {
   opacity: 1;
   text-decoration: none;
-  color: #f04770 !important;
+  color: #37bfc3 !important;
+  a {
+    color: #37bfc3 !important;
+    text-decoration: none !important;
+  }
   background-color: white !important;
 }
