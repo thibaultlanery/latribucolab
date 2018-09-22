@@ -19,5 +19,5 @@ console.log('Hello World from Webpacker')
 // cardmodif();
 
 import {initializeClock } from '../components/coutdown';
-var deadline = new Date("10/01/2018");
+var deadline = new Date("10/24/2018");
 initializeClock('clockdiv', deadline);
