@@ -15,7 +15,7 @@ $(document).ready(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
 
-        scrollTop: $(hash).offset().top -100
+        scrollTop: $(hash).offset().top -50
       }, 1200, function(){
 
 

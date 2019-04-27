@@ -23,7 +23,7 @@ Rails.application.configure do
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = Uglifier.new(harmony: true)
-  # config.assets.css_compressor = :sass
+  config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
@@ -92,4 +92,7 @@ Rails.application.configure do
     api_key: ENV['MAILGUN_API_KEY'],
     domain: 'www.la-tribu.co'
 }
+
+ENV["DATABASE_URL"] = "postgres://utggkkhnnyjlmi:9497fa7b0382d1943fcde86feb2e653a0317a9c97ea906a58587ffbbbd49611f@ec2-54-75-227-92.eu-west-1.compute.amazonaws.com:5432/d8r5vfjrod1pbr"
+
 end

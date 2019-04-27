@@ -1,8 +1,10 @@
 {
   "dependencies": {
-    "@rails/webpacker": "^3.4.1",
+    "@rails/webpacker": "^3.5.3",
     "bootstrap": "3",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "justflipit": "^1.1.2",
+    "lazysizes": "^4.0.4"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"

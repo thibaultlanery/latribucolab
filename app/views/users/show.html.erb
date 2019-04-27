@@ -1,24 +1,78 @@
-<div class="wrapper">
-  <div class="container text-center show">
-    <div class="content">
-      <div class="content-text">
-        <h1>Un grand merci <%= @user.name %></h1>
-        <h2>Votre intérêt à ce projet à beaucoup d'importance à nos yeux et ceux des partenaires qui sont engagés avec nous</h2>
-        <p>
-          Nous vous avons envoyé un mail de bienvenu à l'adresse mail indiquée et vous enverrons des informations concernant l'avancement du projet.
-        </p>
-        <h3>Si l'idée vous a plu elle plaira à votre entourage alors partagez!</h3>
-          <div class="sharethis-inline-share-buttons" data-url="https://latribu.herokuapp.com/"></div>
-        <h1>A très vite</h1>
+<div class="wrapper show">
+  <div class="container text-center ">
+    <div class="div-logo">
+      <div class="logo">
       </div>
-      <div class="team">
-        <ul class= "list-inline">
-          <li><%= cl_image_tag("Capture_d_écran_2018-04-06_à_19.51.10_aqclbn.png", :effect=>"grayscale", :height=>200, :crop=>"scale") %><h4>Thibault</h4></li>
-          <li><%= cl_image_tag("Julien_RIou_juezxg.jpg", :height=>200, :width=>200, :crop=>"thumb") %><h4>Julien</h4></li>
-        </ul>
+    </div>
+    <div class="content-text">
+      <div class="title">
+        <h1>Un grand merci <%= current_user.name.capitalize %></h1>
+        <h4>Regardez votre boîte mail, on vous souhaite la bienvenue 😉.</h4>
+        <h4>Suivez l’avancée du projet sur : </h4>
       </div>
-      <p>Votre email sera exclusivement destiné à vous fournir du contenu émanant de La Tribu.</p>
+      <table align="center">
+        <tr align="center">
+          <td style="width:120px" >
+            <a href="https://www.instagram.com/latribu__lamarquecollaborative/" target="_blank"><img src="http://res.cloudinary.com/dcljc9muz/image/upload/c_scale,q_auto:eco,w_50/v1524262827/instagram-icon_1057-2227_wdujac.png" border="0" alt="Instagram"/></a>
+          </td>
+          <td style="width:120px" >
+            <a href="https://www.facebook.com/La-Tribu-175044193150565/" target="_blank"><img src="http://res.cloudinary.com/dcljc9muz/image/upload/c_scale,q_auto:eco,w_50/v1524262796/8cc74bfbefd94a7c24d9d666a51f0623_df5c9f.png" border="0" alt="Facebook"/></a>
+          </td>
+        </tr>
+      </table>
+        <h4>On vous fait vivre l’aventure en images et vous disons tout  <br> sur ce qui se cache derrière nos produits 🌿📸🎥 !</h4>
+        <div class="share">
+          <h4>Alors soyez gentil, partagez aux amis ! Si l'idée vous a plu elle leur plaira aussi 🙌.</h4>
+          <div class="sharethis-inline-share-buttons" data-url="https://www.la-tribu.co"></div>
+        </div>
     </div>
   </div>
+      <div class="container text-center">
+        <div class="vote">
+          <% unless current_user.category_preferences.present? %>
+            <div class="title">
+              <h1>Votez !</h1>
+              <h4><strong>Quels sont les produits que vous aimeriez retrouver sur La Tribu dans les mois à venir?</strong></h4>
+            </div>
+            <div class="pitch">
+              <h5>La Tribu est une marque collaborative, elle vous donne la parole. </h5>
+              <h5>Vous pourrez régulièrement, contribuer au projet, en nous donnant votre opinion en ligne.</h5>
+              <h5>Alors ne perdons pas de temps, donnez-nous votre avis dès maintenant !</h5>
+            </div>
+            <h4 style="font-style: italic">Cliquez sur les images pour effectuer votre sélection:</h4>
+                <%= simple_form_for :category_preferences, url: category_preferences_path do |f| %>
+                  <%= f.fields_for :categories do |uf| %>
+                    <div class="row">
+                    <% Category.all.each do |category| %>
+                    <div class="col-xs-6 col-md-3">
+                      <label>
+                        <%= uf.check_box "category_ids", { multiple: true, id: "check" }, category.id, nil %>
+                          <%= image_tag category.pictoname, {class: "img-rounded"} %>
+                         <h5><%= category.name %></H5>
+                      </label>
+                      </div>
+                    <% end %>
+                    </div>
+                  <% end %>
+                <div class="form-actions" id="vote">
+                <%= f.button :submit, "JE VOTE", class:"btn-medium-pink" %>
+                </div>
+              <% end %>
+            </div>
+          <% else %>
+            <h2>A voté!<br>Merci d'avoir contribué au choix de vos futurs produits !</h2>
+          <% end %>
+        </div>
+    <div class="container">
+      <div class="team-show text-center">
+        <ul class= "list-inline">
+          <h4>À très vite</h4>
+          <li><%= cl_image_tag("moi_caré_hq60uv.png", class:"lazyload", :fetch_format=>:auto, :quality=>"auto", :effect=>"grayscale", :height=>120,:width=>120, :crop=>"scale") %><h4>Thibault</h4></li>
+          <li><%= cl_image_tag("julien_nfwsg0.png",class:"lazyload", :effect=>"grayscale", :fetch_format=>:auto, :quality=>"auto", :height=>120, :width=>120, :crop=>"thumb") %><h4>Julien</h4></li>
+        </ul>
+      </div>
+    </div>
 </div>
+
+
 

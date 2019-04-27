@@ -1,0 +1,16 @@
+ <div class="form">
+  <%= simple_form_for(@user) do |f| %>
+    <%= f.error_notification %>
+    <div class="form-inputs">
+      <ul class="list-inline">
+        <li><%= f.input :name, required: true, placeholder: "Prénom", label: false %></li>
+        <li><%= f.input :email, required: true,  placeholder: "Email", label: false%></li>
+      </ul>
+    </div>
+    <div class="form-actions">
+      <%= f.button :submit, "REJOINS NOUS", class: "btn-medium-pink" %>
+    </div>
+    <h5>On t'informe sur l'actualité du projet 1x par mois</h5>
+  <% end %>
+</div>
+

@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta property="og:title" content="Redonnez de la transparence à vos fonds de placards!" />
+    <meta name="google-site-verification" content="7Wo_ABOHnlXe-hKYJVKU9c7UgUCONysBWXnwq8CqxSM" />
+    <meta property="og:title" content="Mieux consommer démarre là-bas" />
     <meta property="og:url" content="http://www.la-tribu.co" />
-    <meta property="og:image" content="https://res.cloudinary.com/dcljc9muz/image/upload/v1522885730/tapachula_f6xcld.jpg" />
-    <meta property="og:description" content="La Tribu, c'est une marque collaborative qui développe avec vous des produits d'épicerie d'exception, en totale transparence et livré directement chez vous!" />
+    <meta property="og:image" content="https://res.cloudinary.com/dcljc9muz/image/upload/c_scale,q_auto:best,w_600/v1524535139/photoshare_if3mv8.png" />
+    <meta property="og:description" content="La Tribu, est une marque collaborative qui développe avec vous des produits d'épicerie d'exception, en totale transparence et livrés directement chez vous!" />
     <meta property="og:site_name" content="La Tribu" />
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>La Tribu, marque collaborative de produits d'épicerie</title>
-    <meta name="description" content="La Tribu, c'est une marque collaborative qui développe avec vous des produits d'épicerie d'exception, en totale transparence et livré directement chez vous!"
+    <meta name="description" content="La Tribu, est une marque collaborative qui développe avec vous des produits d'épicerie d'exception, en totale transparence et livrés directement chez vous!"
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+      integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+      crossorigin="anonymous"></script>
+        <!-- Hotjar Tracking Code for www.la-tribu.co -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:900649,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 </head>
+
     <%#= stylesheet_pack_tag 'application', media: 'all' %>
   <body>
-    <%= render 'shared/navbar' %>
+
     <%= render 'shared/flashes' %>
     <%= yield %>
+
     <%= render 'shared/footer' %>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -30,6 +50,9 @@
 
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
-
+  <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5acd26af15e550001323fa2e&product=social-ab' async='async'></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Open+Sans:400, 700|Permanent+Marker|Neucha" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   </body>
 </html>
