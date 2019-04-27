@@ -21,6 +21,7 @@ gem "letter_opener", group: :development
 gem "gibbon"
 gem 'mailgun_rails'
 gem 'forest_liana'
+gem 'sassc'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
