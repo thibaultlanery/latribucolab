@@ -93,6 +93,4 @@ Rails.application.configure do
     domain: 'www.la-tribu.co'
 }
 
-ENV["DATABASE_URL"] = "postgres://utggkkhnnyjlmi:9497fa7b0382d1943fcde86feb2e653a0317a9c97ea906a58587ffbbbd49611f@ec2-54-75-227-92.eu-west-1.compute.amazonaws.com:5432/d8r5vfjrod1pbr"
-
 end
