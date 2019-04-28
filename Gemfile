@@ -21,6 +21,7 @@ gem "letter_opener", group: :development
 gem "gibbon"
 gem 'mailgun_rails'
 gem 'forest_liana'
+gem 'dotenv-rails', groups: [:development, :test]
 
 group :development do
   gem 'web-console', '>= 3.3.0'
@@ -35,5 +36,4 @@ group :development, :test do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem "better_errors"
   gem "binding_of_caller"
-  gem 'dotenv-rails'
 end
