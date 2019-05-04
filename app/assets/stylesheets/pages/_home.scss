@@ -3,12 +3,7 @@
 
 
 // Specific CSS for your home-page
-.content {
-  // background: linear-gradient(rgba(0, 70, 100, 0.4), rgba(0, 70, 100, 0.4));
-  padding: 25px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+// general
 .wrapper-home {
   h5 {
     font-size: 16px;
@@ -43,6 +38,7 @@ margin-top: 15px;
 padding: 20px;
 
 }
+
 .grey {
   color: #484848;
 }
@@ -59,7 +55,7 @@ padding: 20px;
 }
 
 .first-banner {
-  background-image: radial-gradient(ellipse at center, rgba(0,50,70,0.2) 40%,rgba(0,50,70,0.2) 100%), url('https://res.cloudinary.com/dcljc9muz/image/upload/f_auto,c_scale,q_auto:best,w_1500/v1532032555/Producteurs_Nous_z2s5zy.jpg') ;
+  background-image: linear-gradient(rgba(0,50,70,0.2) 40%,rgba(0,50,70,0.2) 100%), url('https://res.cloudinary.com/dcljc9muz/image/upload/f_auto,c_scale,q_auto:best,w_1500/v1532032555/Producteurs_Nous_z2s5zy.jpg') ;
   background-size: cover;
   background-repeat: no-repeat;
   background-position:center center;
@@ -74,77 +70,6 @@ padding: 20px;
   min-height: 100vh;
   letter-spacing: 1px;
   }
-
-  .form-control {
-    font-size: 14px !important;
-    height:38px !important;
-  }
-  .form {
-    margin-top: 50px;
-  }
-
-  .formtwo {
-    margin-top: 50px;
-  }
-
-.fourth-banner {
-  img {
-    width: 130px;
-    border-radius: 50%;
-    // box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
-    // border: 2px solid #37bfc3;
-     // border: 2px solid #0B2C64;
-  }
-}
-
-
-.fifth-banner {
-  min-height: 380px;
-  background-color: #37bfc3;
-  color: white;
-}
-#decouvrir {
-  margin-top: 20px;
-  margin-right: auto;
-  margin-left: auto;
-  display: flow-root;
-}
-
-#apprendre {
-  margin-right: auto;
-  margin-left: auto;
-  display: flow-root;
-}
-
-.lancement-expl {
-  min-height: 312px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.rocket {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position:center center;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-
-
-.container-carnet-img {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 200px;
-  margin-bottom: 10px;
-}
-.carnet-img {
-  width: 160px;
-  height: 160px;
-}
 
 
  .card {
@@ -214,162 +139,8 @@ Front of the card styels
   transform: rotateY( 180deg );
 }
 
-//endofessai2
-.frisette{
-  img {
-    width: 100%;
-  }
-}
-.card-title {
-  width: 100%;
-  p { margin: 0;
-    padding:0;
-  }
-  p:first-child {
-  font-size: 29px;
-  background-color: white;
-  }
-  font-size: 20px;
-}
-#cafe-title {
-  color: #A4765B;
-}
-#cafe-brand {
-  color: white;
-  background-color: #A4765B;
-}
-#quinoa-title {
-  color: #EED0A6;
-}
-#quinoa-brand {
-  color: white;
-  background-color: #EED0A6;
-}
-.ambiance-grain {
 
-  // min-height: 197px;hel
-  max-height: 130px;
-  min-height: 130px;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 3%,rgba(255,255,255,0.24) 50%,rgba(255,255,255,1) 100%), url(https://res.cloudinary.com/dcljc9muz/image/upload/c_scale,q_auto:good,w_263/v1522885728/cafe%CC%812_mbn1tg.jpg);
-}
 
-.ambiance-grain-quin {
-  min-height: 130px;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 3%,rgba(255,255,255,0.24) 50%,rgba(255,255,255,1) 100%), url(https://res.cloudinary.com/dcljc9muz/image/upload/c_scale,q_auto:good,w_263/v1522885730/quinoa_m96w3v.jpg);
-
-}
-.doypack {
-  max-width: 90px;
-  margin-top: -65px;
-}
-.doypack-quinoa {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color:white;
-}
-.description {
-  background-color: white;
-  color: #484848;
-  text-align:center;
-  padding: 15px;
-  height: 117px;
-  p {
-    margin: 0;
-  }
- }
-
- .content-back  {
-  height: 90%;
-}
-
-//endofcard
-.third-banner {
-  // background-color:white;
-  // color:  #5F5F5F;
-
-  p {
-  font-size: 16px;
-  }
-}
-.icons {
-  img {
-  margin-top:10px;
-  max-width: 130px;
-  height:130px;
-  border-radius: 50%;
-  // box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
-  //border: 4px solid #F9D243;
-  // border: 2px solid #EF476F;
-   // border: 2px solid #0B2C64;
-  }
-}
-
-.followers {
-    img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-  }
-  p {
-    margin: 0 0 5px;
-  }
-}
-
-.team {
-  img {
-    border-radius: 50%;
-  }
-  margin-top: 10px;
-}
-
-.link {
-  position: absolute;
-  background: black;
-  opacity: 0;
-}
-.circle {
-  width: 50px;
-  height: 50px;
-  background-color:#F9D243;
-  border-radius: 50%;
-  p:first-child{
-    color: white;
-      font-size: 32px;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  a:hover {
-    color: #37bfc3;
-  }
-}
-.equipe {
-  background-color: #f04770;
-  color: white;
-  padding-bottom: 10px;
-
-}
-.chiapas {
-  background-color: red;
-  background-image: radial-gradient(ellipse at center, rgba(0,0,0,0.4) 40%,rgba(0,0,0,0.3) 60%), url('https://res.cloudinary.com/dcljc9muz/image/upload/c_scale,e_auto_saturation,w_600/v1534956515/DSC_0510_2_jr4mnw.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position:center center;
-  min-height: 396px !important;
-  color: white;
-  display: flex;
-  align-items: center;
-}
-
-.txt {
-  padding: 15px;
-}
-.team > h4{
-    font-family: 'Permanent Marker', cursive;
-
-}
   .voteresults {
   img{
     width: 100px !important;
@@ -377,6 +148,8 @@ Front of the card styels
     object-fit: cover;
     }
   }
+
+
 @media (max-width: 768px) {
    .scrollmenu {
     overflow: scroll;
