@@ -68,28 +68,7 @@ img{
 color: white
 }
 
-.vote {
-  border-radius: 15px;
-  color: white;
-  background:  #37bfc3;
-  padding: 30px;
-  padding-top: 10px;
-  margin-bottom: 20px;
-  img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    transition: box-shadow ease 200ms;
-    margin: 5px;
-    border: 3px solid transparent;
-  }
-  input:checked + img {
-    border: 3px solid #28a745;
-  }
-#check {
-  display: none
-}
-}
+
 .share {
   background-color:white;
   color: #484848;
