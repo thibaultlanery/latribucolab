@@ -1,6 +1,21 @@
  <div class="form">
   <%= simple_form_for(@user) do |f| %>
     <%= f.error_notification %>
+
+            <%= f.fields_for :category_preferences, url: category_preferences_path do |uf| %>
+              <div class="row">
+              <% Category.all.each do |category| %>
+              <div class="col-xs-6 col-md-3">
+                <label>
+                  <%= uf.check_box "category_ids", { multiple: true, id: "check" }, category.id, nil %>
+                    <%= image_tag category.pictoname, {class: "img-rounded"} %>
+                   <h5><%= category.name %></H5>
+                </label>
+                </div>
+              <% end %>
+              </div>
+            <% end %>
+
     <div class="form-inputs">
       <ul class="list-inline">
         <li><%= f.input :name, required: true, placeholder: "Prénom", label: false %></li>

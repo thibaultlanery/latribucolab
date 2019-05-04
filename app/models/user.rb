@@ -2,8 +2,8 @@ class User < ApplicationRecord
     has_many :category_preferences,  dependent: :destroy
     has_many :categories, through: :category_preferences
 
-    after_create :subscribe_to_newsletter
-    after_create :send_welcome_email
+    # after_create :subscribe_to_newsletter
+    # after_create :send_welcome_email
 
     validates :email, presence: true, uniqueness: true
     validates_format_of :email, :with => /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i, on: :create
