@@ -16,7 +16,7 @@
 //     }
 // });
 
-$('input').click( function(){
+$('.checked').click( function(){
     if ( $(this).parent().hasClass('highlights') ) {
         $(this).parent().removeClass('highlights');
     } else {

@@ -67,7 +67,7 @@ padding: 20px;
   justify-content: space-around;
   align-items: center;
   color: white;
-  min-height: 100vh;
+  min-height: 85vh;
   letter-spacing: 1px;
   }
 
@@ -94,9 +94,9 @@ padding: 20px;
   }
 }
 
-  input:checked + img {
-    outline: 2px solid #28a745;
-  }
+  // input:checked + img {
+  //   outline: 2px solid #28a745;
+  // }
 
 .highlights {
   outline: 10px solid #28a745;
