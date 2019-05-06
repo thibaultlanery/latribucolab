@@ -8,16 +8,3 @@
 // layout file, like app/views/layouts/application.html.erb
 
 console.log('Hello World from Webpacker')
-
-// import 'bootstrap';
-
-// $(function () {
-//   $('[data-toggle="tooltip"]').tooltip();
-// })
-
-// import { cardmodif } from '../components/navbar';
-// cardmodif();
-
-import {initializeClock } from '../components/coutdown';
-var deadline = new Date("10/24/2018");
-initializeClock('clockdiv', deadline);
