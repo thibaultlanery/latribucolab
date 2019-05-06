@@ -1,21 +1,19 @@
  <div class="form">
   <%= simple_form_for(@user) do |f| %>
     <%= f.error_notification %>
-
-            <%= f.fields_for :category_preferences, url: category_preferences_path do |uf| %>
-              <div class="row">
-              <% Category.all.each do |category| %>
-              <div class="col-xs-6 col-md-3">
-                <label>
-                  <%= uf.check_box "category_ids", { multiple: true, id: "check" }, category.id, nil %>
-                    <%= image_tag category.pictoname, {class: "img-rounded"} %>
+      <%= f.fields_for :category_preferences, url: category_preferences_path do |uf| %>
+        <div class="row">
+          <% Category.all.each do |category| %>
+            <div class="col-xs-6 col-md-3" >
+                <label class="card">
+                  <%= uf.check_box :category_ids, { multiple: true, id: "check", class: "checked" }, category.id, nil %>
+                   <%= image_tag category.pictoname, {class: "img-circle"} %>
                    <h5><%= category.name %></H5>
                 </label>
-                </div>
-              <% end %>
               </div>
             <% end %>
-
+          </div>
+        <% end %>
     <div class="form-inputs">
       <ul class="list-inline">
         <li><%= f.input :name, required: true, placeholder: "Prénom", label: false %></li>
@@ -23,9 +21,8 @@
       </ul>
     </div>
     <div class="form-actions">
-      <%= f.button :submit, "REJOINS NOUS", class: "btn-medium-pink" %>
+      <%= f.button :submit, "REJOINS NOUS", class: "btn-pink" %>
     </div>
-    <h5>On t'informe sur l'actualité du projet 1x par mois</h5>
   <% end %>
 </div>
 

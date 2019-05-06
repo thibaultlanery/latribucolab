@@ -6,12 +6,16 @@
       <div class="first-banner-content text-center">
         <div class="punchline ">
           <!-- <h1>VOS PRODUITS D'EPICERIE COMME SI VOUS Y ETIEZ!</h1> -->
-          <h1>MIEUX CONSOMMER DÉMARRE LÀ-BAS</h1>
+          <h1>Mieux consommer démarre là-bas</h1>
           <!-- <h3>Des produits d'épicerie bons, justes et développés ensembles!</h3> <br> -->
           <h3>Rejoignez notre communauté de citoyens <br> et élaborons ensemble nos produits d'épicerie. </h3>
           <!-- -->
           <br>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class= "second-banner">
     <div class="container text-center">
       <div class="vote">
         <div class="title">
@@ -23,50 +27,10 @@
           <h5>Vous pourrez régulièrement, contribuer au projet, en nous donnant votre opinion en ligne.</h5>
           <h5>Alors ne perdons pas de temps, donnez-nous votre avis dès maintenant !</h5>
         </div>
-        <h4 style="font-style: italic">Cliquez sur les images pour effectuer votre sélection:</h4>
-        <%= render "shared/form" %>
-        </div>
-      </div>
-
+          <h4 style="font-style: italic">Cliquez sur les images pour effectuer votre sélection:</h4>
+          <%= render "shared/form" %>
       </div>
     </div>
   </div>
-
-    <div class="seventh-banner banner grey" id="equipe">
-      <div class="container text-center">
-        <div class="row">
-          <div class="title">
-            <h1>Votez !</h1>
-            <h4>Depuis le 21 mai 2018 les votes sont ouverts pour élire <strong>les prochains produits que nous développerons ensemble !</strong></h4>
-          </div>
-        </div>
-        <div class="row">
-          <div class="voteresults col-sm-6">
-            <div class="row">
-              <div class="txt">
-                <h2>Découvrez Le Top 4</h2>
-                <h4>des produits choisis par la communauté</h4>
-              </div>
-                 <% CategoryPreference.try.first(4).each do |category_preference| %>
-                <div class="col-xs-6 col-md-3">
-                  <%= image_tag category_preference[0].pictoname, {class:"img-rounded"}%>
-                  <h3><%= CategoryPreference.try.index(category_preference) + 1 %></h3>
-                  <h5><%= category_preference[0].name %></H5>
-                  <h5><% category_preference[1]%></h5>
-                </div>
-              <% end %>
-            </div>
-          </div>
-          <div class="voter col-sm-6">
-            <div class="txt">
-              <h2>Rejoignez notre communauté</h2>
-              <h2>pour donner votre avis!</h2>
-              <%= render "shared/formtwo" %>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
 </div>
 

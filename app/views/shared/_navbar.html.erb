@@ -1,13 +1,17 @@
 <div class="navbar-wagon navbar-fixed-top">
   <a href="/" class="navbar-wagon-brand ">
+    <%= link_to "https://www.la-tribu.co" do %>
     <%= cl_image_tag("tribublanco_1_yauycz.svg", :secure => true, class:"lazyload", :height=>70, :quality=>"auto:best", :crop=>"scale")%>
+    <% end %>
   </a>
   <div class="navbar-wagon-center hidden-sm hidden-xs ">
-    <a><%= link_to "Nos produits", "#nosproduits", class: "navbar-wagon-item navbar-wagon-link" %></a>
-    <a><%= link_to "Nos valeurs", "#nosvaleurs", class: "navbar-wagon-item navbar-wagon-link" %></a>
-    <a><%= link_to "Collaboratif ?", "#commentcamarche", class: "navbar-wagon-item navbar-wagon-link" %></a>
-    <a><%= link_to "Lancement", "#lancement", class: "navbar-wagon-item navbar-wagon-link" %></a>
-    <a><%= link_to "Votez !", "#equipe", class: "navbar-wagon-item navbar-wagon-link" %></a>
+    <a><%= link_to "La tribu", "https://www.la-tribu.co/", class: "navbar-wagon-item navbar-wagon-link" %></a>
+    <a><%= link_to "Les produits", "https://www.la-tribu.co/les-produits", class: "navbar-wagon-item navbar-wagon-link" %></a>
+    <a><%= link_to "Notre histoire", "https://www.la-tribu.co/nos-aventuriers", class: "navbar-wagon-item navbar-wagon-link" %></a>
+    <a><%= link_to "Notre univers", "https://www.la-tribu.co/le-blog", class: "navbar-wagon-item navbar-wagon-link" %></a>
+    <a><%= link_to "Nos recettes", "https://www.la-tribu.co/nos-recettes", class: "navbar-wagon-item navbar-wagon-link" %></a>
+    <a><%= link_to "Le concept", "https://www.la-tribu.co/le-concept", class: "navbar-wagon-item navbar-wagon-link" %></a>
+    <a><%= link_to "Contact", "hhttps://www.la-tribu.co/contact", class: "navbar-wagon-item navbar-wagon-link" %></a>
   </div>
   <div class="navbar-wagon-right">
     <div class="footer-links">
