@@ -1,7 +1,8 @@
 {
   "dependencies": {
-    "@rails/webpacker": "3.4",
+    "@rails/webpacker": "^4.0.2",
     "ajv": "^6.10.0",
+    "babel-loader": "^8.0.5",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "justflipit": "^1.1.2",
@@ -10,6 +11,6 @@
   },
   "devDependencies": {
     "webpack": "^4.30.0",
-    "webpack-dev-server": "2.11.2"
+    "webpack-dev-server": "^3.3.1"
   }
 }
