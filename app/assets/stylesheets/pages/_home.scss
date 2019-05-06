@@ -20,9 +20,9 @@
 // font-family: 'Encode Sans Semi Expanded', sans-serif;
 //font-family: 'Fira Sans', sans-serif;
 //font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif;
+font-family: 'open Sans', sans-serif;
 h1 {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'lobster';
   letter-spacing: 1.5px;
 }
 h2 {
@@ -55,7 +55,7 @@ padding: 20px;
 }
 
 .first-banner {
-  background-image: linear-gradient(rgba(0,50,70,0.2) 40%,rgba(0,50,70,0.2) 100%), url('https://res.cloudinary.com/dcljc9muz/image/upload/f_auto,c_scale,q_auto:best,w_1500/v1532032555/Producteurs_Nous_z2s5zy.jpg') ;
+  background-image: url('https://res.cloudinary.com/dcljc9muz/image/upload/v1557135873/Producteurs___Nous_edited_edited_modifie%CC%81_fdu7ds.jpg') ;
   background-size: cover;
   background-repeat: no-repeat;
   background-position:center center;
@@ -99,20 +99,33 @@ padding: 20px;
   // }
 
 .highlights {
-  outline: 10px solid #28a745;
+  outline: 5px solid #37a4dd;
 }
 
 .card {
   box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
-  min-height: 230px;
+  min-height: 280px;
   width: 100%;
   margin-top: 30px;
+  font-family: 'lobster two';
+  h5 {
+    font-size: 23px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right:10px;
+  }
 }
 
   #check {
     display: none
   }
 
+  .pitch {
+    margin-bottom: 30px;
+  }
+.form-inputs {
+  margin-top: 30px;
+}
 // @media (max-width: 768px) {
 //    .scrollmenu {
 //     overflow: scroll;

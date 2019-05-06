@@ -10,7 +10,7 @@
   // font-family: 'Poppins', sans-serif;
   //font-family: 'Fira Sans', sans-serif;
   //font-family: 'Montserrat', sans-serif;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lobster', sans-serif;
   transition: 0.3s background-color ease;
   height: 80px;
   padding: 0px 30px;
@@ -23,6 +23,9 @@
 
 /* Logo */
 .navbar-wagon-brand img {
+    width: 109px;
+    height: 79px;
+    object-fit: cover;
   // height: 150px;
 }
 
@@ -35,7 +38,7 @@
 
 /* Right section */
 .navbar-wagon-center {
-  width: 60%;
+  width: 64%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,12 +53,14 @@
 /* Navbar link */
 .navbar-wagon-link {
   color: white !important;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .navbar-wagon-link:hover {
   // color: #da552f;
-  color: #F9D243;
+  // color: #F9D243;
+  color: #FFC65C;
+  transition: color 0.4s ease 0s;
   text-decoration: none;
 }
 
