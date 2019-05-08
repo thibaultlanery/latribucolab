@@ -88,14 +88,9 @@ padding: 20px;
   padding: 30px;
   padding-top: 10px;
   margin-bottom: 20px;
-  img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    transition: box-shadow ease 200ms;
-    margin: 5px;
-    border: 3px solid transparent;
-  }
+img {
+  max-width: 70%;
+}
 }
 
   // input:checked + img {
@@ -129,6 +124,14 @@ width: 70%;
     margin-top: 20px;
     padding-left: 10px;
     padding-right:10px;
+  }
+  img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    transition: box-shadow ease 200ms;
+    margin: 5px;
+    border: 3px solid transparent;
   }
 }
 
