@@ -1,28 +1,33 @@
  <div class="form">
-  <%= simple_form_for(@user) do |f| %>
-    <%= f.error_notification %>
-      <%= f.fields_for :category_preferences, url: category_preferences_path do |uf| %>
-        <div class="row">
-          <% Category.all.each do |category| %>
-            <div class="col-xs-6 col-md-3" >
-                <label class="card">
-                  <%= uf.check_box :category_ids, { multiple: true, id: "check", class: "checked" }, category.id, nil %>
-                   <%= image_tag category.pictoname, {class: "img-circle"} %>
-                   <h5><%= category.name %></H5>
-                </label>
-              </div>
-            <% end %>
-          </div>
-        <% end %>
-    <div class="form-inputs">
-      <ul class="list-inline">
-        <li><%= f.input :name, required: true, placeholder: "Prénom", label: false %></li>
-        <li><%= f.input :email, required: true,  placeholder: "Email", label: false%></li>
-      </ul>
-    </div>
-    <div class="form-actions">
-      <%= f.button :submit, "REJOINS NOUS", class: "btn-pink" %>
-    </div>
-  <% end %>
+  <div class="form_left">
+    <h4 style="font-style: italic">Cliquez pour effectuer votre sélection:</h4>
+    <%= simple_form_for(@user) do |f| %>
+      <%= f.error_notification %>
+        <%= f.fields_for :category_preferences, url: category_preferences_path do |uf| %>
+          <div class="row">
+            <% Category.all.each do |category| %>
+              <div class="col-xs-6 col-md-3" >
+                  <label class="card">
+                    <%= uf.check_box :category_ids, { multiple: true, id: "check", class: "checked" }, category.id, nil %>
+                     <%= image_tag category.pictoname, {class: "img-circle"} %>
+                     <h4><%= category.name %></H4>
+                  </label>
+                </div>
+              <% end %>
+            </div>
+          <% end %>
+        </div>
+    <div class="form_right">
+      <div class="form-inputs">
+        <ul class="list-inline">
+          <li><%= f.input :name, required: true, placeholder: "Prénom", label: false %></li>
+          <li><%= f.input :email, required: true,  placeholder: "Email", label: false%></li>
+        </ul>
+      </div>
+      <div class="form-actions">
+        <%= f.button :submit, "SOUMETTRE MON VOTE", class: "btn-green" %>
+      </div>
+    <% end %>
+  </div>
 </div>
 
