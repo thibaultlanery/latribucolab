@@ -37,12 +37,10 @@
 
     <%#= stylesheet_pack_tag 'application', media: 'all' %>
   <body>
-
+    <%= render "shared/navbar" %>
     <%= render 'shared/flashes' %>
     <%= yield %>
-
     <%= render 'shared/footer' %>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5acd26af15e550001323fa2e&product=social-ab' async='async'></script>
 

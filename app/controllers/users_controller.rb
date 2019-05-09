@@ -8,15 +8,16 @@ class UsersController < ApplicationController
 
   def create
       @user = User.new(user_params)
-      category_ids = category_params
-      @user.category_preferences << category_ids.map { |category_id| CategoryPreference.new(category_id: category_id) }
-      @user.category_preferences.each do |category_preference|
-        if category_preference.save
+      if @user.name.present? & @user.email.present? & params[:user][:category_preferences].present?
+        category_ids = category_params
+        @user.save
+        @user.category_preferences << category_ids.map { |category_id| CategoryPreference.new(category_id: category_id) }
+        @user.category_preferences.each do |category_preference|
+          if category_preference.save
         else
-        flash[:alert] = 'hum, :( il semble vous ayez déja choisi cette categorie'
+          flash[:alert] = 'hum, :( il semble vous ayez déja choisi cette categorie'
         end
       end
-      if @user.save
         session[:user_id] = @user.id
         redirect_to user_path(@user)
       else

@@ -20,8 +20,8 @@
     <div class="form_right">
       <div class="form-inputs">
         <ul class="list-inline">
-          <li><%= f.input :name, required: true, placeholder: "Prénom", label: false %></li>
-          <li><%= f.input :email, required: true,  placeholder: "Email", label: false%></li>
+          <li><%= f.input :name, required: true, placeholder: "Prénom", label: false, include_blank: false %></li>
+          <li><%= f.input :email, required: true,  placeholder: "Email", label: false, include_blank: false%></li>
         </ul>
       </div>
       <div class="form-actions">
