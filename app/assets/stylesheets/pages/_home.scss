@@ -103,15 +103,21 @@ color: white;
 color: #FFC65C;
 }
 
-.form {
-  display: inline-flex;
+@media (min-width: 992px) {
+    .centered {
+        display: flex;
+        align-items: center;
+    }
 }
+
 .form_right {
-  margin-top: auto;
-  margin-bottom: auto;
+  // margin-top: auto;
+  // margin-bottom: auto;
+
 }
+
 .form_left {
-width: 70%;
+// width: 70%;
 }
 
 .card {
