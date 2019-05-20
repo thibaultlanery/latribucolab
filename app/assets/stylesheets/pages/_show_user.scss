@@ -97,23 +97,9 @@ font-size: 17px;
   }
 padding: 0;
   }
-.vote {
-  padding-top: 10px;
-  background-color: #37bfc3 !important;
-  margin-bottom: 10px;
-   img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    transition: box-shadow ease 200ms;
-    margin: 5px;
-    border: 3px solid transparent;
-  }
-  input:checked + img {
-    border: 3px solid #28a745;
-  }
+
 #check {
   display: none
   }
-  }
 }
+
