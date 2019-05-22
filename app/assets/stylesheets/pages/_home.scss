@@ -218,9 +218,8 @@ color: #FFC65C;
 //   .ambiance-grain {
 //     min-height: 95px;
 //   }
-//   #cafe-title {
-//     font-size: 25px !important;
-//   }
+
+
 
 //   #cafe-brand {
 //   font-size: 20px;
@@ -322,3 +321,55 @@ color: #FFC65C;
 //     }
 //   }
 // }
+@media (max-width: 375px) {
+
+  .first-banner {
+    min-height: 50vh;
+  }
+
+  h1 {
+    font-size: 25px !important;
+  }
+
+.title {
+  font-family: lobster;
+  font-size: 20px;
+}
+
+.pitch {
+margin-bottom: 10px !important;
+}
+
+  .vote {
+    padding: 10px;
+    img {
+      max-width: 100%;
+    }
+    h5 {
+      padding: 10px;
+    }
+  }
+
+.form_left {
+  h4 {
+    font-size: 16px;
+  }
+}
+
+  .card {
+    min-height: 220px;
+    img {
+      width: 80px;
+      height: 80px;
+    }
+    h4 {
+      font-size: 17px;
+    }
+  }
+
+  .form_right {
+    padding-top: 20px;
+  }
+
+  }
+

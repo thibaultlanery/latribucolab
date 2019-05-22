@@ -34,14 +34,12 @@ class UsersController < ApplicationController
     def set_user
       @user = current_user
     end
-
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
       params.require(:user).permit(:name, :email)
     end
-
-     def category_params
-    params[:user][:category_preferences][:category_ids]
+    def category_params
+      params[:user][:category_preferences][:category_ids]
     end
 
 end
