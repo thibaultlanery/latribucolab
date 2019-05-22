@@ -14,19 +14,17 @@ class UsersController < ApplicationController
       @user.category_preferences << category_ids.map { |category_id| CategoryPreference.new(category_id: category_id) }
       @user.category_preferences.each do |category_preference|
           if category_preference.save
-            respond_to do |format|
-            format.html {   redirect_to users_path }
-            format.js {} # <-- will render `app/views/reviews/create.js.erb`
-            end
-          else
-            respond_to do |format|
-            format.html { render 'user/show' }
-            format.js {} # <-- idem
-          end
+        else
+          flash[:alert] = 'hum, :( il semble vous ayez déja choisi cette categorie'
         end
       end
-    end
+        session[:user_id] = @user.id
+        redirect_to user_path(@user)
+      else
+        redirect_to root_path, alert: "Ooooops, assurez vous de remplir les deux champs, ce mail est peut etre déjà utilisé ou non conforme au format attendu "
+      end
   end
+
 
 
   private
