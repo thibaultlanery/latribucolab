@@ -1,7 +1,7 @@
 
 // Specific CSS for your home-page
 // general
-.wrapper-home {
+.wrapper {
   h5 {
     font-size: 16px;
     line-height: 1.5;
@@ -103,15 +103,21 @@ color: white;
 color: #FFC65C;
 }
 
-.form {
-  display: inline-flex;
+@media (min-width: 992px) {
+    .centered {
+        display: flex;
+        align-items: center;
+    }
 }
+
 .form_right {
-  margin-top: auto;
-  margin-bottom: auto;
+  // margin-top: auto;
+  // margin-bottom: auto;
+
 }
+
 .form_left {
-width: 70%;
+// width: 70%;
 }
 
 .card {
@@ -212,9 +218,8 @@ width: 70%;
 //   .ambiance-grain {
 //     min-height: 95px;
 //   }
-//   #cafe-title {
-//     font-size: 25px !important;
-//   }
+
+
 
 //   #cafe-brand {
 //   font-size: 20px;
@@ -316,3 +321,55 @@ width: 70%;
 //     }
 //   }
 // }
+@media (max-width: 375px) {
+
+  .first-banner {
+    min-height: 50vh;
+  }
+
+  h1 {
+    font-size: 25px !important;
+  }
+
+.title {
+  font-family: lobster;
+  font-size: 20px;
+}
+
+.pitch {
+margin-bottom: 10px !important;
+}
+
+  .vote {
+    padding: 10px;
+    img {
+      max-width: 100%;
+    }
+    h5 {
+      padding: 10px;
+    }
+  }
+
+.form_left {
+  h4 {
+    font-size: 16px;
+  }
+}
+
+  .card {
+    min-height: 220px;
+    img {
+      width: 80px;
+      height: 80px;
+    }
+    h4 {
+      font-size: 17px;
+    }
+  }
+
+  .form_right {
+    padding-top: 20px;
+  }
+
+  }
+
