@@ -1,7 +1,7 @@
-<div class="wrapper show">
+<div class="wrapper text-center show">
   <div class="show-banner">
     <div class="container">
-      <div class="first-banner-content text-center">
+      <div class="first-banner-content">
         <div class="punchline ">
           <!-- <h1>VOS PRODUITS D'EPICERIE COMME SI VOUS Y ETIEZ!</h1> -->
           <h1>A voté !</h1>
@@ -13,21 +13,40 @@
       </div>
     </div>
   </div>
-
-  <div class="container text-center ">
-    <div class="content-text">
-      <div class="title">
-        <h1>Un grand merci <%= current_user.name.capitalize %></h1>
-        <div class="share">
-          <h4>Invitez vos amis ! Si l'idée vous a plu elle leur plaira aussi 🙌.</h4>
-          <div class="sharethis-inline-share-buttons" data-url="https://www.la-tribu.co"></div>
+  <div class="padded">
+    <div class="container">
+      <div class="row">
+        <div class="content-text">
+          <div class="title">
+            <h1>Un grand merci <%= current_user.name.capitalize %> !</h1>
+          </div>
+          <div class="">
+            <h4>Nous vous invitons désormais à :</h4>
+          </div>
         </div>
-        <div class="boutique">
-          <h4>Découvrez notre gamme développée en 2018 par la communauté !</h4>
-          <%= link_to 'DÉCOUVRIR', "https://www.la-tribu.co/les-produits",class: "btn btn-primary"%>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="share col-xs-12">
+          <h1>-1-</h1>
+          <h4><strong>Inviter vos amis à voter également.</strong> <br/> Si l'idée vous a plu elle leur plaira aussi 🙌.</h4>
+          <div class="call-to-action">
+            <div class="sharethis-inline-share-buttons" data-url="https://www.la-tribu.co"></div>
+          </div>
         </div>
+        <div class="boutique col-xs-12">
+          <h1>-2-</h1>
+          <h4><strong>Comprendre l'importance de votre vote</strong> <br> en découvrant la gamme que nous avons développé avec notre communauté en 2018</h4>
+          <div class="call-to-action">
+            <%= link_to 'DÉCOUVRIR', "https://www.la-tribu.co/les-produits",class: "btn btn-green"%>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+</div>
+
 </div>
 
 
