@@ -46,7 +46,8 @@ padding: 20px;
 
 
 .title{
-  margin-bottom: 40px;
+  padding-top: 35px;
+  padding-bottom: 30px;
   h1 {
     font-size: 35px;
     //
@@ -68,7 +69,7 @@ padding: 20px;
   justify-content: space-around;
   align-items: center;
   color: white;
-  min-height: 85vh;
+  min-height: 70vh;
   letter-spacing: 1px;
   }
 
@@ -148,6 +149,7 @@ color: #FFC65C;
 
   .pitch {
     margin-bottom: 30px;
+    margin-top: 30px;
   }
 // @media (max-width: 768px) {
 //    .scrollmenu {
@@ -334,6 +336,8 @@ color: #FFC65C;
 .title {
   font-family: lobster;
   font-size: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .pitch {
@@ -368,7 +372,7 @@ margin-bottom: 10px !important;
   }
 
   .form_right {
-    padding-top: 20px;
+    padding-top: 50px;
   }
 
   }

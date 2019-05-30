@@ -12,15 +12,18 @@
   justify-content: space-around;
   align-items: center;
   color: white;
-  min-height: 50vh;
+  min-height: 70vh;
   letter-spacing: 1px;
 }
 
+.padded {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
 .show {
   h4{
 line-height: 1.5;
 letter-spacing: 0.4px;
-padding: 25px;
 // margin-bottom: 20px;
 // margin-right: auto;
 // margin-left: auto;
@@ -28,13 +31,10 @@ padding: 25px;
 
 }
 
-.pitch {
-  margin-bottom: 20px;
-  h5 {
-  letter-spacing:0.4px;
-  }
 }
 
+.call-to-action {
+  margin-top: 20px;
 }
 
 .logo {
@@ -49,10 +49,8 @@ width: 180px;
 
 .content-text {
 border-radius: 15px;
-padding: 20px;
 color:#484848;
 background-color: white;
-margin-bottom: 20px;
 }
 .team-show  {
 img{
@@ -78,6 +76,10 @@ color: white
     padding: 30px;
  }
 
+ .scrutin {
+  margin-top: 40px;
+ }
+
 @media (max-width: 375px) {
   // .logo {
   //   background-image: url("https://res.cloudinary.com/dcljc9muz/image/upload/c_scale,f_auto,q_auto:good,w_400/v1524535139/photoshare_if3mv8.webp") !important;
@@ -87,6 +89,11 @@ color: white
   // height: 160px;
 
   // }
+
+.padded {
+padding-bottom : 60px !important;
+  }
+
 .show {
   h4 {
 line-height: 25px;
