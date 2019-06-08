@@ -32,6 +32,9 @@
             <div class="form-actions">
               <%= f.button :submit, "SOUMETTRE MON VOTE", class: "btn-green" %>
             </div>
+            <div class="policy list-inline">
+              <%= f.input :accept, as: :boolean, checked_value: true, unchecked_value: false, label: false, inline_label: "J'accepte la #{link_to 'politique de confidentialité'}" %>
+            </div>
           <% end %>
         </div>
       </div>
