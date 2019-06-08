@@ -29,6 +29,24 @@
           <%= render "shared/form" %>
       </div>
     </div>
+      <div class="third-banner text-center">
+        <div class="container padded">
+          <div class="row">
+            <div class="txt">
+              <h2>Découvrez Le Top 4</h2>
+              <h4>des produits choisis par la communauté</h4>
+            </div>
+               <% CategoryPreference.try.first(4).each do |category_preference| %>
+              <div class="col-xs-6 col-md-3">
+                  <%= image_tag category_preference[0].pictoname, {class:"img-circle"}%>
+                  <h3><%= CategoryPreference.try.index(category_preference) + 1 %></h3>
+                  <h5><%= category_preference[0].name %></H5>
+                  <h5><% category_preference[1]%></h5>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
   </div>
 </div>
 
