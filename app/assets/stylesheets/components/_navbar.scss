@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: #37bfc3;
-  color: white !important;
+  color: white;
 
 }
 
@@ -65,6 +65,10 @@
   text-decoration: none;
 }
 
+.dropdown-menu {
+background-color: #37bfc3 !important;
+color: white !important;
+}
 
 @media screen and (max-width: 375px) {
   .navbar-wagon {
