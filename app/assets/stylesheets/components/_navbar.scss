@@ -22,6 +22,26 @@
 
 }
 
+.dropdown-menu {
+  min-width: fit-content !important;
+}
+.navbar-wagon-dropdown-menu {
+  margin-top: 25px;
+  box-shadow: 1px 1px 4px #E6E6E6;
+  border-color: #E6E6E6;
+  z-index: 12 !important;
+}
+.navbar-wagon-dropdown-menu li > a {
+  margin: 5px;
+  transition: color 0.3s ease;
+  // font-weight: lighter !important;
+  color: #37bfc3 !important;
+  font-size: 20px !important;
+  line-height: 22px !important;
+  padding: 10px 20px;
+}
+
+
 /* Logo */
 .navbar-wagon-brand img {
     width: 109px;
@@ -63,11 +83,6 @@
   color: #FFC65C !important;
   transition: color 0.4s ease 0s;
   text-decoration: none;
-}
-
-.dropdown-menu {
-background-color: #37bfc3 !important;
-color: white !important;
 }
 
 @media screen and (max-width: 375px) {
