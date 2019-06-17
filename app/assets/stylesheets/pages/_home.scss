@@ -46,8 +46,7 @@ padding: 20px;
 
 
 .title{
-  padding-top: 35px;
-  padding-bottom: 30px;
+  font-family: 'lobster';
   h1 {
     font-size: 35px;
     //
@@ -102,6 +101,10 @@ color: white;
 
 .hover{
 color: #FFC65C;
+}
+
+.policy {
+  padding-top: 30px;
 }
 
 @media (min-width: 992px) {
