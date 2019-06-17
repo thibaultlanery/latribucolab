@@ -1,6 +1,11 @@
 
 // Specific CSS for your home-page
 // general
+
+.alert {
+  margin-top: 80px !important;
+}
+
 .wrapper {
   h5 {
     font-size: 16px;
@@ -63,12 +68,11 @@ padding: 20px;
   img {
     height: 100%;
   }
-  margin-top: 70px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   color: white;
-  min-height: 70vh;
+  min-height: 90vh;
   letter-spacing: 1px;
   }
 
