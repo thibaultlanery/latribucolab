@@ -9,16 +9,17 @@
   // box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
   // font-family: 'Poppins', sans-serif;
   //font-family: 'Fira Sans', sans-serif;
-  //font-family: 'Montserrat', sans-serif;
-  font-family: 'Lobster', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  //font-family: 'Lobster', sans-serif;
   transition: 0.3s background-color ease;
-  height: 80px;
+  height: 90px;
   padding: 0px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #37bfc3;
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
+
 
 }
 
@@ -74,7 +75,7 @@
 /* Navbar link */
 .navbar-wagon-link {
   color: white !important;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 .navbar-wagon-link:hover {
