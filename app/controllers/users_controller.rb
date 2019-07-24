@@ -21,10 +21,10 @@ class UsersController < ApplicationController
           session[:user_id] = @user.id
           redirect_to user_path(@user)
         else
-          redirect_to root_path, alert: "Ooooops, assurez vous de remplir les deux champs, ce mail est peut etre déjà utilisé ou non conforme au format attendu "
+          redirect_to root_path, alert: "Ooooops, il semble que vous ayez déjà voté, sinon, assurez vous de bien sélectionner et remplir les champs, ce mail est peut etre déjà utilisé ou non conforme au format attendu "
         end
       else
-        redirect_to root_path, alert: "Ooooops, assurez vous de remplir les deux champs, ce mail est peut etre déjà utilisé ou non conforme au format attendu "
+        redirect_to root_path, alert: "Ooooops, assurez vous de bien sélectionner et remplir les champs, ce mail est peut etre déjà utilisé ou non conforme au format attendu "
       end
   end
 
