@@ -4,12 +4,28 @@
     <%= cl_image_tag("tribublanco_1_yauycz.svg", :secure => true, class:"lazyload", :height=>70, :quality=>"auto:best", :crop=>"scale")%>
     <% end %>
   </a>
-  <div class="navbar-wagon-center hidden-sm hidden-xs ">
+  <div class="navbar-wagon-center hidden-sm hidden-xs  ">
     <a><%= link_to "La boutique", "https://www.la-tribu.co/les-produits", class: "navbar-wagon-item navbar-wagon-link" %></a>
-    <a><%= link_to "Collaborez", "http://collab.la-tribu.co/", class: "navbar-wagon-item navbar-wagon-link" %></a>
-    <a><%= link_to "Notre impact", "https://www.la-tribu.co/nos-aventuriers", class: "navbar-wagon-item navbar-wagon-link" %></a>
-    <a><%= link_to "Notre univers", "https://www.la-tribu.co/le-blog", class: "navbar-wagon-item navbar-wagon-link" %></a>
+     <Div class="dropdown">
+        <a><%= link_to "Collaborez", "http://collab.la-tribu.co/", class: "navbar-wagon-item navbar-wagon-link "%></a>
+      <ul class="dropdown-menu">
+        <li><%= link_to "Votez pour nos futurs produits", "http://collab.la-tribu.co/", class: "navbar-wagon-item navbar-wagon-link" %></li>
+        <li><%= link_to "Investissez dans La Tribu", "https://www.wedogood.co/la-tribu/", class: "navbar-wagon-item navbar-wagon-link" %></li>
+      </ul>
+    </Div>
+    <a><%= link_to "Notre impact", "https://www.la-tribu.co/nos-aventuriers", class: "navbar-wagon-item navbar-wagon-link"  %></a>
+    <div class="dropdown">
+      <a><%= link_to "Notre univers", "https://www.la-tribu.co/le-blog", class: "navbar-wagon-item navbar-wagon-link" %></a>
+        <ul class="dropdown-menu">
+          <li><%= link_to "Notre histoire", "https://www.la-tribu.co/notrehistoire", class: "navbar-wagon-item navbar-wagon-link" %></li>
+          <li><%= link_to "Récits de voyages", "https://www.la-tribu.co/le-blog/categories/r%C3%A9cits-de-voyages", class: "navbar-wagon-item navbar-wagon-link" %></li>
+          <li><%= link_to "Aux origines du goût", "https://www.la-tribu.co/le-blog/categories/aux-origines-du-goût", class: "navbar-wagon-item navbar-wagon-link" %></li>
+          <li><%= link_to "Découvrez notre impact", "https://www.la-tribu.co/le-blog/categories/notre-impact", class: "navbar-wagon-item navbar-wagon-link" %></li>
+          <li><%= link_to "Recettes à faire chez soi", "https://www.la-tribu.co/le-blog/categories/recettes", class: "navbar-wagon-item navbar-wagon-link" %></li>
+        </ul>
+    </div>
     <a><%= link_to "Abonnements", "https://www.la-tribu.co/plans-pricing", class: "navbar-wagon-item navbar-wagon-link" %></a>
+
   </div>
   <div class="navbar-wagon-right hidden-sm hidden-xs">
     <div class="footer-links">
@@ -30,6 +46,7 @@
       </ul>
     </div>
   </div>
+
 </div>
 
 
