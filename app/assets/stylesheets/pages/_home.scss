@@ -24,7 +24,8 @@
 //font-family: 'Montserrat', sans-serif;
 font-family: 'open Sans', sans-serif;
 h1 {
-  font-family: 'lobster';
+  // font-family: 'lobster';
+  font-family: "Permanent Marker";
   letter-spacing: 1.5px;
 }
 h2 {
@@ -65,6 +66,7 @@ padding: 20px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position:center center;
+  background-attachment: fixed;
   img {
     height: 100%;
   }
