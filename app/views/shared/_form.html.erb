@@ -33,7 +33,7 @@
               <%= f.button :submit, "SOUMETTRE MON VOTE", class: "btn-green" %>
             </div>
             <div class="policy list-inline">
-              <%= f.input :accept, as: :boolean, checked_value: true, unchecked_value: false, inline_label: ("J'accepte la #{link_to"politique de confidentialité", "https://www.la-tribu.co/politique-de-confidentialite", target: "_blank"} et d'être informé des suites de mon vote via la newsletter mensuelle La Tribu").html_safe %>
+              <%= f.input :accept, as: :boolean, checked_value: true, unchecked_value: false, inline_label: ("(facultatif) Je souhaite être informé des suites de mon vote via la newsletter mensuelle La Tribu et accepte la #{link_to"politique de confidentialité", "https://www.la-tribu.co/politique-de-confidentialite", target: "_blank"}").html_safe %>
             </div>
           <% end %>
         </div>

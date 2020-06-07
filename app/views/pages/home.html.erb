@@ -36,12 +36,12 @@
         <div class="second-step col-sm-6 col-md-4">
           <%= cl_image_tag("apprenez_vert_j5r1vw.jpg", :secure => true, lass:"lazyload", :fetch_format=>:auto, :height=>130, :quality=>"auto:good", :width=>130, :crop=>"fill")%>
           <h2>Apprenez</h2>
-          <h5>Comprenez comment vos produits sont fabriqués, de la graine à vos papilles,<br> grâce aux photos, vidéos et infographies en ligne.</h5>
+          <h5>Comprenez comment vos produits sont fabriqués, de la graine à l'assiette,<br> grâce aux photos et vidéos en ligne.</h5>
         </div>
         <div class="third-step col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
           <%= cl_image_tag("dégustez_vert_gke9of.jpg",:secure => true, lass:"lazyload", :fetch_format=>:auto, :quality=>"auto", :width=>130, :height=>130,  :crop=>"fill") %>
           <h2>Dégustez</h2>
-          <h5>Reçevez vos produits uniques et leurs fiches de dégustation !</h5>
+          <h5>Reçevez vos produits uniques ou retrouvez les dans votre magasin bio préféré !</h5>
         </div>
       </div>
     </div>
@@ -53,13 +53,14 @@
         <div class="title">
           <h1>Aidez-nous à choisir !</h1>
         </div>
+         <%= render "shared/form" %>
         <div class="pitch">
           <h5>Nous allons ensuite à la rencontre des producteurs et développons avec vous les produits qui correspondent à vos attentes.</h5>
         </div>
         <div class="img">
           <%= cl_image_tag("2019_-20_1_uwhr9c.png", :quality=>"auto", :fetch_format=>:auto) %>
         </div>
-          <%= render "shared/form" %>
+
       </div>
     </div>
   </div>

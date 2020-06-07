@@ -8,7 +8,7 @@ class User < ApplicationRecord
     validates :email, presence: true, uniqueness: true
     validates_format_of :email, :with => /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i, on: :create
     validates :name, presence: true
-    validates :accept, presence: true
+    # validates :accept, presence: true
 
   def subscribe_to_newsletter
     SubscribeToNewsletterService.new(self).call
