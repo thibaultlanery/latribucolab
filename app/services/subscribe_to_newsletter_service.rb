@@ -14,7 +14,7 @@ class SubscribeToNewsletterService
           merge_fields: {
           FNAME: @user.name,
           #   LNAME: @user.last_name
-          }
+          },
           tags: [{name:"VOTE COLLAB", status:"active"}]
         }
       )
