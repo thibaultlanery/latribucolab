@@ -17,10 +17,14 @@ class SubscribeToNewsletterService
           }
         }
       )
+      @gibbon.lists(@audience_id).members(Digest::MD5.hexdigest(@user.email)).tags.create(
+        body: {
+          tags: [{name:"VOTE COLLAB", status:"active"}]
+          }
+      )
     rescue Gibbon::MailChimpError => e
      puts "Houston, we have a problem: #{e.message} - #{e.raw_body}"
     end
   end
 
 end
-
