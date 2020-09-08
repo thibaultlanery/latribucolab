@@ -15,6 +15,7 @@ class SubscribeToNewsletterService
           FNAME: @user.name,
           #   LNAME: @user.last_name
           }
+          tags: [{name:"VOTE COLLAB", status:"active"}]
         }
       )
     rescue Gibbon::MailChimpError => e
