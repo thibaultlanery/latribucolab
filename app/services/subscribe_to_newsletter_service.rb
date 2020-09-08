@@ -14,9 +14,13 @@ class SubscribeToNewsletterService
           merge_fields: {
           FNAME: @user.name,
           #   LNAME: @user.last_name
-          },
-          tags: [{name:"VOTE COLLAB", status:"active"}]
+          }
         }
+      )
+      @gibbon.lists(@audience_id).members(Digest::MD5.hexdigest(lower_case_email_address)).tags.create(
+        body: {
+          tags: [{name:"VOTE COLLAB", status:"active"}]
+          }
       )
     rescue Gibbon::MailChimpError => e
      puts "Houston, we have a problem: #{e.message} - #{e.raw_body}"
