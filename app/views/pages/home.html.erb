@@ -5,7 +5,7 @@
       <div class="first-banner-content text-center">
         <div class="punchline ">
           <!-- <h1>VOS PRODUITS D'EPICERIE COMME SI VOUS Y ETIEZ!</h1> -->
-          <h1>Choisissez nos prochains produits</h1>
+          <h1>C'est ici que tout commence !</h1>
           <!-- <h3>Des produits d'épicerie bons, justes et développés ensembles!</h3> <br> -->
    <!--        <h3>Rejoignez notre communauté de citoyens <br> et élaborons ensemble nos produits d'épicerie. </h3> -->
           <!-- -->
@@ -16,49 +16,54 @@
   </div>
 
 
-<div class="fourth-banner banner grey text-center" id="commentcamarche">
+<div class="fourth-banner banner grey " id="commentcamarche">
     <div class="container">
       <div class="row">
-        <div class="title">
+        <div class="title text-center">
           <h1>La Tribu est une marque participative.</h1>
         </div>
         <div class="pitch">
-          <h5>Elle vous permet de reprendre le contrôle de votre consommation en participant à la création de nos produits.</h5>
+          <h5>C'est à dire que nous construisons <strong>avec les citoyens une offre alimentaire à impact environnemental & social</strong> : des produits d’épicerie d'exception <strong> bio et équitables </strong>, développés avec vous dans le respect d’un cahier des charges citoyen.</h5>
+          <h5><strong>Telle est notre recette pour changer le monde !</strong></h5>
         </div>
-        <div class="first-step col-sm-6 col-md-4">
-          <%=cl_image_tag("creez_vert_r6bwsi.jpg", :secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>130, :height=>130, :crop=>"fill") %>
-          <h2>Créez</h2>
-          <h5>
-            Inscrivez-vous pour suivre le projet. <br>
-            Donnez votre avis en ligne sur les futurs produits à développer. <br>
-          </p></h5>
-        </div>
-        <div class="second-step col-sm-6 col-md-4">
-          <%= cl_image_tag("apprenez_vert_j5r1vw.jpg", :secure => true, lass:"lazyload", :fetch_format=>:auto, :height=>130, :quality=>"auto:good", :width=>130, :crop=>"fill")%>
-          <h2>Apprenez</h2>
-          <h5>Comprenez comment vos produits sont fabriqués, de la graine à l'assiette,<br> grâce aux photos et vidéos en ligne.</h5>
-        </div>
-        <div class="third-step col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
-          <%= cl_image_tag("dégustez_vert_gke9of.jpg",:secure => true, lass:"lazyload", :fetch_format=>:auto, :quality=>"auto", :width=>130, :height=>130,  :crop=>"fill") %>
-          <h2>Dégustez</h2>
-          <h5>Reçevez vos produits uniques ou retrouvez les dans votre magasin bio préféré !</h5>
+        <div class="vignettes text-center">
+          <div class="first-step col-sm-6 col-md-4">
+            <%=cl_image_tag("creez_vert_r6bwsi.jpg", :secure => true, lass:"lazyload", :fetch_format=>:auto,:quality=>"auto", :width=>130, :height=>130, :crop=>"fill") %>
+            <h2>Créez</h2>
+            <h5>
+              Inscrivez-vous pour suivre le projet. <br>
+              Participez à notre financement ou donnez votre avis en ligne sur les futurs produits à développer. <br>
+            </p></h5>
+          </div>
+          <div class="second-step col-sm-6 col-md-4">
+            <%= cl_image_tag("apprenez_vert_j5r1vw.jpg", :secure => true, lass:"lazyload", :fetch_format=>:auto, :height=>130, :quality=>"auto:good", :width=>130, :crop=>"fill")%>
+            <h2>Apprenez</h2>
+            <h5>Comprenez comment vos produits génèrent de l'impact de la graine à l'assiette,<br>grâce aux photos et vidéos en ligne.</h5>
+          </div>
+          <div class="third-step col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
+            <%= cl_image_tag("dégustez_vert_gke9of.jpg",:secure => true, lass:"lazyload", :fetch_format=>:auto, :quality=>"auto", :width=>130, :height=>130,  :crop=>"fill") %>
+            <h2>Dégustez</h2>
+            <h5>Reçevez vos produits uniques ou retrouvez les dans votre magasin bio préféré !</h5>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <div class= "second-banner">
-    <div class="container text-center">
+    <div class="container ">
       <div class="vote">
-        <div class="title">
-          <h1>Aidez-nous à choisir !</h1>
+        <div class="title text-center">
+          <h1>À vous de jouer !</h1>
         </div>
          <%= render "shared/form" %>
         <div class="pitch">
-          <h5>Nous allons ensuite à la rencontre des producteurs et développons avec vous les produits qui correspondent à vos attentes.</h5>
+          <h5>Ensuite nous partons à la rencontre des femmes et des hommes qui produisent nos délicieux produits <strong>dans le respect de la Terre et des Hommes </strong>, comme nous l'avons décidé à l'origine de La Tribu.</h5>
+          <h5>Vous pourrez alors suivre les étapes de la construction de vos produits d'épicerie et participer à chaque étapes de leur réalisation.</h5>
         </div>
-        <div class="img">
-          <%= cl_image_tag("2019_-20_1_uwhr9c.png", :quality=>"auto", :fetch_format=>:auto) %>
+        <div class="img text-center">
+        <%= cl_image_tag("2019_-20_1_uwhr9c.png", :quality=>"auto", :fetch_format=>:auto) %>
+
         </div>
 
       </div>
