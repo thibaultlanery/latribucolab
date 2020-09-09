@@ -10,7 +10,7 @@
                 <div class="row">
                   <% Category.all.order(:id).each do |category| %>
                     <div class="col-xs-6 col-sm-3" >
-                        <label class="card">
+                        <label class="card text-center">
                           <%= uf.check_box :category_ids, { multiple: true, id: "check", class: "checked" }, category.id, nil %>
                            <%= image_tag category.pictoname, {class: "img-circle"} %>
                            <h4><%= category.name %></H4>
